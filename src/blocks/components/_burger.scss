@@ -1,53 +1,78 @@
 .burger {
-    --width-burger: 30px;
-    --height-burger: 18px;
-    --height-line: 1px;
-    --color-burger: var(--color-black);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: none;
     position: relative;
-    width: var(--width-burger);
-    height: var(--height-burger);
-    /* z-index: 101; */
-    &__line {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4096FC;
+    transition: transform 0.5s;
+
+    span {
         position: absolute;
-        top: calc((var(--height-burger) - var(--height-line) )  / 2);
-        right: 0;
-        width: 100%;
-        height: var(--height-line);
-        transition: .3s cubic-bezier(.8, .5, .2, 1.4);
-        transition-duration: 500ms;
-        background-color: var(--color-burger);
-        opacity: 1;
-    }
-    &:before, &:after {
-        @include pseudo();
-        position: absolute;
-        right: 0;
-        width: 100%;
-        height: var(--height-line);
-        transition: .3s cubic-bezier(.8, .5, .2, 1.4);
-        transition-duration: 500ms;
-        background-color: var(--color-burger);
-    }
-    &::before {
-        top: 0;
-    }
-    &::after {
-        bottom: 0;
-    }
-    &-close {
-        .burger__line {
-            opacity: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        width: 18px;
+        height: 2px;
+        background-color: #fff;
+        transition: background 0.5s, transform 0.5s;
+
+        &:before,
+        &:after {
+            content: "";
+            background-color: #fff;
+            width: 18px;
+            height: 2px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateY(-6px);
+            transition: transform 0.5s;
+            transform-origin: 50% 50%;
+
         }
-        &::after {
-            top: calc(var(--height-burger) / 2);
-            transform: rotate(45deg);
+
+        &:after {
+            transform: translateY(6px);
         }
-        &::before {
-            top: calc(var(--height-burger) / 2);
-            transform: rotate(-45deg);
+
+    }
+
+    svg {
+        width: 40px;
+        height: 40px;
+        fill: transparent;
+        stroke-width: 2px;
+        stroke: #fff;
+        stroke-dashArray: 165;
+        stroke-dashOffset: 165;
+        transition: stroke-dashOffset 0.7s, fill 0.5s;
+    }
+
+    &.isOpen {
+        transform: rotate(180deg);
+
+        span {
+            background: transparent;
+        }
+
+        span:before {
+            transform: translateY(0) rotate(45deg);
+        }
+
+        span:after {
+            transform: translateY(0) rotate(-45deg);
+        }
+
+        svg {
+            stroke-dashOffset: 0;
+        }
+
+        &:hover {
+            svg {
+                fill: rgba(#fff, 0.1);
+            }
         }
     }
 }

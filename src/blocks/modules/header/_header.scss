@@ -1,6 +1,149 @@
 .header {
+    background-color: #243A54;
+
+    height: 100vh;
+    
     &__container {
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 23px;
+        padding-bottom: 23px;
+        @media (max-width: 576px) {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        position: relative;
+        z-index: 101;
+        @media (max-width: 1024px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__left {
+        display: flex;
+        align-items: center;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: 30px;
+    }
+
+    &__desc {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        max-width: 333px;
+        font-size: 12px;
+        line-height: 17.8px;
+        font-weight: 500;
+        @media (max-width: 1230px) {
+            display: none;
+        }
+        svg {
+            display: block;
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+    }
+
+    &-social {
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+        @media (max-width: 768px) {
+            display: none;
+        }
+        &__item {
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+        }
+
+        &__link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            svg {
+                display: block;
+                width: 18px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__tell {
+        margin-right: 29px;
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__burger {
+        @media (max-width: 1024px) {
+            display: flex;
+        }
+    }
+
+    &__btn {
+        @media (max-width: 1024px) {
+            width: 40px;
+            height: 40px;
+            box-shadow: none;
+            font-size: 0;
+            padding: 0;
+            border-radius: 100%;
+            background-color: rgba(#fff, 0.1);
+            background-image: url(../img/tel.svg);
+            background-size: 14px;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-right: 15px;
+        }
+    }
+}
+
+.logo {
+    display: block;
+    width: 230px;
+    height: 40px;
+    object-fit: cover;
+    @media (max-width: 576px) {
+        width: 160px;
+        height: 28px;
+    }
+}
+
+.tell {
+    display: block;
+    color: #fff;
+    &__desc {
+        display: block;
+        margin-bottom: 3px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16.8px;
+    }
+    &__value {
+        display: block;
+        font-weight: 700;
+        font-size: 21px;
+        color: #fff;
+        line-height: 25.6px;
     }
 }

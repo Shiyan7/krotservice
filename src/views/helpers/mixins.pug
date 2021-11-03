@@ -7,12 +7,8 @@ mixin icon(name,mod)
       use(xlink:href="./img/sprites/sprite.svg#" + name)
 
 mixin burger(aria)
-  button.btn-reset.burger(aria-label=aria)
-    span.burger__line
-
-mixin nav(arr)
-  nav.nav
-    ul.nav__list.list-reset
-      each item in arr
-        li.nav__item
-          a.nav__link(href=item.link)= item.value
+  burger.btn-reset.burger.header__burger(aria-label=aria)
+    span
+    <svg x="0" y="0" width="54px" height="54px" viewbox="0 0 54 54">
+        <circle cx="27" cy="27" r="26"></circle>
+    </svg>
