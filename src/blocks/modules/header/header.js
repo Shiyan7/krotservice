@@ -1,13 +1,14 @@
 const menu = document.querySelector(".nav"),
     burger = document.querySelector(".burger"),
-    nav = document.querySelector(".menu");
-
+    nav = document.querySelector(".menu"),
+    body = document.body;
+    
 const lockScroll = () => {
-    document.body.classList.add("lock");
+    body.classList.add("lock");
 };
 
 const unlockScroll = () => {
-    document.body.classList.remove("lock");
+    body.classList.remove("lock");
 };
 
 const initialMenu = () => {

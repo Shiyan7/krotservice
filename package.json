@@ -74,6 +74,8 @@
     "dependencies": {
         "bootstrap": "^5.0.2",
         "imask": "^6.0.7",
+        "jquery": "^3.6.0",
+        "mmenu-js": "^8.5.24",
         "picturefill": "^3.0.3",
         "smart-grid": "^2.1.2",
         "svg4everybody": "^2.1.9",
