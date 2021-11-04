@@ -44,7 +44,7 @@ export class GraphModal {
         document.body.classList.add("lock");
     }
     enableScroll() {
-        document.body.classList.remove("lock");
+        if(!document.querySelector(".menu").classList.contains("open")) document.body.classList.remove("lock");
     }
 }
 
