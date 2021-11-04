@@ -1,6 +1,3 @@
-
-/*eslint-disable */
-
 "use strict";
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
@@ -278,7 +275,7 @@ function _defineProperty(obj, key, value) {
     }
 })(window);
 
-/* global Promise */
+// eslint-disable-next-line no-console
 (function (window) {
     "use strict";
 
@@ -368,8 +365,9 @@ function _defineProperty(obj, key, value) {
         this.isValidationSuccess = false;
         this.focusWrongField = this.options.focusWrongField || false;
         this.REGEXP = {
-            // eslint-disable-next-line max-len
+            /*eslint-disable */
             email: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+            /*eslint-enable */
             zip: /^\d{5}(-\d{4})?$/,
             phone: /^([0-9]( |-)?)?(\(?[0-9]{3}\)?|[0-9]{3})( |-)?([0-9]{3}( |-)?[0-9]{4}|[a-zA-Z0-9]{7})$/,
             password: /[^\w\d]*(([0-9]+.*[A-Za-z]+.*)|[A-Za-z]+.*([0-9]+.*))/,
@@ -577,7 +575,7 @@ function _defineProperty(obj, key, value) {
             var elems = this.$form.querySelectorAll("[data-validate-field]");
             this.elements = [];
 
-            var _loop = function _loop(i, len) {
+            var _loop = function _loop(i) {
                 var item = elems[i],
                     name = item.getAttribute("data-validate-field"),
                     value = item.value,
