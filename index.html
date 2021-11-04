@@ -797,9 +797,9 @@
           <div class="modal-content">
             <h2 class="g-title modal__title">Вызвать специалиста</h2>
             <p class="modal__desc">Круглосуточная аварийная служба, выезд сразу после вызова.</p>
-            <form class="modal-form" action="#">
-              <input class="g-input modal-form__input" type="text" name="Имя" placeholder="Ваше имя">
-              <input class="g-input modal-form__input" type="tel" name="Телефон" placeholder="Ваш телефон">
+            <form class="modal-form validate-form" action="#">
+              <input class="g-input modal-form__input" data-validate-field="name" type="text" name="Имя" placeholder="Ваше имя">
+              <input class="g-input modal-form__input" data-validate-field="tel" type="tel" name="Телефон" placeholder="Ваш телефон">
               <button class="btn-reset g-btn modal-form__btn">Вызвать</button>
             </form>
             <p class="modal-form__desc">Нажимая кнопку «Получить консультацию», Вы даете согласие на обработку своих&nbsp;<a href="#">персональных данных</a></p>
@@ -813,8 +813,8 @@
             </svg>
             <h2 class="g-title modal__title modal__title--center modal__title--red">Срочный вызов</h2>
             <p class="modal__desc modal__desc--2">Круглосуточная аварийная служба, выезд сразу после вызова.</p>
-            <form class="modal-form" action="#">
-              <input class="g-input modal-form__input" type="tel" name="Телефон" placeholder="Ваш телефон">
+            <form class="modal-form validate-form2" action="#">
+              <input class="g-input modal-form__input" data-validate-field="tel" type="tel" name="Телефон" placeholder="Ваш телефон">
               <button class="btn-reset g-btn modal-form__btn">Вызвать</button>
             </form>
             <p class="modal-form__desc">Нажимая кнопку «Получить консультацию», Вы даете согласие на обработку своих&nbsp;<a href="#">персональных данных</a></p>
@@ -822,7 +822,7 @@
         </div>
       </div>
     </div>
-    <script src="js/main.min.js"></script>
     <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>
