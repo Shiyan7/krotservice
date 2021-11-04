@@ -60,7 +60,7 @@
             &--2 {
                 @media (min-width: 1025px) {
                     left: 100%;
-                    margin-top: -48px;
+                    margin-top: -47px;
                 }
             }
 
@@ -105,14 +105,17 @@
         align-items: center;
         text-align: center;
         position: relative;
-        color: #212121;
         font-size: 14px;
         font-weight: 600;
         line-height: 17px;
+        color: #212121;
         text-transform: uppercase;
         padding: 26px 37.7px;
         transition: color 0.3s, background-color 0.3s;
-        
+        a {
+            color: #212121;
+            transition: color 0.3s;
+        }
         @media (max-width: 1230px) {
             justify-content: center;
             padding: 20px 0;
@@ -151,21 +154,15 @@
                 opacity: 0;
                 visibility: hidden;
                 transition: opacity 0.3s, visibility 0.3s;
-
-                @media (max-width: 1024px) {
-                    display: none;
-                }
-            }
-
-            &:hover {
-                &:after {
-                    opacity: 1;
-                    visibility: visible;
-                }
             }
 
             @media (min-width: 1025px) {
                 &:hover {
+                    
+                    &:after {
+                        opacity: 1;
+                        visibility: visible;
+                    }
                     svg {
                         transform: rotate(-180deg);
                         stroke: #4096fc;
@@ -202,6 +199,10 @@
             text-transform: initial;
             line-height: 17px;
 
+            a {
+                color: #000;
+            }
+
 
             &:after {
                 display: none;
@@ -232,11 +233,19 @@
                 font-weight: 500;
                 font-size: 14px;
                 line-height: 17px;
-
-                &:hover {
-                    color: #4096fc;
-                    background-color: #e4e4e4;
+                a {
+                    @media (min-width: 1025px) {
+                        &:hover {
+                            color: #4096fc;
+                        }
+                    }
                 }
+                @media (min-width: 1025px) {
+                    &:hover {
+                        background-color: #e4e4e4;
+                    }
+                }
+                
             }
         }
     }
@@ -410,6 +419,10 @@
             background-color: transparent;
             color: #fff;
             padding: 12.5px 0;
+
+            a {
+                color: #fff;
+            }
 
             svg {
                 fill: #fff;

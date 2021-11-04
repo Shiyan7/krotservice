@@ -36,7 +36,6 @@ menu.addEventListener("click", (e) => {
     }
 
     if (e.target.classList.contains("nav__link") && !e.target.classList.contains("nav__link--drop")) {
-        e.preventDefault();
         menu.classList.remove("open");
     }
 });
