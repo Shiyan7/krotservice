@@ -1,19 +1,10 @@
 const menu = document.querySelector(".nav"),
     burger = document.querySelector(".burger"),
-    nav = document.querySelector(".menu"),
-    body = document.body;
-    
-const lockScroll = () => {
-    body.classList.add("lock");
-};
-
-const unlockScroll = () => {
-    body.classList.remove("lock");
-};
+    nav = document.querySelector(".menu");
 
 const initialMenu = () => {
-    document.querySelector(".nav__list--dropdown").classList.remove("transformation");
-    document.querySelector(".nav").querySelector(".nav__list").classList.remove("transformation");
+    document.querySelector(".nav__list--dropdown").classList.remove("animation");
+    document.querySelector(".nav").querySelector(".nav__list").classList.remove("animation");
     scrollTop();
 };
 
@@ -26,29 +17,27 @@ const scrollTop = () => {
 
 burger.addEventListener("click", () => {
     nav.classList.toggle("open");
-    lockScroll();
     initialMenu();
 });
 
 menu.addEventListener("click", (e) => {
     if (e.target.classList.contains("nav__link--drop")) {
         e.preventDefault();
-        e.target.closest(".nav__list").classList.add("transformation");
-        e.target.closest(".nav__item").querySelector(".nav__list--dropdown").classList.add("transformation");
+        e.target.closest(".nav__list").classList.add("animation");
+        e.target.closest(".nav__item").querySelector(".nav__list--dropdown").classList.add("animation");
         scrollTop();
     }
 
     if (e.target.classList.contains("mobile-back__link")) {
         e.preventDefault();
-        e.target.closest(".nav__list--dropdown").classList.remove("transformation");
-        e.target.closest(".nav").querySelector(".nav__list").classList.remove("transformation");
+        e.target.closest(".nav__list--dropdown").classList.remove("animation");
+        e.target.closest(".nav").querySelector(".nav__list").classList.remove("animation");
         scrollTop();
     }
 
     if (e.target.classList.contains("nav__link") && !e.target.classList.contains("nav__link--drop")) {
         e.preventDefault();
         menu.classList.remove("open");
-        unlockScroll();
     }
 });
 

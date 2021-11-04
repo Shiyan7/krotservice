@@ -1,0 +1,13 @@
+.g-title {
+    margin: 0;
+    font-family: "FuturaPT", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 60px;
+    line-height: 66px;
+    &--center {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
