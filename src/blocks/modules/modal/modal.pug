@@ -4,9 +4,9 @@
         .modal-content
             h2.g-title.modal__title Вызвать специалиста
             p.modal__desc Круглосуточная аварийная служба, выезд сразу после вызова.
-            form.modal-form(action="#")
-                input.g-input.modal-form__input(type="text" name="Имя" placeholder="Ваше имя")
-                input.g-input.modal-form__input(type="tel" name="Телефон" placeholder="Ваш телефон")
+            form.modal-form.validate-form(action="#")
+                input.g-input.modal-form__input(data-validate-field="name" type="text" name="Имя" placeholder="Ваше имя")
+                input.g-input.modal-form__input(data-validate-field="tel" type="tel" name="Телефон" placeholder="Ваш телефон")
                 button.btn-reset.g-btn.modal-form__btn Вызвать
             p.modal-form__desc Нажимая кнопку «Получить консультацию», Вы даете согласие на обработку своих&nbsp;
                 a(href="#") персональных данных
@@ -16,8 +16,8 @@
             +icon("urgent-call", "modal__icon")
             h2.g-title.modal__title.modal__title--center.modal__title--red Срочный вызов
             p.modal__desc.modal__desc--2 Круглосуточная аварийная служба, выезд сразу после вызова.
-            form.modal-form(action="#")
-                input.g-input.modal-form__input(type="tel" name="Телефон" placeholder="Ваш телефон")
+            form.modal-form.validate-form2(action="#")
+                input.g-input.modal-form__input(data-validate-field="tel" type="tel" name="Телефон" placeholder="Ваш телефон")
                 button.btn-reset.g-btn.modal-form__btn Вызвать
             p.modal-form__desc Нажимая кнопку «Получить консультацию», Вы даете согласие на обработку своих&nbsp;
                 a(href="#") персональных данных

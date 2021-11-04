@@ -154,3 +154,7 @@
     transform: translateY(0);
     transition: transform var(--transition-time), opacity var(--transition-time);
 }
+
+.js-validate-error-label {
+    display: none;
+}

@@ -1,11 +1,17 @@
 .g-input {
+    border: 1px solid transparent;
     color: hsla(231, 13%, 41%, 1);
-    border: none;
     padding: 30px 35px;
     background: #f6f6f6;
     border-radius: 100px;
     outline: none;
     font-weight: 300;
+
+    &.js-validate-error-field {
+        background-color: rgba(235, 47, 47, 0.1);
+        border: 1px solid rgba(235, 47, 47, 0.5) !important;
+    }
+    
     &::placeholder {
         color: #818181;
         opacity: 1;
