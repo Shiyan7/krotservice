@@ -4,39 +4,36 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #4096FC;
+    background-color: #4096fc;
     transition: transform 0.5s;
 
     span {
+        display: block;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        display: block;
         width: 18px;
         height: 2px;
-        background-color: #fff;
+        transform: translate(-50%, -50%);
         transition: background 0.5s, transform 0.5s;
+        background-color: #fff;
 
-        &:before,
-        &:after {
+        &:before, &:after {
             content: "";
             position: absolute;
-            background-color: #fff;
             top: 0;
             left: 0;
             width: 18px;
             height: 2px;
             transform: translateY(-6px);
             transition: transform 0.5s;
+            background-color: #fff;
             transform-origin: 50% 50%;
-
         }
 
         &:after {
             transform: translateY(6px);
         }
-
     }
 
     svg {

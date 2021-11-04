@@ -165,7 +165,7 @@
         width: 146px;
         height: 146px;
         border: 2px solid #fff;
-        transition: transform 1s;
+        transition: background-color 0.5s;
         animation: ripple 1.5s linear infinite;
         border-radius: 100%;
         background-color: #eb2f2f;
@@ -179,6 +179,10 @@
             height: 100px;
             font-size: 10px;
             margin-bottom: 35px;
+        }
+
+        &:hover {
+            background-color: #e30303;
         }
 
         svg {
