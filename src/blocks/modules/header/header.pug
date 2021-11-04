@@ -18,7 +18,7 @@ header.header
                 .tell.header__tell
                     span.tell__desc Круглосуточно, без выходных
                     a.tell__value(href="tel:+74951374369") +7 (495) 137-43-69
-                button.btn-reset.g-btn.modal-btn.header__btn(data-graph-animation="custom" data-graph-path="first" data-graph-speed="500") Вызвать специалиста
+                button.btn-reset.g-btn.modal-btn.header__btn(data-graph-animation="fadeInUp" data-graph-path="call-specialist" data-graph-speed="500") Вызвать специалиста
                 +burger("Бургер меню")
         .menu
             nav.nav
@@ -30,7 +30,7 @@ header.header
                             |Услуги
                             +icon("arrow")
                             +icon("arrow2")
-                        ul.nav__list.list-reset.nav__list--dropdown.dropdown-list.nav__list--dropdown--2
+                        ul.nav__list.list-reset.nav__list--dropdown.dropdown-list
                             li.dropdown-list__item.mobile-back
                                 a.dropdown-list__link.mobile-back__link(href="#")
                                     +icon("arrow2")
@@ -61,8 +61,7 @@ header.header
                                 .dropdown-list__link.nav__link.nav__link--drop
                                     a.g-link(href="#") Другие услуги
                                     +icon("arrow2")
-                                +navDropdown
-                    
+                                +navDropdown  
                     li.nav__item
                         a.nav__link.main-nav__link(href="#") Цены
                     li.nav__item

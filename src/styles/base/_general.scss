@@ -52,9 +52,6 @@ img {
     outline: none;
     cursor: pointer;
     background: transparent;
-    &:focus-visible {
-        outline: auto;
-    }
 }
 
 .lock {

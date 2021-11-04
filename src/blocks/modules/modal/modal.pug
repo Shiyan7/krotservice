@@ -1,5 +1,23 @@
 .modal
-    .modal__container(role="dialog" aria-modal="true" data-graph-target="first")
+    .modal__container(role="dialog" aria-modal="true" data-graph-target="call-specialist")
         button.btn-reset.modal__close(aria-label="Закрыть модальное окно")
         .modal-content
-            h2.modal__title Заголовок модального окна
+            h2.g-title.modal__title Вызвать специалиста
+            p.modal__desc Круглосуточная аварийная служба, выезд сразу после вызова.
+            form.modal-form(action="#")
+                input.g-input.modal-form__input(type="text" name="Имя" placeholder="Ваше имя")
+                input.g-input.modal-form__input(type="tel" name="Телефон" placeholder="Ваш телефон")
+                button.btn-reset.g-btn.modal-form__btn Вызвать
+            p.modal-form__desc Нажимая кнопку «Получить консультацию», Вы даете согласие на обработку своих&nbsp;
+                a(href="#") персональных данных
+    .modal__container(role="dialog" aria-modal="true" data-graph-target="urgent-call")
+        button.btn-reset.modal__close(aria-label="Закрыть модальное окно")
+        .modal-content
+            +icon("urgent-call", "modal__icon")
+            h2.g-title.modal__title.modal__title--center.modal__title--red Срочный вызов
+            p.modal__desc.modal__desc--2 Круглосуточная аварийная служба, выезд сразу после вызова.
+            form.modal-form(action="#")
+                input.g-input.modal-form__input(type="tel" name="Телефон" placeholder="Ваш телефон")
+                button.btn-reset.g-btn.modal-form__btn Вызвать
+            p.modal-form__desc Нажимая кнопку «Получить консультацию», Вы даете согласие на обработку своих&nbsp;
+                a(href="#") персональных данных
