@@ -9,6 +9,13 @@
         border-radius: 100%;
         background-color: rgba(#fff, 0.3);
         transition: background-color 0.3s;
+        cursor: pointer;
+
+        @media (max-width: 360px) {
+            width: 6px;
+            height: 6px;
+        }
+
         &:not(:last-child) {
             margin-right: 10px;
         }
