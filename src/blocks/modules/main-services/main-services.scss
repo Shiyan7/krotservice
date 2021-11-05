@@ -17,7 +17,7 @@
     }
 
     &__container {
-        padding-bottom: 60px;
+        padding-bottom: 73px;
     }
 
     &__title {
@@ -28,8 +28,6 @@
         @media (max-width: 1024px) {
             max-width: 700px;
             margin-bottom: 90px;
-            font-size: 40px;
-            line-height: 44px;
         }
         @media (max-width: 768px) {
             font-size: 30px;
@@ -64,7 +62,7 @@
             display: none;
         }
 
-        &.swiper-container-initialized {
+        &.swiper-initialized {
             .swiper-pagination {
                 display: flex;
             }
@@ -84,6 +82,10 @@
     height: 588px;
     padding: 40px 40px 0;
 
+    @media (min-width: 1025px) {
+        cursor: pointer;
+    }
+
     @media (max-width: 1024px) {
         height: 560px;
         padding: 0;
@@ -95,7 +97,7 @@
 
     &:hover {
         .main-service__link {
-            background-color: #2488ff;
+            background-color: #4096fc;
             border: 1px solid transparent;
             box-shadow: 0 4px 25px 5px rgba(53, 116, 191, 0.15), 0 2px 2px #3a8df2, inset 0 2px 1px rgba(255, 255, 255, 0.25);
         }
@@ -215,6 +217,7 @@
         @media (max-width: 576px) {
             font-size: 14px;
             line-height: 23px;
+            margin-bottom: 20px;
         }
     }
 
@@ -225,7 +228,7 @@
         line-height: 17px;
 
         @media (max-width: 1024px) {
-            background-color: #2488ff;
+            background-color: #4096fc;
             border: 1px solid transparent;
             box-shadow: 0 4px 25px 5px rgba(53, 116, 191, 0.15), 0 2px 2px #3a8df2, inset 0 2px 1px rgba(255, 255, 255, 0.25);
         }
@@ -235,6 +238,10 @@
         }
         @media (max-width: 576px) {
             width: 90%;
+        }
+
+        &:hover {
+            background-color: #2488ff !important;
         }
     }
 
@@ -316,7 +323,11 @@
             background-size: 15000%;
 
             @media (max-width: 1024px) {
-                top: 195px;
+                top: 200px;
+            }
+
+            @media (max-width: 576px) {
+                top: 185px;
             }
         }
         .main-service__icon {

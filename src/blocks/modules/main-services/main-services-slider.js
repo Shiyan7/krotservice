@@ -1,16 +1,18 @@
-import swiper from "swiper/bundle";
+import Swiper, {Pagination } from "swiper";
+
+Swiper.use(Pagination);
 
 const mainServicesSlider = document.querySelector(".main-services-slider");
 
 let mySwiper;
 
 const initializeSlider = () => {
-    mySwiper = new swiper(mainServicesSlider, {
+    mySwiper = new Swiper(mainServicesSlider, {
         slidesPerView: 1,
         breakpoints: {
             769: {
                 slidesPerView: 2,
-                spaceBetween: 50
+                spaceBetween: 50,
             }
         },
         pagination: {
@@ -34,7 +36,7 @@ const mobileSlider = () => {
 
     if (window.innerWidth > 1024) {
         mainServicesSlider.dataset.mobile = "false";
-        if (mainServicesSlider.classList.contains("swiper-container-initialized")) {
+        if (mainServicesSlider.classList.contains("swiper-initialized")) {
             mySwiper.destroy();
         }
     }

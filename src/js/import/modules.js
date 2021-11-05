@@ -3,6 +3,7 @@ import "%modules%/header/burger";
 import "%modules%/hero/hero";
 import "%modules%/main-services/main-services";
 import "%modules%/main-services/main-services-slider";
+import "%modules%/services/services";
 import "%modules%/footer/footer";
 import "%modules%/modal/modal";
 import "%modules%/modal/validate";

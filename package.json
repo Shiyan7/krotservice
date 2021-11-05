@@ -76,10 +76,11 @@
         "imask": "^6.2.2",
         "inputmask": "^5.0.6",
         "just-validate": "^1.5.0",
+        "lazy-line-painter": "^1.9.6",
         "picturefill": "^3.0.3",
         "smart-grid": "^2.1.2",
         "svg4everybody": "^2.1.9",
-        "swiper": "6.0.0",
+        "swiper": "^7.2.0",
         "vanilla-lazyload": "^17.3.1"
     },
     "husky": {
