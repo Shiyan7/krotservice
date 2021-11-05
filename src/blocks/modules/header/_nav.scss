@@ -1,11 +1,53 @@
 .main-nav {
+
+    &__item {
+        &:first-child {
+            overflow: hidden;
+            border-top-left-radius: 1000px;
+            border-bottom-left-radius: 1000px;
+        }
+        &:last-child {
+            overflow: hidden;
+            border-top-right-radius: 1000px;
+            border-bottom-right-radius: 1000px;
+        }
+    }
+
     &__link {
         font-size: 14px;
         font-weight: 600;
         line-height: 17px;
+
         @media (max-width: 1230px) {
             justify-content: center;
             padding: 20px 0;
+        }
+
+        @media (min-width: 1025px) {
+            &:hover {
+                
+                &:after {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                svg {
+                    transform: rotate(-180deg);
+                    stroke: #4096fc;
+                }
+            }
+        }
+
+        &:after {
+            @include pseudo();
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            transition: opacity 0.3s, visibility 0.3s;
+            background-color: #4096fc;
+            opacity: 0;
+            visibility: hidden;
         }
     }
 }
@@ -139,33 +181,6 @@
                     stroke: none;
                 }
             }
-
-            @media (min-width: 1025px) {
-                &:hover {
-                    
-                    &:after {
-                        opacity: 1;
-                        visibility: visible;
-                    }
-                    svg {
-                        transform: rotate(-180deg);
-                        stroke: #4096fc;
-                    }
-                }
-            }
-
-            &:after {
-                @include pseudo();
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                height: 2px;
-                transition: opacity 0.3s, visibility 0.3s;
-                background-color: #4096fc;
-                opacity: 0;
-                visibility: hidden;
-            }
             .arrow2 {
                 display: none;
             }
@@ -194,10 +209,6 @@
             padding: 15px 20px;
             background-color: #fff;
             text-transform: initial;
-
-            &:after {
-                display: none;
-            }
             &:hover {
                 @media (min-width: 1025px) {
                     background-color: #f1f1f1;
