@@ -792,8 +792,8 @@
         <section class="main-services"><span class="main-services__line"></span>
           <div class="container main-services__container">
             <h2 class="g-title g-title--center main-services__title">Комплексное обслуживание канализационных сетей</h2>
-            <div class="swiper-container main-services-slider" data-mobile="false">
-              <ul class="main-services__list list-reset swiper-wrapper"><span class="main-service__bg"></span>
+            <div class="swiper main-services-slider" data-mobile="false">
+              <ul class="main-services__list list-reset swiper-wrapper"><span class="main-service__bg" style="left: 0;"></span>
                 <li class="main-services__item main-service swiper-slide">
                   <h3 class="main-service__title">Гидродинамическая прочистка</h3>
                   <div class="main-service__icon">
@@ -860,6 +860,91 @@
                 </li>
               </ul>
               <div class="swiper-pagination g-pagination main-services-slider__pagination"></div>
+            </div>
+          </div>
+        </section>
+        <section class="services">
+          <div class="container services__container">
+            <h2 class="g-title services__title">Услуги</h2>
+            <div class="swiper services-slider" data-mobile="false">
+              <ul class="swiper-wrapper services__list list-reset">
+                <div class="swiper-slide services__item">
+                  <li class="service">
+                    <svg class="svg-icon service-1">
+                      <use xlink:href="./img/sprites/sprite.svg#service-1"></use>
+                    </svg>
+                    <h3 class="g-title service__title">Гидродинамическая прочистка</h3>
+                    <p class="service__desc">Гидродинамическая промывка канализации любых диаметров. От оборудования для домов и квартир до мощных машин с расходом воды 350 л/мин и давлением 205 бар!</p><a class="g-link service__link" href="#">Подробнее</a>
+                  </li>
+                </div>
+                <div class="swiper-slide services__item">
+                  <li class="service"><svg class="service-2" width="129" height="79" viewBox="0 0 129 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_286:1005" fill="white">
+<path d="M52.7598 53.988C52.7598 52.8369 53.693 51.9037 54.8441 51.9037H66.3079V66.494H54.8441C53.6929 66.494 52.7598 65.5608 52.7598 64.4097V53.988Z"/>
+</mask>
+<path d="M52.7598 53.988C52.7598 52.8369 53.693 51.9037 54.8441 51.9037H66.3079V66.494H54.8441C53.6929 66.494 52.7598 65.5608 52.7598 64.4097V53.988Z" stroke="white" stroke-width="6.25299" mask="url(#path-1-inside-1_286:1005)"/>
+<mask id="path-2-inside-2_286:1005" fill="white">
+<path d="M116.334 64.4097C116.334 65.5608 115.401 66.494 114.25 66.494L104.87 66.494L104.87 51.9037L114.25 51.9037C115.401 51.9037 116.334 52.8369 116.334 53.988L116.334 64.4097Z"/>
+</mask>
+<path d="M116.334 64.4097C116.334 65.5608 115.401 66.494 114.25 66.494L104.87 66.494L104.87 51.9037L114.25 51.9037C115.401 51.9037 116.334 52.8369 116.334 53.988L116.334 64.4097Z" stroke="white" stroke-width="6.25299" mask="url(#path-2-inside-2_286:1005)"/>
+<line x1="114.246" y1="53.8616" x2="126.626" y2="41.4821" stroke="white" stroke-width="3.12649" stroke-linecap="round"/>
+<line x1="114.77" y1="59.7199" x2="127.276" y2="59.7199" stroke="white" stroke-width="3.12649" stroke-linecap="round"/>
+<line x1="115.418" y1="65.4519" x2="126.755" y2="76.7893" stroke="white" stroke-width="3.12649" stroke-linecap="round"/>
+<path d="M95.5365 62.4539L98.3444 53.0863C98.5122 52.5097 99.1974 52.0544 100.069 51.933C101.273 51.7823 102.434 52.2972 102.678 53.0873L104.006 57.5374L104.006 51.9037L106.951 51.9037L106.951 65.3077C106.951 65.8743 106.341 66.3598 105.501 66.4701C104.54 66.6016 103.594 66.1767 103.396 65.5293L100.511 55.8784L97.7034 65.246C97.5203 65.8227 96.8336 66.2789 95.9638 66.4003C94.7582 66.551 93.5984 66.0361 93.3695 65.246L90.5616 55.8784L87.7538 65.246C87.5859 65.8227 86.8992 66.2789 86.0141 66.4003C84.8238 66.551 83.664 66.0361 83.4198 65.246L80.6119 55.8784L77.8041 65.246C77.6362 65.8227 76.9495 66.2789 76.0644 66.4003C74.8741 66.551 73.7143 66.0361 73.4701 65.246L70.6623 55.8784L67.7781 65.5293C67.6102 66.0857 66.8777 66.4903 66.0231 66.4903C65.0312 66.4903 64.2224 65.9542 64.2224 65.3067L64.2224 51.9037L67.1677 51.9037L67.1677 57.5374L68.4953 53.0873C68.6784 52.5107 69.3651 52.0544 70.235 51.933C71.4405 51.7823 72.6003 52.2972 72.8292 53.0873L75.6371 62.455L78.445 53.0873C78.6129 52.5107 79.2996 52.0544 80.1847 51.933C81.375 51.7823 82.55 52.2972 82.7789 53.0873L85.5868 62.4539L88.3947 53.0863C88.5625 52.5096 89.2493 52.0534 90.1344 51.932C91.3247 51.7813 92.4844 52.2962 92.7286 53.0863L95.5365 62.4539Z" fill="white"/>
+<path d="M52.6301 59.0472L12.0487 60.5648C2.77298 60.5648 4.70542 52.9769 13.5947 42.3539C20.938 34.3866 6.50905 13.8994 2 1" stroke="white" stroke-width="2.41712"/>
+</svg>
+                    <h3 class="g-title service__title">устранение засоров</h3>
+                    <p class="service__desc">Электромеханическое оборудование со спиралями и штангами позволяет справиться с самыми сложными засорами на объектах наружной и внутренней канализации.</p><a class="g-link service__link" href="#">Подробнее</a>
+                  </li>
+                </div>
+                <div class="swiper-slide services__item">
+                  <li class="service">
+                    <svg class="svg-icon service-3">
+                      <use xlink:href="./img/sprites/sprite.svg#service-3"></use>
+                    </svg>
+                    <h3 class="g-title service__title">Прочистка наружной канализации</h3>
+                    <p class="service__desc">Аварийные и плановые работы. Гидродинамическая промывка труб любых диаметров. Выполнение даже самых сложных работ в согласованные сроки.</p><a class="g-link service__link" href="#">Подробнее</a>
+                  </li>
+                </div>
+                <div class="swiper-slide services__item">
+                  <li class="service">
+                    <svg class="svg-icon service-4">
+                      <use xlink:href="./img/sprites/sprite.svg#service-4"></use>
+                    </svg>
+                    <h3 class="g-title service__title">Прочистка внутренней канализации</h3>
+                    <p class="service__desc">Работаем в частных домах, квартирах и на предприятиях, гидродинамическим и электромеханическим способом. </p><a class="g-link service__link" href="#">Подробнее</a>
+                  </li>
+                </div>
+                <div class="swiper-slide services__item">
+                  <li class="service"><svg class="service-5" width="164" height="80" viewBox="0 0 164 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M130 64.6667L130 55.3333L164 40L164 80L130 64.6667Z" fill="url(#paint0_linear_149:3825)"/>
+<path d="M52 59.4713L11.1222 61C1.77863 61 3.72519 53.3567 12.6794 42.656C20.0763 34.6306 5.54199 13.9936 1 1" stroke="white" stroke-width="2"/>
+<rect x="59.25" y="49.25" width="67.5" height="21.5" stroke="white" stroke-width="2.5"/>
+<path d="M59 68C56.8783 68 54.8434 67.1571 53.3431 65.6569C51.8429 64.1566 51 62.1217 51 60C51 57.8783 51.8429 55.8434 53.3431 54.3431C54.8434 52.8429 56.8783 52 59 52V54.6307C57.576 54.6307 56.2103 55.1964 55.2034 56.2034C54.1964 57.2103 53.6307 58.576 53.6307 60C53.6307 61.424 54.1964 62.7897 55.2034 63.7966C56.2103 64.8036 57.576 65.3693 59 65.3693L59 68Z" fill="white"/>
+<path d="M118 50H120.5V70H118V50Z" fill="white"/>
+<path d="M125.5 68C126.354 68 127.199 67.7931 127.987 67.391C128.776 66.989 129.493 66.3997 130.096 65.6569C130.7 64.914 131.179 64.0321 131.505 63.0615C131.832 62.0909 132 61.0506 132 60C132 58.9494 131.832 57.9091 131.505 56.9385C131.179 55.9679 130.7 55.086 130.096 54.3431C129.493 53.6003 128.776 53.011 127.987 52.609C127.199 52.2069 126.354 52 125.5 52L125.5 60L125.5 68Z" fill="white"/>
+<defs>
+<linearGradient id="paint0_linear_149:3825" x1="130" y1="60" x2="162.64" y2="60" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FCFF74"/>
+<stop offset="1" stop-color="#FDFFA7" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
+                    <h3 class="g-title service__title">Диагностика трубопроводов</h3>
+                    <p class="service__desc">Видеодиагностика и телеинспекция труб любых диаметров. Возможность составления технического отчёта, предоставление видеозаписи и фотографий исследования.</p><a class="g-link service__link" href="#">Подробнее</a>
+                  </li>
+                </div>
+                <div class="swiper-slide services__item">
+                  <li class="service">
+                    <svg class="svg-icon service-6">
+                      <use xlink:href="./img/sprites/sprite.svg#service-6"></use>
+                    </svg>
+                    <h3 class="g-title service__title">Обслуживание канализации</h3>
+                    <p class="service__desc">Плановое и аварийное обслуживание любой сложности: от ресторанов до промышленных предприятий. Заключение договора обслуживания на объекты.</p><a class="g-link service__link" href="#">Подробнее</a>
+                  </li>
+                </div>
+              </ul>
+              <div class="swiper-pagination g-pagination services-slider__pagination"></div>
             </div>
           </div>
         </section>
