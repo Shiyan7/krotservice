@@ -100,7 +100,7 @@
         }
 
         &:not(:last-child) {
-            .nav__link {
+            .main-nav__link {
                 border-right: 1px solid #ebebeb;
 
                 @media (max-width: 1024px) {
@@ -118,6 +118,7 @@
         color: #212121;
         text-transform: uppercase;
         padding: 26px 37.7px;
+        cursor: pointer;
         transition: color 0.3s, background-color 0.3s;
 
         @media (max-width: 1024px) {

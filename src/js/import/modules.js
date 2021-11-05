@@ -1,6 +1,8 @@
 import "%modules%/header/header";
 import "%modules%/header/burger";
 import "%modules%/hero/hero";
+import "%modules%/main-services/main-services";
+import "%modules%/main-services/main-services-slider";
 import "%modules%/footer/footer";
 import "%modules%/modal/modal";
 import "%modules%/modal/validate";
