@@ -1,0 +1,58 @@
+.about-section {
+    position: relative;
+    background-image: url(../img/about-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    &__container {
+        padding-top: 80px;
+        @media (max-width: 1024px) {
+            padding-top: 50px;
+        }
+    }
+
+    &__title {
+        line-height: 52px;
+        margin-bottom: 20px;
+        @media (max-width: 768px) {
+            font-size: 30px;
+            line-height: 34px;
+        }
+        @media (max-width: 576px) {
+            font-size: 25px;
+            line-height: 30px;
+        }
+        @media (max-width: 420px) {
+            font-size: 18px;
+            line-height: 23.4px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__subtitle {
+        margin: 0;
+        font-weight: 700;
+        line-height: 24.3px;
+        color: #243a54;
+        margin-bottom: 10px;
+    }
+
+    &__desc {
+        max-width: 1076px;
+        margin: 0;
+        font-size: 18px;
+        line-height: 28.8px;
+        color: #212121;
+        margin-bottom: 40px;
+        @media (max-width: 768px) {
+            font-size: 16px;
+            line-height: 25px;
+            margin-bottom: 30px;
+        }
+        @media (max-width: 576px) {
+            font-size: 14px;
+            line-height: 22.4px;
+            margin-bottom: 20px;
+        }
+    }
+}
