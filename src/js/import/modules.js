@@ -9,6 +9,8 @@ import "%modules%/about-section/benefits";
 import "%modules%/about-section/clients-slider";
 import "%modules%/certificates/certificates-slider";
 import "%modules%/certificates/certificates-gallery";
+import "%modules%/our-team/our-team-slider";
+import "%modules%/our-team/team-slider";
 import "%modules%/footer/footer";
 import "%modules%/modal/modal";
 import "%modules%/modal/validate";

@@ -1099,6 +1099,7 @@ function _defineProperty(obj, key, value) {
 const validateForm = document.querySelector(".validate-form");
 const validateForm2 = document.querySelector(".validate-form2");
 const validateForm3 = document.querySelector(".validate-form3");
+const validateForm4 = document.querySelector(".validate-form4");
 
 if(validateForm) {
     new window.JustValidate(".validate-form", {
@@ -1168,6 +1169,39 @@ if(validateForm2) {
 }
 if(validateForm3) {
     new window.JustValidate(".validate-form3", {
+        rules: {
+            email: {
+                required: true,
+                email: false
+            },
+            name: {
+                required: true,
+            },
+            text: {
+                required: true,
+            },
+            tel: {
+                required: true,
+            },
+            password: {
+                required: true,
+                password: false,
+            },
+            password2: {
+                required: true,
+                password: false,
+            },
+            checkbox1: {
+                required: true,
+            },
+            checkbox2: {
+                required: true,
+            }
+        }
+    });
+}
+if(validateForm4) {
+    new window.JustValidate(".validate-form4", {
         rules: {
             email: {
                 required: true,

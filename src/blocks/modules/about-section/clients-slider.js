@@ -11,10 +11,6 @@ new Swiper(".clients-slider", {
     grid: {
         rows: 2,
     },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
     navigation: {
         prevEl: ".clients-slider__btn--prev",
         nextEl: ".clients-slider__btn--next",

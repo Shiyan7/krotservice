@@ -2,7 +2,7 @@
     position: relative;
     &__container {
         padding-top: 80px;
-        padding-bottom: 80px;
+        padding-bottom: 94px;
         @media (max-width: 1024px) {
             padding-top: 60px;
             padding-bottom: 60px;
@@ -36,8 +36,22 @@
 
     &-slider {
         padding: 0 20px;
-        @media (max-width: 1024px) {
-            padding: 0 10px;
+        @media (max-width: 768px) {
+            padding: 0;
+        }
+        &__controls {
+            position: absolute;
+            top: 50%;
+            right: -20px;
+            left: -20px;
+            @media (max-width: 1330px) {
+                right: -10px;
+                left: -10px;
+            }
+            @media (max-width: 576px) {
+                right: -15px;
+                left: -15px;
+            }
         }
         &__wrapper {
             @media (max-width: 768px) {
@@ -82,4 +96,8 @@
         height: 100%;
         object-fit: cover;
     }
+}
+
+.slider {
+    position: relative;
 }

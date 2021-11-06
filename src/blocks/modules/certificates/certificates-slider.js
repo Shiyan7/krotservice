@@ -11,10 +11,6 @@ new Swiper(".certificates-slider", {
     grid: {
         rows: 2,
     },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
     navigation: {
         prevEl: ".certificates-slider__btn--prev",
         nextEl: ".certificates-slider__btn--next",
