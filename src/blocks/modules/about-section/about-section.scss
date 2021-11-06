@@ -3,6 +3,7 @@
     background-image: url(../img/about-bg.svg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #f6f6f6;
     
     &__container {
         padding-top: 80px;
@@ -19,10 +20,10 @@
             line-height: 34px;
         }
         @media (max-width: 576px) {
-            font-size: 25px;
-            line-height: 30px;
+            font-size: 22px;
+            line-height: 26px;
         }
-        @media (max-width: 420px) {
+        @media (max-width: 360px) {
             font-size: 18px;
             line-height: 23.4px;
             margin-bottom: 15px;

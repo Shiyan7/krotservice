@@ -4,10 +4,7 @@ section.about-section
         h3.about-section__subtitle Клиенты — наше ВСЕ! 
         p.about-section__desc Мы очень ценим и дорожим нашими клиентами: 63% получаемых заказов — либо обращения по рекомендации, либо повторные обращения и это — отличный показатель! Мы постоянно получаем положительные отзывы о работе наших специалистов.
         .plyr__video-embed.about__video(id="player")
-            iframe(
-                src="https://youtu.be/pIrnew79beQ"
-                allowfullscreen
-                allow="autoplay")
+            iframe(src="https://youtu.be/pIrnew79beQ" allowfullscreen allow="autoplay")
     .container.benefits__container
         ul.benefits__list.list-reset.animation
             li.benefits__item
@@ -22,3 +19,35 @@ section.about-section
             li.benefits__item
                 span.benefits__number(data-number="56") 0
                 span.benefits__caption постоянных клиентов
+    .container.clients__container
+        h2.g-title.clients__title.g-title--center Наши клиенты
+        .swiper.clients-slider
+            button.btn-reset.g-slider-btn.g-slider-btn--prev.clients-slider__btn--prev
+                +icon("slider-arrow")
+            .swiper-wrapper.clients-slider__wrapper
+                .swiper-slide.clients__item
+                    img.clients__image.clients__image--5.lozad(src="img/clients-5.jpg", data-src="img/clients-5@2x.jpg" alt="Client 5")
+                .swiper-slide.clients__item
+                    img.clients__image.clients__image--6.lozad(src="img/clients-6.jpg", data-src="img/clients-6@2x.jpg" alt="Client 6")
+                .swiper-slide.clients__item
+                    img.clients__image.clients__image--7.lozad(src="img/clients-7.jpg", data-src="img/clients-7@2x.jpg" alt="Client 7")
+                .swiper-slide.clients__item
+                    img.clients__image.clients__image--8.lozad(src="img/clients-8.jpg", data-src="img/clients-8@2x.jpg" alt="Client 8")
+                .swiper-slide.clients__item
+                    img.clients__image.clients__image--9.lozad(src="img/clients-9.jpg", data-src="img/clients-9@2x.jpg" alt="Client 9")
+                .swiper-slide.clients__item
+                    img.clients__image.clients__image--1.lozad(src="img/clients-1.jpg", data-src="img/clients-1@2x.jpg" alt="Client 1")
+                .swiper-slide.clients__item
+                    img.clients__image.clients__image--2.lozad(src="img/clients-2.jpg", data-src="img/clients-2@2x.jpg" alt="Client 2")
+                .swiper-slide.clients__item
+                    img.clients__image.clients__image--3.lozad(src="img/clients-3.jpg", data-src="img/clients-3@2x.jpg" alt="Client 3")
+                .swiper-slide.clients__item
+                    img.clients__image.clients__image--4.lozad(src="img/clients-4.jpg", data-src="img/clients-4@2x.jpg" alt="Client 4")
+                .swiper-slide.clients__item
+                    img.clients__image.clients__image--5.lozad(src="img/clients-5.jpg", data-src="img/clients-5@2x.jpg" alt="Client 5")
+                .swiper-slide.clients__item
+                    img.clients__image.clients__image--5.lozad(src="img/clients-5.jpg", data-src="img/clients-5@2x.jpg" alt="Client 5")
+                .swiper-slide.clients__item
+                    img.clients__image.clients__image--6.lozad(src="img/clients-6.jpg", data-src="img/clients-6@2x.jpg" alt="Client 6")
+            button.btn-reset.g-slider-btn.g-slider-btn--next.clients-slider__btn--next
+                +icon("slider-arrow")

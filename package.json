@@ -77,6 +77,7 @@
         "inputmask": "^5.0.6",
         "just-validate": "^1.5.0",
         "lazy-line-painter": "^1.9.6",
+        "lozad": "^1.16.0",
         "picturefill": "^3.0.3",
         "plyr": "^3.6.9",
         "smart-grid": "^2.1.2",

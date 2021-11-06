@@ -1,0 +1,57 @@
+.g-slider-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    width: 87px;
+    height: 87px;
+    background: #fff;
+    box-shadow: 0 32px 32px rgba(179, 215, 238, 0.1), 0px 16px 16px rgba(179, 215, 238, 0.1), 0px 8px 8px rgba(179, 215, 238, 0.1), 0px 4px 4px rgba(179, 215, 238, 0.1), 0px 2px 2px rgba(179, 215, 238, 0.1), 0px 1px 1px rgba(179, 215, 238, 0.1);
+    transition: background-color 0.3s, opacity 0.3s;
+    border-radius: 100%;
+
+    &.swiper-button-disabled {
+        pointer-events: none;
+        opacity: 0.7;
+    }
+
+    &--prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        svg {
+            transform:  rotate(180deg);
+        }
+    }
+
+    &--next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+    }
+
+    svg {
+        display: block;
+        width: 15px;
+        height: 21px;
+        fill: #4096fc;
+        transition: fill 0.3s;
+    }
+
+    &:hover {
+        background-color: #4096fc;
+        svg {
+            fill: #fff;
+        }
+    }
+
+    @media (max-width: 576px) {
+        width: 50px;
+        height: 50px;
+        svg {
+            width: 10px;
+        }
+    }
+}

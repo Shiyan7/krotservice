@@ -6,6 +6,7 @@ import "%modules%/main-services/main-services-slider";
 import "%modules%/services/services";
 import "%modules%/about-section/video";
 import "%modules%/about-section/benefits";
+import "%modules%/about-section/clients-slider";
 import "%modules%/footer/footer";
 import "%modules%/modal/modal";
 import "%modules%/modal/validate";
