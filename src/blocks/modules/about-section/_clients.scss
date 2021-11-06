@@ -50,6 +50,7 @@
                 left: -45px;
                 @media (max-width: 1330px) {
                     left: 5px;
+                    top: calc(50% - 10px);
                 }
             }
 
@@ -57,6 +58,7 @@
                 right: -45px;
                 @media (max-width: 1330px) {
                     right: 5px;
+                    top: calc(50% - 10px);
                 }
             }
         }
