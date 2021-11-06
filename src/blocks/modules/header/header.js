@@ -28,7 +28,7 @@ menu.addEventListener("click", (e) => {
         scrollTop();
     }
 
-    if (e.target.classList.contains("mobile-back__link")) {
+    if (e.target.closest(". mobile-back__link")) {
         e.preventDefault();
         e.target.closest(".nav__list--dropdown").classList.remove("animation");
         e.target.closest(".nav").querySelector(".nav__list").classList.remove("animation");
