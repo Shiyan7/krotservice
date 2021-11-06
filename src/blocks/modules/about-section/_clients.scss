@@ -2,6 +2,15 @@
 
     &__container {
         padding-bottom: 80px;
+        @media (max-width: 1024px) {
+            padding-bottom: 60px;
+        }
+        @media (max-width: 768px) {
+            padding-bottom: 40px;
+        }
+        @media (max-width: 576px) {
+            padding-bottom: 30px;
+        }
     }
 
     &__title {
@@ -26,12 +35,13 @@
 
         @media (max-width: 768px) {
             overflow: hidden;
+            margin: 0 -15px;
+            padding: 0 15px;
         }
 
         &__wrapper {
             @media (max-width: 768px) {
                 flex-wrap: wrap;
-                gap: 20px;
             }
         }
 
@@ -39,14 +49,14 @@
             &--prev {
                 left: -45px;
                 @media (max-width: 1330px) {
-                    left: 15px;
+                    left: 5px;
                 }
             }
 
             &--next {
                 right: -45px;
                 @media (max-width: 1330px) {
-                    right: 15px;
+                    right: 5px;
                 }
             }
         }
@@ -68,7 +78,8 @@
         @media (max-width: 768px) {
             border: none;
             height: 180px;
-            margin: 0 !important;
+            margin-top: 0 !important;
+            margin-bottom: 20px;
         }
         &:hover {
             .clients__image {
@@ -109,6 +120,9 @@
 
         &--4 {
             width: 152px;
+            @media (max-width: 576px) {
+                width: 110px;
+            }
         }
 
         &--5 {
@@ -131,10 +145,16 @@
 
         &--8 {
             width: 162px;
+            @media (max-width: 576px) {
+                width: 110px;
+            }
         }
 
         &--9 {
             width: 116px;
+            @media (max-width: 576px) {
+                width: 80px;
+            }
         }
     }
 }   
