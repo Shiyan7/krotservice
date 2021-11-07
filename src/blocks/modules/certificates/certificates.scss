@@ -83,6 +83,7 @@
 }
 
 .certificate {
+    display: block;
     border-radius: 5px;
     border: 10px solid #f6f6f6;
 
@@ -92,7 +93,7 @@
 
     &__image {
         display: block;
-        width: 100%;
+        width: 255px;
         height: 100%;
         object-fit: cover;
     }

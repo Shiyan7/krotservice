@@ -51,8 +51,8 @@
                 right: -10px;
                 left: -10px;
             }
-            @media (max-width: 1024px) {
-                top: 42%;
+            @media (max-width: 768px) {
+                top: 47%;
             }
             @media (max-width: 576px) {
                 top: 34%;
@@ -61,7 +61,7 @@
                 top: 32%;
             }
             @media (max-width: 360px) {
-                top: 30%;
+                top: 27.5%;
             }
         }
         &__btn {
@@ -94,7 +94,6 @@
         width: calc(100% - 40px);
         padding: 20px;
     }
-
     @media (max-width: 576px) {
         width: calc(100% - 30px);
         padding: 15px;
@@ -119,9 +118,6 @@
 
         &__main {
             margin-bottom: 20px;
-            @media (max-width: 1024px) {
-                height: 100%;
-            }
             @media (max-width: 768px) {
                 margin-bottom: 10px;
             }
@@ -129,16 +125,43 @@
                 height: 200px;
                 margin-bottom: 4px;
             }
-            &-wrapper {
-                align-items: center;
+            @media (max-width: 360px) {
+                height: 150px;
+            }
+            &-image {
+                width: 435px;
+                height: 330px;
+                @media (max-width: 1024px) {
+                    width: 100%;
+                    height: 500px;
+                }
+                @media (max-width: 768px) {
+                    height: 400px;
+                }
+                @media (max-width: 576px) {
+                    height: 100%;
+                }
             }
         }
 
         &__item {
             height: 100%;
         }
+
         &__nav {
             height: 100px;
+            @media (max-width: 1024px) {
+                height: 150px;
+            }
+            @media (max-width: 768px) {
+                height: 110px;
+            }
+            @media (max-width: 576px) {
+                height: 80px;
+            }
+            @media (max-width: 360px) {
+                height: 50px;
+            }
             &-wrapper {
                 display: flex;
             }
@@ -221,6 +244,7 @@
         padding: 36px 45px 34px 43px;
         font-size: 14px;
         line-height: 17px;
+        font-weight: 600;
         @media (max-width: 576px) {
             width: 100%;
             padding: 26px 0 22px;

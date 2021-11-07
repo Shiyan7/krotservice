@@ -11,16 +11,34 @@ section.our-team
                 .swiper-wrapper
                     .swiper-slide.team
                         .team-slider
+                            .team-slider__main
+                                .team-slider__item
+                                    img.team-slider__image.team-slider__main-image(src="img/team-1.jpg", alt="Фотография команды 1")
+                            .swiper.team-slider__nav
+                                .swiper-wrapper.team-slider__nav-wrapper
+                                    .swiper-slide.team-slider__item.team-slider__nav-item
+                                        img.team-slider__image.team-slider__nav-image(src="img/team-1.jpg", alt="Фотография команды 1")
+                                    .swiper-slide.team-slider__item.team-slider__nav-item
+                                        img.team-slider__image.team-slider__nav-image(src="img/team-2.jpg", alt="Фотография команды 2")
+                                    .swiper-slide.team-slider__item.team-slider__nav-item
+                                        img.team-slider__image.team-slider__nav-image(src="img/team-3.jpg", alt="Фотография команды 3")
+                                    .swiper-slide.team-slider__item.team-slider__nav-item
+                                        img.team-slider__image.team-slider__nav-image(src="img/team-4.jpg", alt="Фотография команды 4")
+                        .team__right
+                            h3.team__title Иван Иванов
+                            span.team__job-title Сантехник
+                            span.team__experience Опыт работы: 8 лет
+                            .team__desc
+                                p Ежеквартальное повышение квалификации и прохождение аттестации дают мне полное понимание всех процессов, в которых задействованы мои специалисты. Это дает мне возможность лично гарантировать качество оказываемых услуг.
+                                p Ежеквартальное повышение квалификации и прохождение аттестации дают мне полное понимание всех процессов, в которых задействованы мои специалисты. 
+
+                            button.btn-reset.g-btn.team__btn.modal-btn(data-graph-animation="fadeInUp" data-graph-path="ask-question" data-graph-speed="500") Задать вопрос эксперту
+                    .swiper-slide.team
+                        .team-slider
                             .swiper.team-slider__main
                                 .swiper-wrapper.team-slider__main-wrapper
                                     .swiper-slide.team-slider__item
-                                        img.team-slider__image(src="img/team-1.jpg", alt="Фотография команды 1")
-                                    .swiper-slide.team-slider__item
-                                        img.team-slider__image(src="img/team-2.jpg", alt="Фотография команды 2")
-                                    .swiper-slide.team-slider__item
-                                        img.team-slider__image(src="img/team-3.jpg", alt="Фотография команды 3")
-                                    .swiper-slide.team-slider__item
-                                        img.team-slider__image(src="img/team-4.jpg", alt="Фотография команды 4")
+                                        img.team-slider__image.team-slider__main-image(src="img/team-1.jpg", alt="Фотография команды 1")
                             .swiper.team-slider__nav
                                 .swiper-wrapper.team-slider__nav-wrapper
                                     .swiper-slide.team-slider__item.team-slider__nav-item
