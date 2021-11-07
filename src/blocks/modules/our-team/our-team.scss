@@ -25,10 +25,12 @@
         @media (max-width: 768px) {
             font-size: 30px;
             line-height: 34px;
+            margin-bottom: 40px;
         }
         @media (max-width: 576px) {
             font-size: 25px;
             line-height: 30px;
+            margin-bottom: 20px;
         }
         @media (max-width: 360px) {
             font-size: 18px;
@@ -45,8 +47,8 @@
         &__controls {
             position: absolute;
             top: 50%;
-            right: -43px;
-            left: -46px;
+            right: -40px;
+            left: -40px;
             @media (max-width: 1330px) {
                 right: -10px;
                 left: -10px;
