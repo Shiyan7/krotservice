@@ -18,6 +18,15 @@
 
     &__container {
         padding-bottom: 73px;
+        @media (max-width: 768px) {
+            padding-bottom: 40px;
+        }
+        @media (max-width: 576px) {
+            padding-bottom: 30px;
+        }
+        @media (max-width: 360px) {
+            padding-bottom: 20px;
+        }
     }
 
     &__title {
@@ -51,6 +60,16 @@
         position: relative;
         padding-bottom: 50px;
         grid-template-columns: repeat(3, 1fr);
+
+        @media (max-width: 768px) {
+            padding-bottom: 40px;
+        }
+        @media (max-width: 576px) {
+            padding-bottom: 30px;
+        }
+        @media (max-width: 360px) {
+            padding-bottom: 20px;
+        }
 
         @media (max-width: 1024px) {
             display: flex;
