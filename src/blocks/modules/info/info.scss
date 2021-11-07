@@ -2,7 +2,7 @@
 
     &__container {
         padding-top: 80px;
-        padding-bottom: 80px;
+        padding-bottom: 81px;
         @media (max-width: 1024px) {
             padding-top: 60px;
             padding-bottom: 60px;
@@ -97,14 +97,15 @@
 
         &__desc {
             margin: 0;
-            line-height: 25.6px;
-            margin-bottom: 15px;
+            line-height: 26.6px;
+            margin-bottom: 17px;
         }
 
         &__link {
             display: inline-block;
             position: relative;
             font-weight: 600;
+            font-size: 16px;
             line-height: 25.6px;
             color: #858585;
             &:after {

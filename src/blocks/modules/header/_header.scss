@@ -6,6 +6,10 @@
     left: 0;
     width: 100%;
     
+    &--main {
+        background-color: transparent;
+    }
+
     &__container {
         padding-top: 23px;
         padding-bottom: 23px;
@@ -91,10 +95,6 @@
         }
     }
 
-    &--main {
-        background-color: transparent;
-    }
-
     &-social {
         display: flex;
         align-items: center;
@@ -156,5 +156,9 @@
         font-size: 21px;
         color: #fff;
         line-height: 25.6px;
+        transition: color 0.3s;
+        &:hover {
+            color: #4096fc;
+        }
     }
 }
