@@ -1100,14 +1100,11 @@ const validateForm = document.querySelector(".validate-form");
 const validateForm2 = document.querySelector(".validate-form2");
 const validateForm3 = document.querySelector(".validate-form3");
 const validateForm4 = document.querySelector(".validate-form4");
+const validateForm5 = document.querySelector(".validate-form5");
 
 if(validateForm) {
     new window.JustValidate(".validate-form", {
         rules: {
-            email: {
-                required: true,
-                email: false
-            },
             name: {
                 required: true,
             },
@@ -1117,30 +1114,12 @@ if(validateForm) {
             tel: {
                 required: true,
             },
-            password: {
-                required: true,
-                password: false,
-            },
-            password2: {
-                required: true,
-                password: false,
-            },
-            checkbox1: {
-                required: true,
-            },
-            checkbox2: {
-                required: true,
-            }
         }
     });
 }
 if(validateForm2) {
     new window.JustValidate(".validate-form2", {
         rules: {
-            email: {
-                required: true,
-                email: false
-            },
             name: {
                 required: true,
             },
@@ -1150,30 +1129,12 @@ if(validateForm2) {
             tel: {
                 required: true,
             },
-            password: {
-                required: true,
-                password: false,
-            },
-            password2: {
-                required: true,
-                password: false,
-            },
-            checkbox1: {
-                required: true,
-            },
-            checkbox2: {
-                required: true,
-            }
         }
     });
 }
 if(validateForm3) {
     new window.JustValidate(".validate-form3", {
         rules: {
-            email: {
-                required: true,
-                email: false
-            },
             name: {
                 required: true,
             },
@@ -1183,30 +1144,12 @@ if(validateForm3) {
             tel: {
                 required: true,
             },
-            password: {
-                required: true,
-                password: false,
-            },
-            password2: {
-                required: true,
-                password: false,
-            },
-            checkbox1: {
-                required: true,
-            },
-            checkbox2: {
-                required: true,
-            }
         }
     });
 }
 if(validateForm4) {
     new window.JustValidate(".validate-form4", {
         rules: {
-            email: {
-                required: true,
-                email: false
-            },
             name: {
                 required: true,
             },
@@ -1216,20 +1159,21 @@ if(validateForm4) {
             tel: {
                 required: true,
             },
-            password: {
-                required: true,
-                password: false,
-            },
-            password2: {
-                required: true,
-                password: false,
-            },
-            checkbox1: {
+        }
+    });
+}
+if(validateForm5) {
+    new window.JustValidate(".validate-form5", {
+        rules: {
+            name: {
                 required: true,
             },
-            checkbox2: {
+            text: {
                 required: true,
-            }
+            },
+            tel: {
+                required: true,
+            },
         }
     });
 }

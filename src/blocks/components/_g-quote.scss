@@ -1,0 +1,43 @@
+.g-quote {
+    display: flex;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    padding: 34px;
+    @media (max-width: 576px) {
+        padding: 20px;
+    }
+    svg {
+        flex-shrink: 0;
+        width: 93px;
+        height: 61px;
+        @media (max-width: 1024px) {
+            width: 63px;
+            height: 41px;
+        }
+        @media (max-width: 576px) {
+            width: 38px;
+            height: 25px;
+        }
+    }
+    q {
+        font-style: italic;
+        font-size: 18px;
+        line-height: 29px;
+        font-weight: 300;
+        max-width: 957px;
+        margin-left: 25px;
+        @media (max-width: 1024px) {
+            font-size: 16px;
+            line-height: 24px;
+            margin-left: 20px;
+        }
+        @media (max-width: 576px) {
+            font-size: 14px;
+            line-height: 22px;
+            margin-left: 15px;
+        }
+        &:before, &:after {
+            display: none;
+        }
+    }
+}

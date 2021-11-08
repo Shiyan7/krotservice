@@ -1,0 +1,63 @@
+section.questions
+    .container.questions__container
+        h2.g-title.questions__title Самые часто задаваемые вопросы
+        .questions__content
+            ul.accordion__list.list-reset.questions__accordion
+                li.accordion
+                    button.btn-reset.accordion__control(aria-expanded="false")
+                        span.accordion__icon
+                        span.g-title.accordion__title Как быстро может приехать мастер?
+                    .accordion__content(aria-hidden="true")
+                        p Выезд мастера в пределах Москвы мы выполняем бесплатно. Вы оплачиваете только стоимость оказанных услуг специалистом согласно прайс-листу. Стоимость выезда специалиста в Московскую область зависит от расстояния до конкретного объекта.
+                li.accordion
+                    button.btn-reset.accordion__control(aria-expanded="false")
+                        span.accordion__icon
+                        span.g-title.accordion__title Почему мне стоит заказать услуги сантехника у вас?
+                    .accordion__content(aria-hidden="true")
+                        p Выезд мастера в пределах Москвы мы выполняем бесплатно. Вы оплачиваете только стоимость оказанных услуг специалистом согласно прайс-листу. Стоимость выезда специалиста в Московскую область зависит от расстояния до конкретного объекта.
+                li.accordion
+                    button.btn-reset.accordion__control(aria-expanded="false")
+                        span.accordion__icon
+                        span.g-title.accordion__title Сколько стоит вызвать сантехника?
+                    .accordion__content(aria-hidden="true")
+                        p Выезд мастера в пределах Москвы мы выполняем бесплатно. Вы оплачиваете только стоимость оказанных услуг специалистом согласно прайс-листу. Стоимость выезда специалиста в Московскую область зависит от расстояния до конкретного объекта.
+                li.accordion
+                    button.btn-reset.accordion__control(aria-expanded="false")
+                        span.accordion__icon
+                        span.g-title.accordion__title Сколько будет стоить работа?
+                    .accordion__content(aria-hidden="true")
+                        p Выезд мастера в пределах Москвы мы выполняем бесплатно. Вы оплачиваете только стоимость оказанных услуг специалистом согласно прайс-листу. Стоимость выезда специалиста в Московскую область зависит от расстояния до конкретного объекта.
+                li.accordion
+                    button.btn-reset.accordion__control(aria-expanded="false")
+                        span.accordion__icon
+                        span.g-title.accordion__title Ваши мастера оставляют за собой грязь?
+                    .accordion__content(aria-hidden="true")
+                        p Выезд мастера в пределах Москвы мы выполняем бесплатно. Вы оплачиваете только стоимость оказанных услуг специалистом согласно прайс-листу. Стоимость выезда специалиста в Московскую область зависит от расстояния до конкретного объекта.
+                li.accordion
+                    button.btn-reset.accordion__control(aria-expanded="false")
+                        span.accordion__icon
+                        span.g-title.accordion__title Какая гарантия на услуги?
+                    .accordion__content(aria-hidden="true")
+                        p Выезд мастера в пределах Москвы мы выполняем бесплатно. Вы оплачиваете только стоимость оказанных услуг специалистом согласно прайс-листу. Стоимость выезда специалиста в Московскую область зависит от расстояния до конкретного объекта.
+            .questions-right(action="#")
+                .questions-right__form
+                    h2.g-title.questions-form__title Остались вопросы?
+                    p.questions-form__desc Задайте свой вопрос и получите бесплатную консультацию!
+                    form.questions-form.validate-form5(action="#")
+                        input.g-input.questions-form__input(data-validate-field="name" type="text" name="Имя" placeholder="Ваше имя")
+                        input.g-input.questions-form__input(data-validate-field="tel" type="tel" name="Телефон" placeholder="Ваш телефон")
+                        textarea.g-textarea.questions-form__input(data-validate-field="text", name="Вопрос" placeholder="Ваш вопрос")
+                        button.btn-reset.g-btn.questions-form__btn отправить
+                .questions-right__bottom
+                    span.questions-contacts__desc Или можно позвонить:
+                    .questions-contacts
+                        ul.list-reset.questions-contacts__social
+                            li.questions-contacts__social-item
+                                a.questions-contacts__social-link(href="#")
+                                    +icon("telegram2")
+                            li.questions-contacts__social-item
+                                a.questions-contacts__social-link(href="#")
+                                    +icon("whatsapp2")
+                        .tell.questions-contacts__tell
+                            span.tell__desc Круглосуточно, без выходных
+                            a.tell__value(href="tel:+74951374369") +7 (495) 137-43-69
