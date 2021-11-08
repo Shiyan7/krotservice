@@ -1,4 +1,4 @@
-section.about
+section.about.start-count.animation
     .container.about__container
         h1.g-title.about__title О компании
         .about__content
@@ -12,3 +12,57 @@ section.about
                 button.g-btn.about__btn.btn-reset.modal-btn(data-graph-animation="fadeInUp" data-graph-path="write-us" data-graph-speed="500") Написать нам
             .about__right
                 img.about__image.lozad(src="img/about-image.jpg", data-src="img/about-image@2x.jpg", 2x alt="Картинка о компании")
+        ul.benefits__list.list-reset.about-benefits__list
+            li.benefits__item
+                span.benefits__number
+                    span.benefits__value(data-number="8000") 0
+                    |км
+                span.benefits__caption Трубопроводов промыли хозяйственно-бытовой и ливневой канализации
+            li.benefits__item
+                span.benefits__number
+                    span.benefits__value(data-number="30") 0
+                    |тыс
+                span.benefits__caption Выполненых аварийных выездов
+            li.benefits__item
+                span.benefits__number
+                    span.benefits__value(data-number="5500") 0
+                span.benefits__caption Компаний решили свои <br> проблемы нашими руками
+        .about__quote
+            +icon("quote")
+            q Мы выполняем свою работу, используя только лучшее оборудование. Наша задача – максимально быстро и надолго избавить вас от проблем с канализацией: устранить засор, промыть трубы, либо провести видеодиагностику.
+        h3.about-section__subtitle Клиенты — наше ВСЕ! 
+        p.about-section__desc Мы очень ценим и дорожим нашими клиентами: 63% получаемых заказов — либо обращения по рекомендации, либо повторные обращения и это — отличный показатель! Мы постоянно получаем положительные отзывы о работе наших специалистов.
+        +video("video about__video")
+        h2.g-title.g-title--center.certificates__title СЕРТИФИКАТЫ И ЛИЦЕНЗИИ
+        .slider
+            .certificates-slider__controls
+                button.btn-reset.g-slider-btn.g-slider-btn--prev.certificates-slider__btn--prev
+                    +icon("slider-arrow")
+                button.btn-reset.g-slider-btn.g-slider-btn--next.certificates-slider__btn--next
+                    +icon("slider-arrow")
+            .swiper.certificates-slider
+                .swiper-wrapper.certificates-slider__wrapper
+                    .swiper-slide.certificates__item
+                        a.certificate(data-fslightbox="certificates" href="img/certificate-1@2x.png") 
+                            img.certificate__image.lozad(src="img/certificate-1.png", data-src="img/certificate-1@2x.png", 2x, alt="Сертификат 1")
+                    .swiper-slide.certificates__item
+                        a.certificate(data-fslightbox="certificates" href="img/certificate-2@2x.png") 
+                            img.certificate__image.lozad(src="img/certificate-2.png", data-src="img/certificate-2@2x.png", 2x, alt="Сертификат 2")
+                    .swiper-slide.certificates__item
+                        a.certificate(data-fslightbox="certificates" href="img/certificate-3@2x.png") 
+                            img.certificate__image.lozad(src="img/certificate-3.png", data-src="img/certificate-3@2x.png", 2x, alt="Сертификат 3")
+                    .swiper-slide.certificates__item
+                        a.certificate(data-fslightbox="certificates" href="img/certificate-4@2x.png") 
+                            img.certificate__image.lozad(src="img/certificate-4.png", data-src="img/certificate-4@2x.png", 2x, alt="Сертификат 4")
+                    .swiper-slide.certificates__item
+                        a.certificate(data-fslightbox="certificates" href="img/certificate-3@2x.png") 
+                            img.certificate__image.lozad(src="img/certificate-3.png", data-src="img/certificate-3@2x.png", 2x, alt="Сертификат 3")
+                    .swiper-slide.certificates__item
+                        a.certificate(data-fslightbox="certificates" href="img/certificate-4@2x.png") 
+                            img.certificate__image.lozad(src="img/certificate-4.png", data-src="img/certificate-4@2x.png", 2x, alt="Сертификат 4")
+                    .swiper-slide.certificates__item
+                        a.certificate(data-fslightbox="certificates" href="img/certificate-1@2x.png") 
+                            img.certificate__image.lozad(src="img/certificate-1.png", data-src="img/certificate-1@2x.png", 2x, alt="Сертификат 1")
+                    .swiper-slide.certificates__item
+                        a.certificate(data-fslightbox="certificates" href="img/certificate-2@2x.png") 
+                            img.certificate__image.lozad(src="img/certificate-2.png", data-src="img/certificate-2@2x.png", 2x, alt="Сертификат 2")

@@ -1,15 +1,17 @@
 .main-nav {
 
     &__item {
-        &:first-child {
-            overflow: hidden;
-            border-top-left-radius: 1000px;
-            border-bottom-left-radius: 1000px;
-        }
-        &:last-child {
-            overflow: hidden;
-            border-top-right-radius: 1000px;
-            border-bottom-right-radius: 1000px;
+        @media (min-width: 1025px) {
+            &:first-child {
+                overflow: hidden;
+                border-top-left-radius: 1000px;
+                border-bottom-left-radius: 1000px;
+            }
+            &:last-child {
+                overflow: hidden;
+                border-top-right-radius: 1000px;
+                border-bottom-right-radius: 1000px;
+            }
         }
     }
 

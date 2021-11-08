@@ -124,3 +124,11 @@ mixin navDropdown
                 a.nav__link.dropdown-list__link.g-link(href="#") Под услуга №2
             li.dropdown-list__item
                 a.nav__link.dropdown-list__link.g-link(href="#") Под услуга №3
+mixin video(cls)
+    div(class="video " + cls)
+        a.video__link(href="https://youtu.be/pIrnew79beQ")
+            picture
+                source(srcset="https://i.ytimg.com/vi_webp/pIrnew79beQ/maxresdefault.webp" type="image/webp")
+                img.video__media(src="https://i.ytimg.com/vi/pIrnew79beQ/maxresdefault.jpg" alt="1. Пилот, разборы, ответы и лайвы")
+        button.btn-reset.video__button(aria-label="Запустить видео")
+            +icon("play")

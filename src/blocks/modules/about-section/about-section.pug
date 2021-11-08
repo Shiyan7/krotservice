@@ -1,31 +1,28 @@
-section.about-section.animation
+section.about-section.start-count.animation
     .container.about-section__container
         h2.g-title.about-section__title О Компании “Кротсервис”
         h3.about-section__subtitle Клиенты — наше ВСЕ! 
         p.about-section__desc Мы очень ценим и дорожим нашими клиентами: 63% получаемых заказов — либо обращения по рекомендации, либо повторные обращения и это — отличный показатель! Мы постоянно получаем положительные отзывы о работе наших специалистов.
-        <div class="video">
-            <a class="video__link" href="https://youtu.be/pIrnew79beQ">
-                <picture>
-                    <source srcset="https://i.ytimg.com/vi_webp/pIrnew79beQ/maxresdefault.webp" type="image/webp">
-                    <img class="video__media" src="https://i.ytimg.com/vi/pIrnew79beQ/maxresdefault.jpg" alt="1. Пилот, разборы, ответы и лайвы">
-                </picture>
-            </a>
-            button.btn-reset.video__button(aria-label="Запустить видео")
-                +icon("play")
-        </div>
+        +video("video")
     .container.benefits__container
         ul.benefits__list.list-reset
             li.benefits__item
-                span.benefits__number(data-number="23") 0
+                span.benefits__number
+                    span.benefits__value(data-number="23") 0
                 span.benefits__caption успешных проектов
             li.benefits__item
-                span.benefits__number(data-number="34") 0
+                span.benefits__number
+                    span.benefits__value(data-number="34") 0
                 span.benefits__caption успешных проектов
             li.benefits__item
-                span.benefits__number(data-number="56") 0
+                span.benefits__number
+                    span.benefits__value(data-number="56") 0
+                    |к
                 span.benefits__caption постоянных клиентов
             li.benefits__item
-                span.benefits__number(data-number="56") 0
+                span.benefits__number
+                    span.benefits__value(data-number="56") 0
+                    |к
                 span.benefits__caption постоянных клиентов
     .container.clients__container
         h2.g-title.clients__title.g-title--center Наши клиенты

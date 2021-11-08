@@ -1,9 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const benefits = document.querySelector(".benefits__list");
-    const counters = document.querySelectorAll(".benefits__number");
-    const about = document.querySelector(".about-section");
+    const counters = document.querySelectorAll(".benefits__value");
+    const startCount = document.querySelector(".start-count");
 
-    if (benefits) {
+    if (startCount) {
         const counterAnim = (el, start = 0, end) => {
             let startTimestamp = null;
             const step = (timestamp) => {
@@ -21,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const watchScroll = () => {
 
-            if (about.classList.contains("active")) {
+            if (startCount.classList.contains("active")) {
                 flag++;
                 if (flag == 1) {
                     setTimeout(function () {

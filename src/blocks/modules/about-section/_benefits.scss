@@ -14,7 +14,6 @@
 
     &__list {
         display: flex;
-        align-items: center;
         justify-content: space-between;
         @media (max-width: 1024px) {
             display: grid;
@@ -26,18 +25,13 @@
     }
 
     &__item {
-        position: relative;
         display: flex;
         flex-direction: column;
-        &:nth-child(3),
-        &:nth-child(4) {
-            .benefits__number:after {
-                content: "к"
-            }
-        }
+        position: relative;
     }
 
     &__number {
+        display: flex;
         font-weight: 900;
         font-size: 85px;
         line-height: 104px;
@@ -45,7 +39,7 @@
         -webkit-text-stroke: 3px #4096fc;
         -webkit-text-fill-color: transparent;
         @media (max-width: 1024px) {
-            text-align: center;
+            justify-content: center;
         }
         @media (max-width: 768px) {
             font-size: 70px;
@@ -58,13 +52,21 @@
         }
     }
 
+    &__value {
+        @media (max-width: 576px) {
+            margin-bottom: 5px;
+        }
+    }
+
     &__caption {
+        max-width: 372px;
         font-weight: 600;
         font-size: 14px;
         line-height: 22px;
         color: #212121;
         @media (max-width: 1024px) {
             text-align: center;
+            margin: 0 auto;
         }
         @media (max-width: 768px) {
             font-size: 12px;
