@@ -1,0 +1,17 @@
+extends ../layouts/default
+include ../helpers/mixins
+
+block variables
+	- const title = "О компании";
+	- const page = "about"
+
+block content
+	.site-container 
+		include ../../blocks/modules/header/header
+		main.main
+			
+		include ../../blocks/modules/footer/footer
+		include ../../blocks/modules/modal/modal
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")
