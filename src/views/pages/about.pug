@@ -6,10 +6,11 @@ block variables
 	- const page = "about"
 
 block content
-	.site-container 
+	.site-container
 		include ../../blocks/modules/header/header
 		main.main
-			
+			include ../../blocks/modules/breadcrumbs/breadcrumbs
+			include ../../blocks/modules/about/about
 		include ../../blocks/modules/footer/footer
 		include ../../blocks/modules/modal/modal
 block scripts

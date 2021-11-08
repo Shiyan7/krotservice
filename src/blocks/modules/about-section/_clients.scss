@@ -77,18 +77,18 @@
         transition: box-shadow 0.5s;
         @media (min-width: 1025px) {
             cursor: pointer;
+            &:hover {
+                box-shadow: 0 64px 134px rgba(0, 0, 0, 0.1);
+                .clients__image {
+                    filter: grayscale(0);
+                }
+            }
         }
         @media (max-width: 768px) {
-            border: none;
             height: 180px;
+            border: none;
             margin-top: 0 !important;
             margin-bottom: 20px;
-        }
-        &:hover {
-            box-shadow: 0px 64px 134px rgba(0, 0, 0, 0.1);
-            .clients__image {
-                filter: grayscale(0);
-            }
         }
     }
 
