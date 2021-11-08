@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const watchWidth = () => {
                 mainServiceBg.style.width = `${el.offsetWidth}px`;
             };
+            
             el.addEventListener("mouseenter", (e) => {
                 mainServiceBg.style.left = `${e.currentTarget.offsetLeft}px`;
             });
