@@ -1,6 +1,5 @@
 .why {
     background-color: #243a54;
-    margin-bottom: 80px;
 
     &__container {
         padding-top: 60px;
@@ -117,7 +116,7 @@
                 padding-top: 0;
             }
             @media (max-width: 576px) {
-                font-size: 14px;
+                font-size: 12px;
                 line-height: 20px;
             }
             @media (max-width: 360px) {
