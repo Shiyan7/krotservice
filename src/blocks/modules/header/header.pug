@@ -26,8 +26,8 @@ mixin header
                     li.nav__item.main-nav__item
                         a.nav__link.main-nav__link(href="about.html") О компании
                     li.nav__item.main-nav__item
-                        a.nav__link.nav__link--drop.nav__link--dropdown.main-nav__link(href="#")
-                            |Услуги
+                        .nav__link.nav__link--drop.nav__link--dropdown.main-nav__link
+                            a(href="services.html") Услуги
                             +icon("arrow")
                             +icon("arrow2")
                         ul.nav__list.list-reset.nav__list--dropdown.dropdown-list

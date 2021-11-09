@@ -20,12 +20,19 @@
         font-weight: 600;
         line-height: 17px;
 
+        a {
+            color: #fff;
+        }
+
         @media (max-width: 1230px) {
             justify-content: center;
             padding: 20px 0;
         }
 
         @media (min-width: 1025px) {
+            a {
+                color: #000;
+            }
             &:hover {
                 
                 &:after {
@@ -162,8 +169,11 @@
         color: #212121;
         text-transform: uppercase;
         padding: 26px 37.7px;
-        cursor: pointer;
         transition: color 0.3s, background-color 0.3s;
+
+        @media (min-width: 1025px) {
+            cursor: pointer;
+        }
 
         @media (max-width: 1024px) {
             color: #fff;
@@ -192,6 +202,7 @@
                 margin-left: 5px;
                 transition: transform 0.3s;
                 stroke: #212121;
+                pointer-events: none;
 
                 @media (max-width: 1024px) {
                     stroke: #fff;
@@ -221,6 +232,7 @@
                 width: 15px;
                 height: 15px;
                 fill: #212121;
+                pointer-events: none;
             }
         }
     }
@@ -271,6 +283,8 @@
 }
 
 .menu {
+    position: relative;
+    z-index: 2;
     @media (max-width: 1024px) {
 
         opacity: 0;

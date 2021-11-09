@@ -47,4 +47,18 @@
             }
         }
     }
+
+    &--2 {
+        margin-top: -20px;
+        background-color: #243a54;
+        .breadcrumbs__link {
+            color: #fff;
+            &[href] {
+                border-bottom: 1px solid rgba(#ffffff, 0.2);
+                &:hover {
+                    border-bottom: 1px solid transparent;
+                }
+            }
+        }
+    }
 }

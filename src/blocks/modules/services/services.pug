@@ -1,6 +1,9 @@
 section.services
     .container.services__container
-        h2.g-title.services__title Услуги
+        if page === "services"
+            h2.g-title.services__title.services__title--2 Услуги
+        else
+            h2.g-title.services__title Услуги
         .swiper.services-slider(data-mobile="false")
             .swiper-wrapper.services__list
                 .swiper-slide.services__item

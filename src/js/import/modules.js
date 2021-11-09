@@ -15,3 +15,4 @@ import "%modules%/footer/footer";
 import "%modules%/modal/modal";
 import "%modules%/modal/validate";
 import "%modules%/modal/imask";
+import "%modules%/testimonials/testimonials-slider";
