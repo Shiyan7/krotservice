@@ -2,19 +2,19 @@ section.prices
     .container.prices__container
         h1.g-title.prices__title Цены
         if page === "prices-individuals"
-            nav.prices-nav
-                ul.prices-nav__list.list-reset
-                    li.prices-nav__item
-                        a.prices-nav__link.prices-nav__link--current Частным лицам
-                    li.prices-nav__item
-                        a.prices-nav__link(href="prices-organizations.html") Организациям
+            nav.g-page-nav
+                ul.g-page-nav__list.list-reset
+                    li.g-page-nav__item
+                        a.g-page-nav__link.g-page-nav__link--current Частным лицам
+                    li.g-page-nav__item
+                        a.g-page-nav__link(href="prices-organizations.html") Организациям
         else
-            nav.prices-nav
-                ul.prices-nav__list.list-reset
-                    li.prices-nav__item
-                        a.prices-nav__link(href="prices-individuals.html") Частным лицам
-                    li.prices-nav__item
-                        a.prices-nav__link.prices-nav__link--current Организациям
+            nav.g-page-nav
+                ul.g-page-nav__list.list-reset
+                    li.g-page-nav__item
+                        a.g-page-nav__link(href="prices-individuals.html") Частным лицам
+                    li.g-page-nav__item
+                        a.g-page-nav__link.g-page-nav__link--current Организациям
         .prices-item
             h2.g-title.prices-item__title Устранение засоров (внутренняя канализация)
             .prices__grid
