@@ -103,7 +103,7 @@
     }
 }
 
-.service {
+.service-item {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -129,10 +129,10 @@
 
     &:hover {
         .service {
-            &__link {
+            &-item__link {
                 color: #4096fc;
             }
-            &-back {
+            &-item-back {
                 opacity: 1;
                 visibility: visible;
             }
@@ -251,7 +251,7 @@
     }
 
     &:nth-child(2) {
-        .service__title {
+        .service-item__title {
             max-width: 196px;
         }
     }

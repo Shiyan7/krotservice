@@ -23,6 +23,11 @@
         color: #bbbbbb;
         padding-bottom: 5px;
         text-transform: uppercase;
+        transition: color 0.3s;
+        &:hover {
+            color: #4096fc;
+            border-bottom: 2px solid currentColor;
+        }
         @media (max-width: 576px) {
             font-size: 17px;
             line-height: 20px;

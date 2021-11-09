@@ -27,6 +27,14 @@ else if page === "prices-organizations"
                     a.breadcrumbs__link(href="/") Цены
                 li.breadcrumbs__item
                     a.breadcrumbs__link Организации
+else if page === "works"
+    .breadcrumbs.breadcrumbs--2
+        .container.breadcrumbs__container
+            ul.breadcrumbs__list.list-reset
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="/") Главная
+                li.breadcrumbs__item
+                    a.breadcrumbs__link.breadcrumbs__link--current Наши работы
 else
     .breadcrumbs
         .container.breadcrumbs__container
