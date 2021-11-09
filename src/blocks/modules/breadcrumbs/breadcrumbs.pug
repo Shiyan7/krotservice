@@ -6,6 +6,27 @@ if page === "services"
                     a.breadcrumbs__link(href="/") Главная
                 li.breadcrumbs__item
                     a.breadcrumbs__link Услуги
+
+else if page === "prices-individuals"
+    .breadcrumbs.prices__breadcrumbs
+        .container.breadcrumbs__container
+            ul.breadcrumbs__list.list-reset
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="/") Главная
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="/") Цены
+                li.breadcrumbs__item
+                    a.breadcrumbs__link Физические лица
+else if page === "prices-organizations"
+    .breadcrumbs.prices__breadcrumbs
+        .container.breadcrumbs__container
+            ul.breadcrumbs__list.list-reset
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="/") Главная
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="/") Цены
+                li.breadcrumbs__item
+                    a.breadcrumbs__link Организации
 else
     .breadcrumbs
         .container.breadcrumbs__container

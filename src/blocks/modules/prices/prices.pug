@@ -1,0 +1,195 @@
+section.prices
+    .container.prices__container
+        h1.g-title.prices__title Цены
+        if page === "prices-individuals"
+            nav.prices-nav
+                ul.prices-nav__list.list-reset
+                    li.prices-nav__item
+                        a.prices-nav__link.prices-nav__link--current Частным лицам
+                    li.prices-nav__item
+                        a.prices-nav__link(href="prices-organizations.html") Организациям
+        else
+            nav.prices-nav
+                ul.prices-nav__list.list-reset
+                    li.prices-nav__item
+                        a.prices-nav__link(href="prices-individuals.html") Частным лицам
+                    li.prices-nav__item
+                        a.prices-nav__link.prices-nav__link--current Организациям
+        .prices-item
+            h2.g-title.prices-item__title Устранение засоров (внутренняя канализация)
+            .prices__grid
+                .prices__col.prices__col--center Объект
+                .prices__col.prices__value--bold
+                    +icon("prices-1")
+                    |Квартира
+                .prices__col.prices__value--bold
+                    +icon("prices-2")
+                    |Дом
+                .prices__col Локация засора
+                .prices__col
+                    ul.prices-list.list-reset
+                        li.prices-list__item
+                            a.prices-list__link.g-link(href="#") В раковине
+                        li.prices-list__item
+                            a.prices-list__link.g-link(href="#") В ванной
+                        li.prices-list__item
+                            a.prices-list__link.g-link(href="#") В душевой кабине
+                        li.prices-list__item
+                            a.prices-list__link.g-link(href="#") В унитазе
+                        li.prices-list__item
+                            a.prices-list__link.g-link(href="#") В трубах
+                .prices__col
+                    ul.prices-list.list-reset
+                        li.prices-list__item
+                            a.prices-list__link.g-link(href="#") В раковине
+                        li.prices-list__item
+                            a.prices-list__link.g-link(href="#") В ванной
+                        li.prices-list__item
+                            a.prices-list__link.g-link(href="#") В душевой кабине
+                        li.prices-list__item
+                            a.prices-list__link.g-link(href="#") В унитазе
+                        li.prices-list__item
+                            a.prices-list__link.g-link(href="#") В трубах
+                .prices__col Длительность работ
+                .prices__col.prices__value от 30 минут
+                .prices__col.prices__value от 30 минут
+                .prices__col Диаметр прочищаемых труб
+                .prices__col.prices__value от 32 мм до 100мм
+                .prices__col.prices__value от 32 мм до 100мм
+                .prices__col Метод прочистки
+                .prices__col
+                    ul.prices-list.list-reset
+                        li.prices-list__item
+                            a.prices-list__link.g-link(href="#") Пневматический
+                        li.prices-list__item
+                            a.prices-list__link.g-link(href="#") Механический
+                        li.prices-list__item
+                            a.prices-list__link.g-link(href="#") Гидродинамический
+                .prices__col
+                    ul.prices-list.list-reset
+                        li.prices-list__item
+                            a.prices-list__link.g-link(href="#") Пневматический
+                        li.prices-list__item
+                            a.prices-list__link.g-link(href="#") Механический
+                        li.prices-list__item
+                            a.prices-list__link.g-link(href="#") Гидродинамический
+                .prices__col.prices__col--center Минимальный заказ
+                .prices__col.prices__value.prices__value--bolder от 3900 рублей
+                .prices__col.prices__value.prices__value--bolder от 4900 рублей
+        .prices-item
+            h2.g-title.prices-item__title Стоимость промывки (прочистки) трубопроводов
+            .prices__grid.prices__grid--2
+                .prices__col.prices__col--left НАИМЕНОВАНИЕ ОБОРУДОВАНИЯ
+                .prices__col.prices__col--column
+                    img.prices__image.lozad(src="img/prices-1.png", data-src="img/prices-1@2x.png", alt="Переносной АВД KRANZLE Profi TST2")
+                    |Переносной АВД KRANZLE Profi TST2
+                .prices__col.prices__col--column
+                    img.prices__image.lozad(src="img/prices-2.png", data-src="img/prices-2@2x.png", alt="Передвижной АВД с подогревом воды KARCHER therm")
+                    |Передвижной АВД с подогревом воды KARCHER therm
+                .prices__col.prices__col--column
+                    img.prices__image.lozad(src="img/prices-3.png", data-src="img/prices-3@2x.png", alt="Переносной АВД KRANZLE Profi TST2")
+                    |Переносной АВД KRANZLE Profi TST2
+                .prices__col.prices__col--column
+                    img.prices__image.lozad(src="img/prices-4.png", data-src="img/prices-4@2x.png", alt="Передвижной АВД с подогревом воды KARCHER therm")
+                    |Передвижной АВД с подогревом воды KARCHER therm
+
+                .prices__col.prices__col--left ДЛИНА ШЛАНГА
+                .prices__col.prices__value--semibold до 40м
+                .prices__col.prices__value--semibold до 120м
+                .prices__col.prices__value--semibold 80м
+                .prices__col.prices__value--semibold 80м
+
+                .prices__col.prices__col--left ДИАМЕТРЫ ПРОМЫВАЕМЫХ ТРУБ
+                .prices__col.prices__value--semibold.prices__col--center 32-100мм
+                .prices__col.prices__value--semibold.prices__col--center 50-150мм
+                .prices__col.prices__value--semibold.prices__col--center 100-300мм
+                .prices__col.prices__value--semibold.prices__col--center 100-500мм
+
+                .prices__col.prices__col--left ПРИМЕЧАНИЕ
+                .prices__col.prices__col--center Возможность проходить несколько поворотов 90° в трубах диаметром 50 - 100 мм
+                .prices__col.prices__col--center Возможность проходить несколько поворотов 90° в трубах диаметром 100 мм	
+                .prices__col.prices__col--center Необходима заправка водопроводной водой (желательно из пожарного гидранта)	
+                .prices__col.prices__col--center Необходима заправка водопроводной водой (желательно из пожарного гидранта)	
+
+                .prices__col.prices__col--left МИНИМАЛЬНЫЙ ЗАКАЗ
+                .prices__col.prices__col--column
+                    span 5 500 ₽
+                    |включает выезд <br> и 1 час работы
+                .prices__col.prices__col--column
+                    span 16 000 ₽
+                    |включает выезд и <br> до 2-х часов работы
+                .prices__col.prices__col--column
+                    span 16 000 ₽
+                    |включает выезд и <br> до 2-х часов работы
+                .prices__col.prices__col--column
+                    span 16 000 ₽
+                    |включает выезд и <br> до 2-х часов работы
+                
+                
+
+                .prices__col.prices__col--left РАБОЧАЯ СМЕНА
+                .prices__col.prices__col--center
+                    span 30 000 ₽
+                .prices__col.prices__col--center
+                    span 35 000 ₽
+                .prices__col.prices__col--center
+                    span 35 000 ₽
+                .prices__col.prices__col--center
+                    span 35 000 ₽
+
+                .prices__col.prices__col--left СТОИМОСТЬ <br> ОДНОГО <br> ПОГОННОГО <br> МЕТРА
+                .prices__col.prices__col--center
+                    span 150 - 500 ₽
+                .prices__col.prices__col--center
+                    span 150 - 500 ₽
+                .prices__col.prices__col--center
+                    span 70 - 350 ₽
+                .prices__col.prices__col--center
+                    span 70 - 350 ₽
+        .prices-info
+            h2.g-title.prices-info__title Дополнительные факторы, влияющие на цену обслуживания
+            p.prices-info__desc Итоговая стоимость устранения засора зависит от определенных факторов, таких как — сложность доступа к внутренним коммуникациям, сложность засора, вид засора(механический(предмет), эксплуатационный (жир и естественность засорения) и техногенный(нарушения прокладки труб не по СНиП), кол-во метража и поворотов, а также время а затраченное на устранение засора. Поэтому точная оценка будет дана по факту выполненных работ.
+            p.prices-info__desc Вид применяемой спецтехники и профессионального оборудования также оказывает влияние на итоговую стоимость прочистки канализации. Компания «КротСервис» располагает каналопромывочными машинами, илососами, транспортом для вывоза извлечённых из труб отходов на полигон, машинами механической прочистки труб и аппаратами высокого давления.
+            ul.prices-types__list.list-reset
+                li.prices-types__item
+                    +icon("prices-types-1")
+                    h3.g-title.prices-types__title Механический
+                    p.prices-types__desc Механический. Пробивание минерально-органических пробок и устранение наслоений на стенках с помощью стального троса или водной струи. Способ эффективен против органики, извести, песка, ржавчины, а также для извлечения мусора, случайно попавшего в трубопровод.
+                li.prices-types__item
+                    +icon("prices-types-2")
+                    h3.g-title.prices-types__title Химический
+                    p.prices-types__desc Химический. Применяется против известковых отложений и особо плотных засоров. В этом случае по шлангу в трубу подаётся не водопроводная вода, а химический реагент, например кислота, который разрушает структуру засора. После такой прочистки обязательно выполняется промывка гидродинамическая промывка, для удаления оставшихся наслоений, а также самого реагента.
+                li.prices-types__item
+                    +icon("prices-types-3")
+                    h3.g-title.prices-types__title Ультразвуковой
+                    p.prices-types__desc Ультразвуковой. Реализуется посредством специального оборудования и является одним из высокоэффективных способ очистки и профилактики загрязнений в трубах.
+            h3.g-title.prices-factors__title Стоимость прочистки канализационных сетей складывается из многих факторов, таких как:
+            ul.prices-factors__list.list-reset
+                li.prices-factors__item
+                    +icon("check")
+                    |диаметр труб и длина прочищаемого участка;
+                li.prices-factors__item
+                    +icon("check")
+                    |тип засора, его плотность и сложность удаления;
+                li.prices-factors__item
+                    +icon("check")
+                    |возможность смыва отходов в городскую централизованную канализацию;
+                li.prices-factors__item
+                    +icon("check")
+                    |дистанция от дома до выгребной ямы или септика;
+                li.prices-factors__item
+                    +icon("check")
+                    |степень доступа к внутренней части трубопровода, наличие ревизий;
+                li.prices-factors__item
+                    +icon("check")
+                    |размещение канализационных колодцев;
+                li.prices-factors__item
+                    +icon("check")
+                    |обеспечение удобного подъезда для транспорта коммунальных служб;
+                li.prices-factors__item
+                    +icon("check")
+                    |напор воды в водопроводной сети;
+                li.prices-factors__item
+                    +icon("check")
+                    |давность последней прочистки.
+            p.prices-factors__desc Расчёт цены учитывает все эти условия, а основным критерием является время затраченное сотрудниками на устранение засора. Поэтому, даже в схожих случаях, когда диаметр и длина труб совпадают, итоговая стоимость может различаться в разы.
