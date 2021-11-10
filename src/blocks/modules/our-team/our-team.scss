@@ -45,8 +45,6 @@
         border: 1.08481px solid #f5f5f5;
         box-shadow: 0 34.7138px 34.7138px rgba(0, 0, 0, 0.02), 0 17.3569px 17.3569px rgba(0, 0, 0, 0.02), 0 8.67845px 8.67845px rgba(0, 0, 0, 0.02), 0 4.33923px 4.33923px rgba(0, 0, 0, 0.02), 0 2.16961px 2.16961px rgba(0, 0, 0, 0.02), 0 1.08481px 1.08481px rgba(0, 0, 0, 0.02);
         &__controls {
-            position: absolute;
-            top: 50%;
             right: -40px;
             left: -40px;
             @media (max-width: 1330px) {

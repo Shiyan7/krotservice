@@ -38,38 +38,9 @@
         @media (max-width: 768px) {
             padding: 0;
         }
-        &__controls {
-            position: absolute;
-            top: 50%;
-            right: -20px;
-            left: -20px;
-            @media (max-width: 1330px) {
-                right: -10px;
-                left: -10px;
-            }
-            @media (max-width: 576px) {
-                right: -15px;
-                left: -15px;
-            }
-        }
         &__wrapper {
             @media (max-width: 768px) {
                 flex-wrap: wrap;
-            }
-        }
-        &__btn {
-            &--prev {
-                left: 5px;
-                @media (max-width: 1330px) {
-                    top: calc(50% - 5px);
-                }
-            }
-
-            &--next {
-                right: 5px;
-                @media (max-width: 1330px) {
-                    top: calc(50% - 5px);
-                }
             }
         }
     }
@@ -99,8 +70,4 @@
             width: 100%;
         }
     }
-}
-
-.slider {
-    position: relative;
 }

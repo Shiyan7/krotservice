@@ -18,3 +18,4 @@ import "%modules%/modal/imask";
 import "%modules%/testimonials/testimonials-slider";
 import "%modules%/prices/simplebar";
 import "%modules%/technology/visible-text";
+import "%modules%/our-works/our-works-slider";

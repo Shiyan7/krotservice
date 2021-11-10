@@ -1,72 +1,150 @@
-section.testimonials
-    .container.testimonials__container
-        h2.g-title.g-title--center.testimonials__title отзывы клиентов
-        .slider
-            .testimonials-slider__controls
-                button.btn-reset.g-slider-btn.g-slider-btn--prev.testimonials-slider__btn--prev
-                    +icon("slider-arrow")
-                button.btn-reset.g-slider-btn.g-slider-btn--next.testimonials-slider__btn--next
-                    +icon("slider-arrow")
-            .swiper.testimonials-slider
-                .swiper-wrapper.testimonials-slider__wrapper
-                    .swiper-slide
-                        article.testimonial
-                            .testimonial__top
-                                .testimonial__left
-                                    img.testimonial__image.lozad(src="img/testimonial.png", data-src="img/testimonial@2x.png", alt="Михаил начальник отдела ООО «ПМ-69» ")
-                                    .testimonial__text
-                                        span.testimonial__name Михаил
-                                        span.testimonial__job-title Начальник отдела ООО «ПМ-69»
-                                img.testimonial__rating(src="img/stars.svg", alt="Rate 4 of 5")
-                            .testimonial__row
-                                span.testimonial__date 23.10.2021
-                                img.testimonial__rating.testimonial__rating--hidden(src="img/stars.svg", alt="Rate 4 of 5")
-                            h3.g-title.testimonial__title Шеллак с блестками: модные дизайны и пошаговая инструкция по его нанесению
-                            p.testimonial__desc Каждая женщина хочет выглядеть достойно и презентабельно. Сияющие глаза, лучезарная улыбка, красивый наряд — это крупный план. Не меньшую роль играют детали. Интересное украшение...
-                            a.g-link.testimonial__link(href="#") Читать дальше
-                    .swiper-slide
-                        article.testimonial
-                            .testimonial__top
-                                .testimonial__left
-                                    img.testimonial__image.lozad(src="img/testimonial.png", data-src="img/testimonial@2x.png", alt="Михаил начальник отдела ООО «ПМ-69» ")
-                                    .testimonial__text
-                                        span.testimonial__name Михаил
-                                        span.testimonial__job-title Начальник отдела ООО «ПМ-69»
-                                img.testimonial__rating(src="img/stars.svg", alt="Rate 4 of 5")
-                            .testimonial__row
-                                span.testimonial__date 23.10.2021
-                                img.testimonial__rating.testimonial__rating--hidden(src="img/stars.svg", alt="Rate 4 of 5")
-                            h3.g-title.testimonial__title Шеллак с блестками: модные дизайны и пошаговая инструкция по его нанесению
-                            p.testimonial__desc Каждая женщина хочет выглядеть достойно и презентабельно. Сияющие глаза, лучезарная улыбка, красивый наряд — это крупный план. Не меньшую роль играют детали. Интересное украшение...
-                            a.g-link.testimonial__link(href="#") Читать дальше
-                    .swiper-slide
-                        article.testimonial
-                            .testimonial__top
-                                .testimonial__left
-                                    img.testimonial__image.lozad(src="img/testimonial.png", data-src="img/testimonial@2x.png", alt="Михаил начальник отдела ООО «ПМ-69» ")
-                                    .testimonial__text
-                                        span.testimonial__name Михаил
-                                        span.testimonial__job-title Начальник отдела ООО «ПМ-69»
-                                img.testimonial__rating(src="img/stars.svg", alt="Rate 4 of 5")
-                            .testimonial__row
-                                span.testimonial__date 23.10.2021
-                                img.testimonial__rating.testimonial__rating--hidden(src="img/stars.svg", alt="Rate 4 of 5")
-                            h3.g-title.testimonial__title Шеллак с блестками: модные дизайны и пошаговая инструкция по его нанесению
-                            p.testimonial__desc Каждая женщина хочет выглядеть достойно и презентабельно. Сияющие глаза, лучезарная улыбка, красивый наряд — это крупный план. Не меньшую роль играют детали. Интересное украшение...
-                            a.g-link.testimonial__link(href="#") Читать дальше
-                    .swiper-slide
-                        article.testimonial
-                            .testimonial__top
-                                .testimonial__left
-                                    img.testimonial__image.lozad(src="img/testimonial.png", data-src="img/testimonial@2x.png", alt="Михаил начальник отдела ООО «ПМ-69» ")
-                                    .testimonial__text
-                                        span.testimonial__name Михаил
-                                        span.testimonial__job-title Начальник отдела ООО «ПМ-69»
-                                img.testimonial__rating(src="img/stars.svg", alt="Rate 4 of 5")
-                            .testimonial__row
-                                span.testimonial__date 23.10.2021
-                                img.testimonial__rating.testimonial__rating--hidden(src="img/stars.svg", alt="Rate 4 of 5")
-                            h3.g-title.testimonial__title Шеллак с блестками: модные дизайны и пошаговая инструкция по его нанесению
-                            p.testimonial__desc Каждая женщина хочет выглядеть достойно и презентабельно. Сияющие глаза, лучезарная улыбка, красивый наряд — это крупный план. Не меньшую роль играют детали. Интересное украшение...
-                            a.g-link.testimonial__link(href="#") Читать дальше
-                .swiper-pagination.g-pagination.testimonials-slider__pagination
+if page === "service"
+    section.testimonials
+        .container.testimonials__container
+            h2.g-title.g-title--center.testimonials__title отзывы клиентов
+            .g-slider
+                .g-slider__controls.testimonials-slider__controls
+                    button.btn-reset.g-slider-btn.g-slider-btn--prev.testimonials-slider__btn--prev
+                        +icon("slider-arrow")
+                    button.btn-reset.g-slider-btn.g-slider-btn--next.testimonials-slider__btn--next
+                        +icon("slider-arrow")
+                .swiper.testimonials-slider
+                    .swiper-wrapper.testimonials-slider__wrapper
+                        .swiper-slide
+                            article.testimonial
+                                .testimonial__top
+                                    .testimonial__left
+                                        img.testimonial__image.lozad(src="img/testimonial.png", data-src="img/testimonial@2x.png", alt="Михаил начальник отдела ООО «ПМ-69» ")
+                                        .testimonial__text
+                                            span.testimonial__name Михаил
+                                            span.testimonial__job-title Начальник отдела ООО «ПМ-69»
+                                    img.testimonial__rating(src="img/stars.svg", alt="Rate 4 of 5")
+                                .testimonial__row
+                                    span.testimonial__date 23.10.2021
+                                    img.testimonial__rating.testimonial__rating--hidden(src="img/stars.svg", alt="Rate 4 of 5")
+                                h3.g-title.testimonial__title Шеллак с блестками: модные дизайны и пошаговая инструкция по его нанесению
+                                p.testimonial__desc Каждая женщина хочет выглядеть достойно и презентабельно. Сияющие глаза, лучезарная улыбка, красивый наряд — это крупный план. Не меньшую роль играют детали. Интересное украшение...
+                                a.g-link.testimonial__link(href="#") Читать дальше
+                        .swiper-slide
+                            article.testimonial
+                                .testimonial__top
+                                    .testimonial__left
+                                        img.testimonial__image.lozad(src="img/testimonial.png", data-src="img/testimonial@2x.png", alt="Михаил начальник отдела ООО «ПМ-69» ")
+                                        .testimonial__text
+                                            span.testimonial__name Михаил
+                                            span.testimonial__job-title Начальник отдела ООО «ПМ-69»
+                                    img.testimonial__rating(src="img/stars.svg", alt="Rate 4 of 5")
+                                .testimonial__row
+                                    span.testimonial__date 23.10.2021
+                                    img.testimonial__rating.testimonial__rating--hidden(src="img/stars.svg", alt="Rate 4 of 5")
+                                h3.g-title.testimonial__title Шеллак с блестками: модные дизайны и пошаговая инструкция по его нанесению
+                                p.testimonial__desc Каждая женщина хочет выглядеть достойно и презентабельно. Сияющие глаза, лучезарная улыбка, красивый наряд — это крупный план. Не меньшую роль играют детали. Интересное украшение...
+                                a.g-link.testimonial__link(href="#") Читать дальше
+                        .swiper-slide
+                            article.testimonial
+                                .testimonial__top
+                                    .testimonial__left
+                                        img.testimonial__image.lozad(src="img/testimonial.png", data-src="img/testimonial@2x.png", alt="Михаил начальник отдела ООО «ПМ-69» ")
+                                        .testimonial__text
+                                            span.testimonial__name Михаил
+                                            span.testimonial__job-title Начальник отдела ООО «ПМ-69»
+                                    img.testimonial__rating(src="img/stars.svg", alt="Rate 4 of 5")
+                                .testimonial__row
+                                    span.testimonial__date 23.10.2021
+                                    img.testimonial__rating.testimonial__rating--hidden(src="img/stars.svg", alt="Rate 4 of 5")
+                                h3.g-title.testimonial__title Шеллак с блестками: модные дизайны и пошаговая инструкция по его нанесению
+                                p.testimonial__desc Каждая женщина хочет выглядеть достойно и презентабельно. Сияющие глаза, лучезарная улыбка, красивый наряд — это крупный план. Не меньшую роль играют детали. Интересное украшение...
+                                a.g-link.testimonial__link(href="#") Читать дальше
+                        .swiper-slide
+                            article.testimonial
+                                .testimonial__top
+                                    .testimonial__left
+                                        img.testimonial__image.lozad(src="img/testimonial.png", data-src="img/testimonial@2x.png", alt="Михаил начальник отдела ООО «ПМ-69» ")
+                                        .testimonial__text
+                                            span.testimonial__name Михаил
+                                            span.testimonial__job-title Начальник отдела ООО «ПМ-69»
+                                    img.testimonial__rating(src="img/stars.svg", alt="Rate 4 of 5")
+                                .testimonial__row
+                                    span.testimonial__date 23.10.2021
+                                    img.testimonial__rating.testimonial__rating--hidden(src="img/stars.svg", alt="Rate 4 of 5")
+                                h3.g-title.testimonial__title Шеллак с блестками: модные дизайны и пошаговая инструкция по его нанесению
+                                p.testimonial__desc Каждая женщина хочет выглядеть достойно и презентабельно. Сияющие глаза, лучезарная улыбка, красивый наряд — это крупный план. Не меньшую роль играют детали. Интересное украшение...
+                                a.g-link.testimonial__link(href="#") Читать дальше
+                    .swiper-pagination.g-pagination.testimonials-slider__pagination
+            .discount-banner
+                img.discount-banner__image.lozad(src="img/discount.png", data-src="img/discount@2x.png" alt="10%")
+                h2.discount-banner__title.g-title Скидка для новых клиентов
+                button.btn-reset.g-btn.discount-banner__btn.modal-btn(data-graph-animation="fadeInUp" data-graph-path="pick-up-discount" data-graph-speed="500") Забрать свою скидку
+else
+    section.testimonials
+        .container.testimonials__container
+            h2.g-title.g-title--center.testimonials__title отзывы клиентов
+            .g-slider
+                .g-slider__controls.testimonials-slider__controls
+                    button.btn-reset.g-slider-btn.g-slider-btn--prev.testimonials-slider__btn--prev
+                        +icon("slider-arrow")
+                    button.btn-reset.g-slider-btn.g-slider-btn--next.testimonials-slider__btn--next
+                        +icon("slider-arrow")
+                .swiper.testimonials-slider
+                    .swiper-wrapper.testimonials-slider__wrapper
+                        .swiper-slide
+                            article.testimonial
+                                .testimonial__top
+                                    .testimonial__left
+                                        img.testimonial__image.lozad(src="img/testimonial.png", data-src="img/testimonial@2x.png", alt="Михаил начальник отдела ООО «ПМ-69» ")
+                                        .testimonial__text
+                                            span.testimonial__name Михаил
+                                            span.testimonial__job-title Начальник отдела ООО «ПМ-69»
+                                    img.testimonial__rating(src="img/stars.svg", alt="Rate 4 of 5")
+                                .testimonial__row
+                                    span.testimonial__date 23.10.2021
+                                    img.testimonial__rating.testimonial__rating--hidden(src="img/stars.svg", alt="Rate 4 of 5")
+                                h3.g-title.testimonial__title Шеллак с блестками: модные дизайны и пошаговая инструкция по его нанесению
+                                p.testimonial__desc Каждая женщина хочет выглядеть достойно и презентабельно. Сияющие глаза, лучезарная улыбка, красивый наряд — это крупный план. Не меньшую роль играют детали. Интересное украшение...
+                                a.g-link.testimonial__link(href="#") Читать дальше
+                        .swiper-slide
+                            article.testimonial
+                                .testimonial__top
+                                    .testimonial__left
+                                        img.testimonial__image.lozad(src="img/testimonial.png", data-src="img/testimonial@2x.png", alt="Михаил начальник отдела ООО «ПМ-69» ")
+                                        .testimonial__text
+                                            span.testimonial__name Михаил
+                                            span.testimonial__job-title Начальник отдела ООО «ПМ-69»
+                                    img.testimonial__rating(src="img/stars.svg", alt="Rate 4 of 5")
+                                .testimonial__row
+                                    span.testimonial__date 23.10.2021
+                                    img.testimonial__rating.testimonial__rating--hidden(src="img/stars.svg", alt="Rate 4 of 5")
+                                h3.g-title.testimonial__title Шеллак с блестками: модные дизайны и пошаговая инструкция по его нанесению
+                                p.testimonial__desc Каждая женщина хочет выглядеть достойно и презентабельно. Сияющие глаза, лучезарная улыбка, красивый наряд — это крупный план. Не меньшую роль играют детали. Интересное украшение...
+                                a.g-link.testimonial__link(href="#") Читать дальше
+                        .swiper-slide
+                            article.testimonial
+                                .testimonial__top
+                                    .testimonial__left
+                                        img.testimonial__image.lozad(src="img/testimonial.png", data-src="img/testimonial@2x.png", alt="Михаил начальник отдела ООО «ПМ-69» ")
+                                        .testimonial__text
+                                            span.testimonial__name Михаил
+                                            span.testimonial__job-title Начальник отдела ООО «ПМ-69»
+                                    img.testimonial__rating(src="img/stars.svg", alt="Rate 4 of 5")
+                                .testimonial__row
+                                    span.testimonial__date 23.10.2021
+                                    img.testimonial__rating.testimonial__rating--hidden(src="img/stars.svg", alt="Rate 4 of 5")
+                                h3.g-title.testimonial__title Шеллак с блестками: модные дизайны и пошаговая инструкция по его нанесению
+                                p.testimonial__desc Каждая женщина хочет выглядеть достойно и презентабельно. Сияющие глаза, лучезарная улыбка, красивый наряд — это крупный план. Не меньшую роль играют детали. Интересное украшение...
+                                a.g-link.testimonial__link(href="#") Читать дальше
+                        .swiper-slide
+                            article.testimonial
+                                .testimonial__top
+                                    .testimonial__left
+                                        img.testimonial__image.lozad(src="img/testimonial.png", data-src="img/testimonial@2x.png", alt="Михаил начальник отдела ООО «ПМ-69» ")
+                                        .testimonial__text
+                                            span.testimonial__name Михаил
+                                            span.testimonial__job-title Начальник отдела ООО «ПМ-69»
+                                    img.testimonial__rating(src="img/stars.svg", alt="Rate 4 of 5")
+                                .testimonial__row
+                                    span.testimonial__date 23.10.2021
+                                    img.testimonial__rating.testimonial__rating--hidden(src="img/stars.svg", alt="Rate 4 of 5")
+                                h3.g-title.testimonial__title Шеллак с блестками: модные дизайны и пошаговая инструкция по его нанесению
+                                p.testimonial__desc Каждая женщина хочет выглядеть достойно и презентабельно. Сияющие глаза, лучезарная улыбка, красивый наряд — это крупный план. Не меньшую роль играют детали. Интересное украшение...
+                                a.g-link.testimonial__link(href="#") Читать дальше
+                    .swiper-pagination.g-pagination.testimonials-slider__pagination

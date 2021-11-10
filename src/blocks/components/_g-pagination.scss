@@ -23,4 +23,12 @@
             background-color: #fff;
         }
     }
+    &--2 {
+        .swiper-pagination-bullet {
+            background-color: rgba(#4096fc, 0.3);
+            &-active {
+                background-color: #4096fc;
+            }
+        }
+    }
 }

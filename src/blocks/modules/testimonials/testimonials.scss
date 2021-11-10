@@ -16,9 +16,6 @@
             padding-top: 30px;
             padding-bottom: 30px;
         }
-        @media (max-width: 360px) {
-            padding-bottom: 20px;
-        }
     }
 
     &__title {
@@ -55,14 +52,8 @@
         }
 
         &__controls {
-            position: absolute;
-            top: 50%;
             right: -43px;
             left: -43px;
-            @media (max-width: 1330px) {
-                right: -10px;
-                left: -10px;
-            }
             @media (max-width: 576px) {
                 top: 45%;
             }
