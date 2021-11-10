@@ -48,10 +48,22 @@
         .modal-content
             h2.g-title.modal__title Написать нам
             p.modal__desc Круглосуточная аварийная служба, выезд сразу после вызова.
-            form.modal-form.validate-form4(action="#")
+            form.modal-form.validate-form5(action="#")
                 input.g-input.modal-form__input(data-validate-field="name" type="text" name="Имя" placeholder="Ваше имя")
                 input.g-input.modal-form__input(data-validate-field="tel" type="tel" name="Телефон" placeholder="Ваш телефон")
                 textarea.g-textarea.modal-form__textarea.modal-form__input(data-validate-field="text", name="Вопрос" placeholder="Ваш вопрос")
                 button.btn-reset.g-btn.modal-form__btn написать
+            p.modal-form__desc Нажимая кнопку «Получить консультацию», Вы даете согласие на обработку своих&nbsp;
+                a(href="#") персональных данных
+    .modal__container(role="dialog" aria-modal="true" data-graph-target="order-service")
+        button.btn-reset.modal__close(aria-label="Закрыть модальное окно")
+        .modal-content
+            h2.g-title.modal__title Заказать услугу
+            p.modal__desc Круглосуточная аварийная служба, выезд сразу после вызова.
+            form.modal-form.validate-form6(action="#")
+                input.g-input.modal-form__input(data-validate-field="name" type="text" name="Имя" placeholder="Ваше имя")
+                input.g-input.modal-form__input(data-validate-field="tel" type="tel" name="Телефон" placeholder="Ваш телефон")
+                textarea.g-textarea.modal-form__textarea.modal-form__input(data-validate-field="text", name="Вопрос" placeholder="Ваш вопрос")
+                button.btn-reset.g-btn.modal-form__btn Заказать
             p.modal-form__desc Нажимая кнопку «Получить консультацию», Вы даете согласие на обработку своих&nbsp;
                 a(href="#") персональных данных

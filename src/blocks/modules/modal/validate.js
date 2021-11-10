@@ -1101,6 +1101,7 @@ const validateForm2 = document.querySelector(".validate-form2");
 const validateForm3 = document.querySelector(".validate-form3");
 const validateForm4 = document.querySelector(".validate-form4");
 const validateForm5 = document.querySelector(".validate-form5");
+const validateForm6 = document.querySelector(".validate-form6");
 
 if(validateForm) {
     new window.JustValidate(".validate-form", {
@@ -1164,6 +1165,21 @@ if(validateForm4) {
 }
 if(validateForm5) {
     new window.JustValidate(".validate-form5", {
+        rules: {
+            name: {
+                required: true,
+            },
+            text: {
+                required: true,
+            },
+            tel: {
+                required: true,
+            },
+        }
+    });
+}
+if(validateForm6) {
+    new window.JustValidate(".validate-form6", {
         rules: {
             name: {
                 required: true,

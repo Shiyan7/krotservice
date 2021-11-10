@@ -1,0 +1,25 @@
+extends ../layouts/default
+include ../helpers/mixins
+
+block variables
+	- const title = "Услуга";
+	- const page = "service"
+
+block content
+	.site-container
+		include ../../blocks/modules/header/header
+		main.main
+			include ../../blocks/modules/breadcrumbs/breadcrumbs
+			include ../../blocks/modules/service/service
+			include ../../blocks/modules/list-works/list-works
+			include ../../blocks/modules/technology/technology
+			include ../../blocks/modules/prices/prices
+			include ../../blocks/modules/why/why
+			include ../../blocks/modules/emergency-crew/emergency-crew
+			include ../../blocks/modules/testimonials/testimonials
+			include ../../blocks/modules/questions/questions
+		include ../../blocks/modules/footer/footer
+		include ../../blocks/modules/modal/modal
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")
