@@ -75,7 +75,7 @@
                                 <use xlink:href="./img/sprites/sprite.svg#arrow2"></use>
                               </svg>Назад</a></li>
                           <li class="dropdown-list__item nav__item">
-                            <div class="dropdown-list__link nav__link nav__link--drop"><a class="g-link" href="#">Устранение засоров</a>
+                            <div class="dropdown-list__link nav__link nav__link--drop"><a class="g-link" href="service.html">Устранение засоров</a>
                               <svg class="svg-icon arrow2">
                                 <use xlink:href="./img/sprites/sprite.svg#arrow2"></use>
                               </svg>
@@ -201,7 +201,7 @@
                           </li>
                           <li class="dropdown-list__item nav__item"><a class="nav__link dropdown-list__link g-link" href="#">Гидродинамическая прочистка</a></li>
                           <li class="dropdown-list__item nav__item">
-                            <div class="dropdown-list__link nav__link nav__link--drop"><a class="g-link" href="#">Прочистка канализации</a>
+                            <div class="dropdown-list__link nav__link nav__link--drop"><a class="g-link" href="service.html">Прочистка канализации</a>
                               <svg class="svg-icon arrow2">
                                 <use xlink:href="./img/sprites/sprite.svg#arrow2"></use>
                               </svg>
@@ -326,7 +326,7 @@
                             </ul>
                           </li>
                           <li class="dropdown-list__item nav__item">
-                            <div class="dropdown-list__link nav__link nav__link--drop"><a class="g-link" href="#">Промывка канализации</a>
+                            <div class="dropdown-list__link nav__link nav__link--drop"><a class="g-link" href="service.html">Промывка канализации</a>
                               <svg class="svg-icon arrow2">
                                 <use xlink:href="./img/sprites/sprite.svg#arrow2"></use>
                               </svg>
@@ -451,7 +451,7 @@
                             </ul>
                           </li>
                           <li class="dropdown-list__item nav__item">
-                            <div class="dropdown-list__link nav__link nav__link--drop"><a class="g-link" href="#">Телеинспекция труб</a>
+                            <div class="dropdown-list__link nav__link nav__link--drop"><a class="g-link" href="service.html">Телеинспекция труб</a>
                               <svg class="svg-icon arrow2">
                                 <use xlink:href="./img/sprites/sprite.svg#arrow2"></use>
                               </svg>
@@ -576,7 +576,7 @@
                             </ul>
                           </li>
                           <li class="dropdown-list__item nav__item">
-                            <div class="dropdown-list__link nav__link nav__link--drop"><a class="g-link" href="#">Другие услуги</a>
+                            <div class="dropdown-list__link nav__link nav__link--drop"><a class="g-link" href="service.html">Другие услуги</a>
                               <svg class="svg-icon arrow2">
                                 <use xlink:href="./img/sprites/sprite.svg#arrow2"></use>
                               </svg>
@@ -754,7 +754,7 @@
             </nav>
             <div class="prices-item">
               <h2 class="g-title prices-item__title">Устранение засоров (внутренняя канализация)</h2>
-              <div class="prices__grid">
+              <div class="prices__grid" data-simplebar>
                 <div class="prices__col prices__col--center">Объект</div>
                 <div class="prices__col prices__value--bold">
                   <svg class="svg-icon prices-1">
@@ -813,7 +813,7 @@
             </div>
             <div class="prices-item">
               <h2 class="g-title prices-item__title">Стоимость промывки (прочистки) трубопроводов</h2>
-              <div class="prices__grid prices__grid--2">
+              <div class="prices__grid prices__grid--2" data-simplebar>
                 <div class="prices__col prices__col--left">НАИМЕНОВАНИЕ ОБОРУДОВАНИЯ</div>
                 <div class="prices__col prices__col--column"><img class="prices__image lozad" src="img/prices-1.png" data-src="img/prices-1@2x.png" alt="Переносной АВД KRANZLE Profi TST2">Переносной АВД KRANZLE Profi TST2</div>
                 <div class="prices__col prices__col--column"><img class="prices__image lozad" src="img/prices-2.png" data-src="img/prices-2@2x.png" alt="Передвижной АВД с подогревом воды KARCHER therm">Передвижной АВД с подогревом воды KARCHER therm</div>
@@ -1165,11 +1165,25 @@
           <div class="modal-content">
             <h2 class="g-title modal__title">Написать нам</h2>
             <p class="modal__desc">Круглосуточная аварийная служба, выезд сразу после вызова.</p>
-            <form class="modal-form validate-form4" action="#">
+            <form class="modal-form validate-form5" action="#">
               <input class="g-input modal-form__input" data-validate-field="name" type="text" name="Имя" placeholder="Ваше имя">
               <input class="g-input modal-form__input" data-validate-field="tel" type="tel" name="Телефон" placeholder="Ваш телефон">
               <textarea class="g-textarea modal-form__textarea modal-form__input" data-validate-field="text" name="Вопрос" placeholder="Ваш вопрос"></textarea>
               <button class="btn-reset g-btn modal-form__btn">написать</button>
+            </form>
+            <p class="modal-form__desc">Нажимая кнопку «Получить консультацию», Вы даете согласие на обработку своих&nbsp;<a href="#">персональных данных</a></p>
+          </div>
+        </div>
+        <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="order-service">
+          <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+          <div class="modal-content">
+            <h2 class="g-title modal__title">Заказать услугу</h2>
+            <p class="modal__desc">Круглосуточная аварийная служба, выезд сразу после вызова.</p>
+            <form class="modal-form validate-form6" action="#">
+              <input class="g-input modal-form__input" data-validate-field="name" type="text" name="Имя" placeholder="Ваше имя">
+              <input class="g-input modal-form__input" data-validate-field="tel" type="tel" name="Телефон" placeholder="Ваш телефон">
+              <textarea class="g-textarea modal-form__textarea modal-form__input" data-validate-field="text" name="Вопрос" placeholder="Ваш вопрос"></textarea>
+              <button class="btn-reset g-btn modal-form__btn">Заказать</button>
             </form>
             <p class="modal-form__desc">Нажимая кнопку «Получить консультацию», Вы даете согласие на обработку своих&nbsp;<a href="#">персональных данных</a></p>
           </div>
