@@ -704,7 +704,7 @@
                       </li>
                       <li class="nav__item main-nav__item"><a class="nav__link main-nav__link" href="prices-individuals.html">Цены</a></li>
                       <li class="nav__item main-nav__item"><a class="nav__link main-nav__link" href="works.html">Работы</a></li>
-                      <li class="nav__item main-nav__item"><a class="nav__link main-nav__link" href="#">Отзывы</a></li>
+                      <li class="nav__item main-nav__item"><a class="nav__link main-nav__link" href="testimonials.html">Отзывы</a></li>
                       <li class="nav__item main-nav__item"><a class="nav__link main-nav__link" href="#">Акции</a></li>
                       <li class="nav__item main-nav__item"><a class="nav__link main-nav__link" href="#">Вакансии</a></li>
                       <li class="nav__item main-nav__item"><a class="nav__link main-nav__link" href="#">Контакты</a></li>
@@ -869,24 +869,24 @@
             <button class="btn-reset g-btn emergency-crew__btn modal-btn" data-graph-animation="fadeInUp" data-graph-path="call-emergency-crew" data-graph-speed="500">вызов аварийной службы</button><span class="emergency-crew__time g-title">24/7</span>
           </div><img class="emergency-crew__image emergency-crew__car lozad" src="img/car.png" data-src="img/car@2x.png" alt="Car"><img class="emergency-crew__image emergency-crew__man" src="img/man.png" alt="Man">
         </section>
-        <section class="testimonials">
-          <div class="container testimonials__container">
-            <h2 class="g-title g-title--center testimonials__title">отзывы клиентов</h2>
+        <section class="testimonials-section">
+          <div class="container testimonials-section__container">
+            <h2 class="g-title g-title--center testimonials-section__title">отзывы клиентов</h2>
             <div class="g-slider">
-              <div class="g-slider__controls testimonials-slider__controls">
-                <button class="btn-reset g-slider-btn g-slider-btn--prev testimonials-slider__btn--prev">
+              <div class="g-slider__controls testimonials-section-slider__controls">
+                <button class="btn-reset g-slider-btn g-slider-btn--prev testimonials-section-slider__btn--prev">
                   <svg class="svg-icon slider-arrow">
                     <use xlink:href="./img/sprites/sprite.svg#slider-arrow"></use>
                   </svg>
                 </button>
-                <button class="btn-reset g-slider-btn g-slider-btn--next testimonials-slider__btn--next">
+                <button class="btn-reset g-slider-btn g-slider-btn--next testimonials-section-slider__btn--next">
                   <svg class="svg-icon slider-arrow">
                     <use xlink:href="./img/sprites/sprite.svg#slider-arrow"></use>
                   </svg>
                 </button>
               </div>
-              <div class="swiper testimonials-slider">
-                <div class="swiper-wrapper testimonials-slider__wrapper">
+              <div class="swiper testimonials-section-slider">
+                <div class="swiper-wrapper testimonials-section-slider__wrapper">
                   <div class="swiper-slide">
                     <article class="testimonial">
                       <div class="testimonial__top">
@@ -936,7 +936,7 @@
                     </article>
                   </div>
                 </div>
-                <div class="swiper-pagination g-pagination testimonials-slider__pagination"></div>
+                <div class="swiper-pagination g-pagination testimonials-section-slider__pagination"></div>
               </div>
             </div>
           </div>
@@ -1029,8 +1029,8 @@
                   <li class="footer-menu__item"><a class="footer-menu__link g-link" href="services.html">Услуги</a></li>
                   <li class="footer-menu__item"><a class="footer-menu__link g-link" href="prices-individuals.html">Цены</a></li>
                   <li class="footer-menu__item"><a class="footer-menu__link g-link" href="works.html">Наши работы</a></li>
-                  <li class="footer-menu__item"><a class="footer-menu__link g-link" href="#">Статьи</a></li>
-                  <li class="footer-menu__item"><a class="footer-menu__link g-link" href="#">Отзывы и гарантии</a></li>
+                  <li class="footer-menu__item"><a class="footer-menu__link g-link" href="">Статьи</a></li>
+                  <li class="footer-menu__item"><a class="footer-menu__link g-link" href="testimonials.html">Отзывы и гарантии</a></li>
                   <li class="footer-menu__item"><a class="footer-menu__link g-link" href="#">Контакты</a></li>
                 </ul>
               </div>
@@ -1171,7 +1171,21 @@
               <input class="g-input modal-form__input" data-validate-field="name" type="text" name="Имя" placeholder="Ваше имя">
               <input class="g-input modal-form__input" data-validate-field="tel" type="tel" name="Телефон" placeholder="Ваш телефон">
               <textarea class="g-textarea modal-form__textarea modal-form__input" data-validate-field="text" name="Вопрос" placeholder="Ваш вопрос"></textarea>
-              <button class="btn-reset g-btn modal-form__btn">Заказать</button>
+              <button class="btn-reset g-btn modal-form__btn">Забрать</button>
+            </form>
+            <p class="modal-form__desc">Нажимая кнопку «Получить консультацию», Вы даете согласие на обработку своих&nbsp;<a href="#">персональных данных</a></p>
+          </div>
+        </div>
+        <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="pick-up-discount">
+          <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+          <div class="modal-content">
+            <h2 class="g-title modal__title">Написать отзыв</h2>
+            <p class="modal__desc">Круглосуточная аварийная служба, выезд сразу после вызова.</p>
+            <form class="modal-form validate-form8" action="#">
+              <input class="g-input modal-form__input" data-validate-field="name" type="text" name="Имя" placeholder="Ваше имя">
+              <input class="g-input modal-form__input" data-validate-field="tel" type="tel" name="Телефон" placeholder="Ваш телефон">
+              <textarea class="g-textarea modal-form__textarea modal-form__input" data-validate-field="text" name="Вопрос" placeholder="Ваш вопрос"></textarea>
+              <button class="btn-reset g-btn modal-form__btn">Написать</button>
             </form>
             <p class="modal-form__desc">Нажимая кнопку «Получить консультацию», Вы даете согласие на обработку своих&nbsp;<a href="#">персональных данных</a></p>
           </div>
