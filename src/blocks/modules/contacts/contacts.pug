@@ -1,0 +1,31 @@
+section.contacts
+    .contacts__bg.lozad(data-background-image-set="url('img/map.jpg') 1x, url('img/map@2x.jpg') 2x ")
+        .contacts__point
+            +icon("point")
+    .container.contacts__container
+        .contacts__content
+            h1.g-title.contacts__title Контакты
+            address.contacts-address
+                span.contacts__caption Адрес:
+                span.contacts-address__value г. Москва, Волгоградский проспект, д. 139, оф. 1
+            .tell.contacts__tel
+                span.contacts__caption Телефон:
+                a.tell__value(href="tel:+74951374369") +7 (495) 137-43-69   
+            .mail.contacts__mail
+                span.contacts__caption Почта:
+                a.mail__link.g-link(href="mailto:info@krotservis.ru") info@krotservis.ru
+            h2.contacts-social__title.contacts__caption Соцсети:
+            ul.contacts-social__list.list-reset
+                li.contacts-social__item
+                    a.contacts-social__link(href="#")
+                        +icon("vk")
+                li.contacts-social__item
+                    a.contacts-social__link(href="#")
+                        +icon("fb")
+                li.contacts-social__item
+                    a.contacts-social__link(href="#")
+                        +icon("instagram")
+                li.contacts-social__item
+                    a.contacts-social__link(href="#")
+                        +icon("youtube")
+            button.btn-reset.g-btn.modal-btn.contacts__btn(data-graph-animation="fadeInUp" data-graph-path="request-call" data-graph-speed="500") Заказать звонок
