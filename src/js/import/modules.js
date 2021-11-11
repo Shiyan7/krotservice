@@ -15,7 +15,7 @@ import "%modules%/footer/footer";
 import "%modules%/modal/modal";
 import "%modules%/modal/validate";
 import "%modules%/modal/imask";
-import "%modules%/testimonials/testimonials-slider";
+import "%modules%/testimonials-section/testimonials-section-slider";
 import "%modules%/prices/simplebar";
 import "%modules%/technology/visible-text";
 import "%modules%/our-works/our-works-slider";

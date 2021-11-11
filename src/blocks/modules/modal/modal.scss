@@ -83,6 +83,11 @@
                 padding-bottom: 3px;
                 border-bottom: 1px solid rgba(#212121, 0.2);
                 color: #212121;
+                transition: color 0.3s, border-bottom 0.3s;
+                &:hover {
+                    color: #4096fc;
+                    border-bottom: 1px solid rgba(#4096fc, 0.5);
+                }
             }
         }
     }
