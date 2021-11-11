@@ -45,6 +45,16 @@ else if page === "service"
                     a.breadcrumbs__link(href="services.html") Услуги
                 li.breadcrumbs__item
                     a.breadcrumbs__link.breadcrumbs__link--current Услуга
+else if page === "work"
+    .breadcrumbs.breadcrumbs--3
+        .container.breadcrumbs__container
+            ul.breadcrumbs__list.list-reset
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="/") Главная
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="works.html") Наши работы
+                li.breadcrumbs__item
+                    a.breadcrumbs__link.breadcrumbs__link--current Работа
 else
     .breadcrumbs
         .container.breadcrumbs__container
