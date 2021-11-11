@@ -1,0 +1,22 @@
+extends ../layouts/default
+include ../helpers/mixins
+
+block variables
+	- const title = "Наши статьи";
+	- const page = "articles"
+
+block content
+	.site-container
+		include ../../blocks/modules/header/header
+		main.main
+			include ../../blocks/modules/breadcrumbs/breadcrumbs
+			include ../../blocks/modules/articles/articles
+			include ../../blocks/modules/emergency-crew/emergency-crew
+			include ../../blocks/modules/why/why
+			include ../../blocks/modules/we-work/we-work
+			include ../../blocks/modules/questions/questions
+		include ../../blocks/modules/footer/footer
+		include ../../blocks/modules/modal/modal
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")

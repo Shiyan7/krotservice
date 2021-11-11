@@ -71,6 +71,14 @@ else if page === "contacts"
                     a.breadcrumbs__link(href="/") Главная
                 li.breadcrumbs__item
                     a.breadcrumbs__link.breadcrumbs__link--current Контакты
+else if page === "articles"
+    .breadcrumbs.breadcrumbs--2
+        .container.breadcrumbs__container
+            ul.breadcrumbs__list.list-reset
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="/") Главная
+                li.breadcrumbs__item
+                    a.breadcrumbs__link.breadcrumbs__link--current Статьи
 else
     .breadcrumbs
         .container.breadcrumbs__container
