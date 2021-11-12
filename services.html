@@ -706,7 +706,7 @@
                       <li class="nav__item main-nav__item"><a class="nav__link main-nav__link" href="works.html">Работы</a></li>
                       <li class="nav__item main-nav__item"><a class="nav__link main-nav__link" href="testimonials.html">Отзывы</a></li>
                       <li class="nav__item main-nav__item"><a class="nav__link main-nav__link" href="#">Акции</a></li>
-                      <li class="nav__item main-nav__item"><a class="nav__link main-nav__link" href="#">Вакансии</a></li>
+                      <li class="nav__item main-nav__item"><a class="nav__link main-nav__link" href="vacancies.html">Вакансии</a></li>
                       <li class="nav__item main-nav__item"><a class="nav__link main-nav__link" href="contacts.html">Контакты</a></li>
                     </ul>
                   </nav>
@@ -734,14 +734,15 @@
               </div>
       </header>
       <main class="main">
-        <div class="breadcrumbs breadcrumbs--2">
-          <div class="container breadcrumbs__container">
-            <ul class="breadcrumbs__list list-reset">
-              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
-              <li class="breadcrumbs__item"><a class="breadcrumbs__link">Услуги</a></li>
-            </ul>
-          </div>
-        </div>
+                <div class="breadcrumbs breadcrumbs--2">
+                  <div class="container breadcrumbs__container">
+                    <ul class="breadcrumbs__list list-reset">
+                      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a>
+                      </li>
+                      <li class="breadcrumb__item"><a class="breadcrumbs__link">Услуги</a></li>
+                    </ul>
+                  </div>
+                </div>
         <section class="services">
           <div class="container services__container">
             <h2 class="g-title services__title services__title--2">Услуги</h2>
@@ -1235,7 +1236,10 @@
           <div class="footer__left"><a class="logo footer__logo" href="/">
               <svg class="svg-icon logo-icon">
                 <use xlink:href="./img/sprites/sprite.svg#logo-icon"></use>
-              </svg></a><span class="footer__copy">© 2021 ООО Сантехстрой</span><span class="footer__desc">Сделано в -&nbsp;<span>RUSO</span></span></div>
+              </svg></a><span class="footer__copy">© 2021 ООО Сантехстрой</span><span class="footer__desc">Сделано в -&nbsp;<a href="#" target="_blank">
+                <svg class="svg-icon ruso">
+                  <use xlink:href="./img/sprites/sprite.svg#ruso"></use>
+                </svg></a></span></div>
           <div class="footer__right">
             <div class="footer__top">
               <div class="footer__col">
@@ -1288,10 +1292,13 @@
                   </div>
                 </div>
                 <div class="mail footer__mail"><span class="mail__desc footer__txt">Почта:</span><a class="mail__link g-link" href="mailto:info@krotservis.ru">info@krotservis.ru</a></div>
-                <div class="address"><span class="address__desc footer__txt">Адрес:</span><span class="address__value">г. Москва, Волгоградский проспект, д. 139, оф. 1</span></div>
+                <address class="address"><span class="address__desc footer__txt">Адрес:</span><span class="address__value">г. Москва, Волгоградский проспект, д. 139, оф. 1</span></address>
               </div>
             </div>
-            <div class="footer__bottom"><a class="footer__link g-link" href="#">Политика конфиденциальности</a><a class="footer__link g-link" href="#">Согласие на обработку персональных данных</a><span class="footer__desc">Сделано в -&nbsp;<span>RUSO</span></span></div>
+            <div class="footer__bottom"><a class="footer__link g-link" href="#">Политика конфиденциальности</a><a class="footer__link g-link" href="#">Согласие на обработку персональных данных</a><span class="footer__desc">Сделано в -&nbsp;<a href="#" target="_blank">
+                  <svg class="svg-icon ruso">
+                    <use xlink:href="./img/sprites/sprite.svg#ruso"></use>
+                  </svg></a></span></div>
           </div>
         </div>
       </footer>
@@ -1412,6 +1419,20 @@
             <h2 class="g-title modal__title">Заказать звонок</h2>
             <p class="modal__desc">Круглосуточная аварийная служба, выезд сразу после вызова.</p>
             <form class="modal-form validate-form9" action="#">
+              <input class="g-input modal-form__input" data-validate-field="name" type="text" name="Имя" placeholder="Ваше имя">
+              <input class="g-input modal-form__input" data-validate-field="tel" type="tel" name="Телефон" placeholder="Ваш телефон">
+              <textarea class="g-textarea modal-form__textarea modal-form__input" data-validate-field="text" name="Вопрос" placeholder="Ваш вопрос"></textarea>
+              <button class="btn-reset g-btn modal-form__btn">Написать</button>
+            </form>
+            <p class="modal-form__desc">Нажимая кнопку «Получить консультацию», Вы даете согласие на обработку своих&nbsp;<a href="#">персональных данных</a></p>
+          </div>
+        </div>
+        <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="respond">
+          <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+          <div class="modal-content">
+            <h2 class="g-title modal__title">ОТкликнуться на вакансию</h2>
+            <p class="modal__desc">Круглосуточная аварийная служба, выезд сразу после вызова.</p>
+            <form class="modal-form validate-form10" action="#">
               <input class="g-input modal-form__input" data-validate-field="name" type="text" name="Имя" placeholder="Ваше имя">
               <input class="g-input modal-form__input" data-validate-field="tel" type="tel" name="Телефон" placeholder="Ваш телефон">
               <textarea class="g-textarea modal-form__textarea modal-form__input" data-validate-field="text" name="Вопрос" placeholder="Ваш вопрос"></textarea>
