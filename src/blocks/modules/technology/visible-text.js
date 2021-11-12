@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const moreText = document.querySelectorAll(".technology__more-text");
+    const moreText = document.querySelectorAll(".more-text");
 
     if (moreText) {
         moreText.forEach(el => {
@@ -8,12 +8,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 //this
                 let th = e.currentTarget;
 
-                const dots = th.closest(".technology-item__desc").querySelector(".dots");
-                const more = th.closest(".technology-item__desc").querySelector(".more");
+                const dots = th.closest(".more-desc").querySelector(".dots");
+                const more = th.closest(".more-desc").querySelector(".more");
+                const text = th.dataset.text;
 
                 if (dots.style.display === "none") {
                     dots.style.display = "inline";
-                    th.innerHTML = "далее";
+                    th.innerHTML = text;
                     more.style.display = "none";
                 } else {
                     dots.style.display = "none";

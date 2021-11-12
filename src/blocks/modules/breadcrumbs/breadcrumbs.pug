@@ -1,89 +1,63 @@
+mixin breadcrumbs(items, last, type)
+    case type
+        when 2
+            .breadcrumbs.breadcrumbs--2
+                .container.breadcrumbs__container
+                    ul.breadcrumbs__list.list-reset
+                        each item in items
+                            li.breadcrumbs__item
+                                if (items.length === 1)
+                                    a.breadcrumbs__link(href="#")= item
+                                else
+                                    a(href="#").breadcrumbs__link= item
+                        if last
+                            li.breadcrumb__item
+                                a.breadcrumbs__link= last
+        when 3
+            .breadcrumbs.breadcrumbs--3
+                .container.breadcrumbs__container
+                    ul.breadcrumbs__list.list-reset
+                        each item in items
+                            li.breadcrumbs__item
+                                if (items.length === 1)
+                                    a.breadcrumbs__link(href="#")= item
+                                else
+                                    a(href="#").breadcrumbs__link= item
+                        if last
+                            li.breadcrumb__item
+                                a.breadcrumbs__link= last
+        default
+            .breadcrumbs
+                .container.breadcrumbs__container
+                    ul.breadcrumbs__list.list-reset
+                        each item in items
+                            li.breadcrumbs__item
+                                if (items.length === 1)
+                                    a.breadcrumbs__link(href="#")= item
+                                else
+                                    a(href="#").breadcrumbs__link= item
+                        if last
+                            li.breadcrumb__item
+                                a.breadcrumbs__link= last
 if page === "services"
-    .breadcrumbs.breadcrumbs--2
-        .container.breadcrumbs__container
-            ul.breadcrumbs__list.list-reset
-                li.breadcrumbs__item
-                    a.breadcrumbs__link(href="/") Главная
-                li.breadcrumbs__item
-                    a.breadcrumbs__link Услуги
-
+    +breadcrumbs(["Главная"], "Услуги", 2)
 else if page === "prices-individuals"
-    .breadcrumbs.prices__breadcrumbs
-        .container.breadcrumbs__container
-            ul.breadcrumbs__list.list-reset
-                li.breadcrumbs__item
-                    a.breadcrumbs__link(href="/") Главная
-                li.breadcrumbs__item
-                    a.breadcrumbs__link(href="/") Цены
-                li.breadcrumbs__item
-                    a.breadcrumbs__link Физические лица
+    +breadcrumbs(["Главная", "Цены"], "Физические лица", 3)
 else if page === "prices-organizations"
-    .breadcrumbs.prices__breadcrumbs
-        .container.breadcrumbs__container
-            ul.breadcrumbs__list.list-reset
-                li.breadcrumbs__item
-                    a.breadcrumbs__link(href="/") Главная
-                li.breadcrumbs__item
-                    a.breadcrumbs__link(href="/") Цены
-                li.breadcrumbs__item
-                    a.breadcrumbs__link Организации
+    +breadcrumbs(["Главная", "Цены"], "Организации", 3)
 else if page === "works"
-    .breadcrumbs.breadcrumbs--2
-        .container.breadcrumbs__container
-            ul.breadcrumbs__list.list-reset
-                li.breadcrumbs__item
-                    a.breadcrumbs__link(href="/") Главная
-                li.breadcrumbs__item
-                    a.breadcrumbs__link.breadcrumbs__link--current Наши работы
+    +breadcrumbs(["Главная"], "Наши работы", 2)
 else if page === "service"
-    .breadcrumbs
-        .container.breadcrumbs__container
-            ul.breadcrumbs__list.list-reset
-                li.breadcrumbs__item
-                    a.breadcrumbs__link(href="/") Главная
-                li.breadcrumbs__item
-                    a.breadcrumbs__link(href="services.html") Услуги
-                li.breadcrumbs__item
-                    a.breadcrumbs__link.breadcrumbs__link--current Услуга
+    +breadcrumbs(["Главная", "Услуги"], "Услуга")
 else if page === "work"
-    .breadcrumbs.breadcrumbs--3
-        .container.breadcrumbs__container
-            ul.breadcrumbs__list.list-reset
-                li.breadcrumbs__item
-                    a.breadcrumbs__link(href="/") Главная
-                li.breadcrumbs__item
-                    a.breadcrumbs__link(href="works.html") Наши работы
-                li.breadcrumbs__item
-                    a.breadcrumbs__link.breadcrumbs__link--current Работа
+    +breadcrumbs(["Главная", "Наши работы"], "Работа", 3)
 else if page === "testimonials"
-    .breadcrumbs.breadcrumbs--2
-        .container.breadcrumbs__container
-            ul.breadcrumbs__list.list-reset
-                li.breadcrumbs__item
-                    a.breadcrumbs__link(href="/") Главная
-                li.breadcrumbs__item
-                    a.breadcrumbs__link.breadcrumbs__link--current Отзывы
+    +breadcrumbs(["Главная"], "Отзывы", 2)
 else if page === "contacts"
-    .breadcrumbs.breadcrumbs--2
-        .container.breadcrumbs__container
-            ul.breadcrumbs__list.list-reset
-                li.breadcrumbs__item
-                    a.breadcrumbs__link(href="/") Главная
-                li.breadcrumbs__item
-                    a.breadcrumbs__link.breadcrumbs__link--current Контакты
+    +breadcrumbs(["Главная"], "Контакты", 2)
 else if page === "articles"
-    .breadcrumbs.breadcrumbs--2
-        .container.breadcrumbs__container
-            ul.breadcrumbs__list.list-reset
-                li.breadcrumbs__item
-                    a.breadcrumbs__link(href="/") Главная
-                li.breadcrumbs__item
-                    a.breadcrumbs__link.breadcrumbs__link--current Статьи
-else
-    .breadcrumbs
-        .container.breadcrumbs__container
-            ul.breadcrumbs__list.list-reset
-                li.breadcrumbs__item
-                    a.breadcrumbs__link(href="/") Главная
-                li.breadcrumbs__item
-                    a.breadcrumbs__link О компании
+    +breadcrumbs(["Главная"], "Статьи", 2)
+else if page === "vacancies"
+    +breadcrumbs(["Главная"], "Вакансии", 2)
+else if page === "about"
+    +breadcrumbs(["Главная"], "О компании")

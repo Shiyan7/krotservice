@@ -9,11 +9,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
             self.classList.toggle("open");
 
+            const watchHeight = () => {
+                content.style.maxHeight = content.scrollHeight + "px";
+            };
+
+            window.addEventListener("resize", () => {
+                watchHeight();
+            });
+
             // если открыт аккордеон
             if (self.classList.contains("open")) {
                 control.setAttribute("aria-expanded", true);
                 content.setAttribute("aria-hidden", false);
-                content.style.maxHeight = content.scrollHeight + "px";
+                watchHeight();
             } else {
                 control.setAttribute("aria-expanded", false);
                 content.setAttribute("aria-hidden", true);
