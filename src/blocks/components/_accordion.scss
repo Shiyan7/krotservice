@@ -11,9 +11,10 @@
     &__control {
         display: flex;
         align-items: center;
-        width: 100%;
+        width: calc(100% - 40px);
         padding: 20px;
         text-align: left;
+        cursor: pointer;
 
         &-right {
             display: flex;
@@ -26,6 +27,7 @@
             position: relative;
             justify-content: space-between;
             padding: 15px 30px;
+            width: calc(100% - 60px);
             @media (max-width: 768px) {
                 align-items: flex-start;
                 flex-direction: column;
