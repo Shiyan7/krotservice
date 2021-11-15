@@ -26,6 +26,19 @@ mixin breadcrumbs(items, last, type)
                         if last
                             li.breadcrumb__item
                                 a.breadcrumbs__link= last
+        when 4
+            .breadcrumbs.breadcrumbs--4
+                .container.breadcrumbs__container
+                    ul.breadcrumbs__list.list-reset
+                        each item in items
+                            li.breadcrumbs__item
+                                if (items.length === 1)
+                                    a.breadcrumbs__link(href="#")= item
+                                else
+                                    a(href="#").breadcrumbs__link= item
+                        if last
+                            li.breadcrumb__item
+                                a.breadcrumbs__link= last
         default
             .breadcrumbs
                 .container.breadcrumbs__container
@@ -64,7 +77,7 @@ else if page === "vacancies"
 else if page === "promotions"
     +breadcrumbs(["Главная"], "Акции", 2)
 else if page === "not-found"
-    +breadcrumbs(["Главная"], "404", 2)
+    +breadcrumbs(["Главная"], "404", 4)
 else if page === "policy"
     +breadcrumbs(["Главная"], "Политика обработки персональных данных", 3)
 else if page === "about"

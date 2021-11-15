@@ -3,10 +3,10 @@
     align-items: center;
     position: absolute;
     top: 0;
+    right: 0;
+    bottom: 0;
     left: 0;
-    width: 100%;
-    height: calc(100vh - 155px);
-    min-height: calc(870px - 155px);
+    min-height: 715px;
     background-color: #243a54;
     padding-top: 155px;
     @media (max-width: 1024px) {

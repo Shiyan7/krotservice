@@ -66,4 +66,17 @@
     &--3 {
         background-color: #f6f6f6;
     }
+
+    &--4 {
+        margin-top: -20px;
+        .breadcrumbs__link {
+            color: #fff;
+            &[href] {
+                border-bottom: 1px solid rgba(#ffffff, 0.2);
+                &:hover {
+                    border-bottom: 1px solid transparent;
+                }
+            }
+        }
+    }
 }

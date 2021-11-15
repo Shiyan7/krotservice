@@ -12,6 +12,7 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 16px;
+    min-height: 100vh;
 }
 
 input::-ms-clear {
@@ -37,6 +38,7 @@ img {
 
 .site-container {
     overflow: hidden;
+    min-height: 100vh;
 }
 
 .list-reset {
