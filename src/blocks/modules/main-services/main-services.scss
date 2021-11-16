@@ -110,7 +110,18 @@
         height: 520px;
     }
 
+    @media (max-width: 768px) {
+        &.swiper-slide-active {
+            .main-service__icon::before, .main-service__icon::after {
+                animation: hiddenCircles 1.5s linear infinite;
+            }
+        }
+    }
+
     &:hover {
+        .main-service__icon::before, .main-service__icon::after {
+            animation: hiddenCircles 1s linear infinite;
+        }
         .main-service__link {
             background-color: #4096fc;
             border: 1px solid transparent;
@@ -159,6 +170,14 @@
         position: relative;
         margin: 0 auto;
 
+        &:before {
+            left: -135px;
+        }
+
+        &:after {
+            right: -135px;
+        }
+
         &:before, &:after {
             @include pseudo();
             position: absolute;
@@ -168,14 +187,6 @@
             background-image: url(../img/svg/circles.svg);
             background-repeat: no-repeat;
             background-size: cover;
-        }
-
-        &:before {
-            left: -135px;
-        }
-
-        &:after {
-            right: -135px;
         }
     }
 
@@ -270,6 +281,9 @@
         }
         @media (max-width: 768px) {
             &.swiper-slide-active {
+                .main-service__icon::before, .main-service__icon::after {
+                    animation: hiddenCircles 1.5s linear infinite;
+                }
                 .main-service__line {
                     animation: gradient 1s infinite linear;
                 }
@@ -411,5 +425,20 @@
 
     100% {
         background-position: 1% 0%;
+    }
+}
+
+@keyframes hiddenCircles {
+    
+    0% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 10%;
+    }
+
+    100% {
+        opacity: 100%;
     }
 }

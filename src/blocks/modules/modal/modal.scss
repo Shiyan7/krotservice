@@ -131,6 +131,11 @@
     background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.2222 3.46146e-07L16 1.77778L1.77778 16L0 14.2222L14.2222 3.46146e-07Z' fill='%23D8D8D8'/%3E%3Cpath d='M16 14.2222L14.2222 16L0 1.77778L1.77778 0L16 14.2222Z' fill='%23D8D8D8'/%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
     background-size: cover;
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: rotate(90deg);
+    }
 }
 
 .modal.is-open {

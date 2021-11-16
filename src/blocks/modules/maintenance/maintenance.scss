@@ -62,6 +62,9 @@
 
         &--2 {
             margin-bottom: 0;
+            @media (max-width: 576px) {
+                margin-bottom: 0;
+            }
             .maintenance__item {
                 background-color: #743645;
             }
@@ -74,9 +77,9 @@
         justify-content: center;
         position: relative;
         background-color: #267d57;
-        padding: 50px 0 30px 56px;
+        padding: 37px 0 26px 56px;
         @media (max-width: 1024px) {
-            padding: 50px 15px 30px 70px;
+            padding: 37px 15px 26px 70px;
         }
         @media (max-width: 576px) {
             flex-direction: row-reverse;
@@ -130,12 +133,17 @@
         }
 
         &--4 {
+            padding-left: 62px;
+            &:before {
+                left: 25px;
+            }
             &:after {
                 display: none;
             }
         }
 
         &--5 {
+            padding-top: 60px;
             padding-bottom: 28px;
         }
         svg {

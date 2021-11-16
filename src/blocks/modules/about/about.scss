@@ -221,14 +221,33 @@
             }
             .benefits {
                 &__item {
+                    align-items: flex-start;
+                    width: auto;
+                    @media (max-width: 1024px) {
+                        align-items: center;
+                    }
                     @media (max-width: 768px) {
                         &:not(:last-child) {
                             margin-bottom: 40px;
                         }
                     }
-                    &:last-child {
+                    &:nth-child(1) {
+                        width: 380px;
+                        @media (max-width: 1024px) {
+                            width: auto;
+                        }
+                    }
+                    &:nth-child(2) {
+                        width: 305px;
+                        @media (max-width: 1024px) {
+                            width: auto;
+                        }
+                    }
+                    &:nth-child(3) {
+                        width: 262px;
                         @media (max-width: 1024px) {
                             grid-column: 2 span;
+                            width: auto;
                         }
                     }
                 }
