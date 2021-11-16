@@ -13,10 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 content.style.maxHeight = content.scrollHeight + "px";
             };
 
-            window.addEventListener("resize", () => {
-                watchHeight();
-            });
-
             // если открыт аккордеон
             if (self.classList.contains("open")) {
                 control.setAttribute("aria-expanded", true);
