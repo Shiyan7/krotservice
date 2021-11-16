@@ -980,15 +980,8 @@
             <h2 class="g-title about-section__title">О Компании “Кротсервис”</h2>
             <h3 class="about-section__subtitle">Клиенты — наше ВСЕ! </h3>
             <p class="about-section__desc">Мы очень ценим и дорожим нашими клиентами: 63% получаемых заказов — либо обращения по рекомендации, либо повторные обращения и это — отличный показатель! Мы постоянно получаем положительные отзывы о работе наших специалистов.</p>
-            <div class="video video"><a class="video__link" href="https://youtu.be/pIrnew79beQ">
-                <picture>
-                  <source srcset="https://i.ytimg.com/vi_webp/pIrnew79beQ/maxresdefault.webp" type="image/webp"/><img class="video__media" src="https://i.ytimg.com/vi/pIrnew79beQ/maxresdefault.jpg" alt="1. Пилот, разборы, ответы и лайвы"/>
-                </picture></a>
-              <button class="btn-reset video__button" aria-label="Запустить видео">
-                <svg class="svg-icon play">
-                  <use xlink:href="./img/sprites/sprite.svg#play"></use>
-                </svg>
-              </button>
+            <div class="plyr__video-embed about__video" id="player">
+              <iframe src="https://youtu.be/pIrnew79beQ" allowfullscreen="allowfullscreen" allowtransparency="allowtransparency" allow="autoplay"></iframe>
             </div>
           </div>
           <div class="container benefits__container">
@@ -1008,18 +1001,18 @@
                 </svg>
               </button>
               <div class="swiper-wrapper clients-slider__wrapper">
-                <div class="swiper-slide clients__item"><img class="clients__image clients__image--5 lozad" src="img/clients-5.jpg" data-src="img/clients-5@2x.jpg" alt="Client 5"></div>
-                <div class="swiper-slide clients__item"><img class="clients__image clients__image--6 lozad" src="img/clients-6.jpg" data-src="img/clients-6@2x.jpg" alt="Client 6"></div>
-                <div class="swiper-slide clients__item"><img class="clients__image clients__image--7 lozad" src="img/clients-7.jpg" data-src="img/clients-7@2x.jpg" alt="Client 7"></div>
-                <div class="swiper-slide clients__item"><img class="clients__image clients__image--8 lozad" src="img/clients-8.jpg" data-src="img/clients-8@2x.jpg" alt="Client 8"></div>
-                <div class="swiper-slide clients__item"><img class="clients__image clients__image--9 lozad" src="img/clients-9.jpg" data-src="img/clients-9@2x.jpg" alt="Client 9"></div>
-                <div class="swiper-slide clients__item"><img class="clients__image clients__image--1 lozad" src="img/clients-1.jpg" data-src="img/clients-1@2x.jpg" alt="Client 1"></div>
-                <div class="swiper-slide clients__item"><img class="clients__image clients__image--2 lozad" src="img/clients-2.jpg" data-src="img/clients-2@2x.jpg" alt="Client 2"></div>
-                <div class="swiper-slide clients__item"><img class="clients__image clients__image--3 lozad" src="img/clients-3.jpg" data-src="img/clients-3@2x.jpg" alt="Client 3"></div>
-                <div class="swiper-slide clients__item"><img class="clients__image clients__image--4 lozad" src="img/clients-4.jpg" data-src="img/clients-4@2x.jpg" alt="Client 4"></div>
-                <div class="swiper-slide clients__item"><img class="clients__image clients__image--5 lozad" src="img/clients-5.jpg" data-src="img/clients-5@2x.jpg" alt="Client 5"></div>
-                <div class="swiper-slide clients__item"><img class="clients__image clients__image--5 lozad" src="img/clients-5.jpg" data-src="img/clients-5@2x.jpg" alt="Client 5"></div>
-                <div class="swiper-slide clients__item"><img class="clients__image clients__image--6 lozad" src="img/clients-6.jpg" data-src="img/clients-6@2x.jpg" alt="Client 6"></div>
+                <div class="swiper-slide clients__item"><img class="clients__image clients__image--5 lozad" src="img/clients-5.jpg" srcset="img/clients-5@2x.jpg 2x" alt="Client 5"></div>
+                <div class="swiper-slide clients__item"><img class="clients__image clients__image--6 lozad" src="img/clients-6.jpg" srcset="img/clients-6@2x.jpg 2x" alt="Client 6"></div>
+                <div class="swiper-slide clients__item"><img class="clients__image clients__image--7 lozad" src="img/clients-7.jpg" srcset="img/clients-7@2x.jpg 2x" alt="Client 7"></div>
+                <div class="swiper-slide clients__item"><img class="clients__image clients__image--8 lozad" src="img/clients-8.jpg" srcset="img/clients-8@2x.jpg 2x" alt="Client 8"></div>
+                <div class="swiper-slide clients__item"><img class="clients__image clients__image--9 lozad" src="img/clients-9.jpg" srcset="img/clients-9@2x.jpg 2x" alt="Client 9"></div>
+                <div class="swiper-slide clients__item"><img class="clients__image clients__image--1 lozad" src="img/clients-1.jpg" srcset="img/clients-1@2x.jpg 2x" alt="Client 1"></div>
+                <div class="swiper-slide clients__item"><img class="clients__image clients__image--2 lozad" src="img/clients-2.jpg" srcset="img/clients-2@2x.jpg 2x" alt="Client 2"></div>
+                <div class="swiper-slide clients__item"><img class="clients__image clients__image--3 lozad" src="img/clients-3.jpg" srcset="img/clients-3@2x.jpg 2x" alt="Client 3"></div>
+                <div class="swiper-slide clients__item"><img class="clients__image clients__image--4 lozad" src="img/clients-4.jpg" srcset="img/clients-4@2x.jpg 2x" alt="Client 4"></div>
+                <div class="swiper-slide clients__item"><img class="clients__image clients__image--5 lozad" src="img/clients-5.jpg" srcset="img/clients-5@2x.jpg 2x" alt="Client 5"></div>
+                <div class="swiper-slide clients__item"><img class="clients__image clients__image--5 lozad" src="img/clients-5.jpg" srcset="img/clients-5@2x.jpg 2x" alt="Client 5"></div>
+                <div class="swiper-slide clients__item"><img class="clients__image clients__image--6 lozad" src="img/clients-6.jpg" srcset="img/clients-6@2x.jpg 2x" alt="Client 6"></div>
               </div>
               <button class="btn-reset g-slider-btn g-slider-btn--next clients-slider__btn--next">
                 <svg class="svg-icon slider-arrow">
@@ -1047,14 +1040,14 @@
               </div>
               <div class="swiper certificates-slider">
                 <div class="swiper-wrapper certificates-slider__wrapper">
-                  <div class="swiper-slide certificates__item"><a class="certificate" data-fslightbox="certificates" href="img/certificate-1@2x.png"> <img class="certificate__image lozad" src="img/certificate-1.png" data-src="img/certificate-1@2x.png" alt="Сертификат 1"></a></div>
-                  <div class="swiper-slide certificates__item"><a class="certificate" data-fslightbox="certificates" href="img/certificate-2@2x.png"> <img class="certificate__image lozad" src="img/certificate-2.png" data-src="img/certificate-2@2x.png" alt="Сертификат 2"></a></div>
-                  <div class="swiper-slide certificates__item"><a class="certificate" data-fslightbox="certificates" href="img/certificate-3@2x.png"> <img class="certificate__image lozad" src="img/certificate-3.png" data-src="img/certificate-3@2x.png" alt="Сертификат 3"></a></div>
-                  <div class="swiper-slide certificates__item"><a class="certificate" data-fslightbox="certificates" href="img/certificate-4@2x.png"> <img class="certificate__image lozad" src="img/certificate-4.png" data-src="img/certificate-4@2x.png" alt="Сертификат 4"></a></div>
-                  <div class="swiper-slide certificates__item"><a class="certificate" data-fslightbox="certificates" href="img/certificate-3@2x.png"> <img class="certificate__image lozad" src="img/certificate-3.png" data-src="img/certificate-3@2x.png" alt="Сертификат 3"></a></div>
-                  <div class="swiper-slide certificates__item"><a class="certificate" data-fslightbox="certificates" href="img/certificate-4@2x.png"> <img class="certificate__image lozad" src="img/certificate-4.png" data-src="img/certificate-4@2x.png" alt="Сертификат 4"></a></div>
-                  <div class="swiper-slide certificates__item"><a class="certificate" data-fslightbox="certificates" href="img/certificate-1@2x.png"> <img class="certificate__image lozad" src="img/certificate-1.png" data-src="img/certificate-1@2x.png" alt="Сертификат 1"></a></div>
-                  <div class="swiper-slide certificates__item"><a class="certificate" data-fslightbox="certificates" href="img/certificate-2@2x.png"> <img class="certificate__image lozad" src="img/certificate-2.png" data-src="img/certificate-2@2x.png" alt="Сертификат 2"></a></div>
+                  <div class="swiper-slide certificates__item"><a class="certificate" data-fslightbox="certificates" href="img/certificate-1@2x.png"> <img class="certificate__image lozad" src="img/certificate-1.png" srcset="img/certificate-1@2x.png 2x" alt="Сертификат 1"></a></div>
+                  <div class="swiper-slide certificates__item"><a class="certificate" data-fslightbox="certificates" href="img/certificate-2@2x.png"> <img class="certificate__image lozad" src="img/certificate-2.png" srcset="img/certificate-2@2x.png 2x" alt="Сертификат 2"></a></div>
+                  <div class="swiper-slide certificates__item"><a class="certificate" data-fslightbox="certificates" href="img/certificate-3@2x.png"> <img class="certificate__image lozad" src="img/certificate-3.png" srcset="img/certificate-3@2x.png 2x" alt="Сертификат 3"></a></div>
+                  <div class="swiper-slide certificates__item"><a class="certificate" data-fslightbox="certificates" href="img/certificate-4@2x.png"> <img class="certificate__image lozad" src="img/certificate-4.png" srcset="img/certificate-4@2x.png 2x" alt="Сертификат 4"></a></div>
+                  <div class="swiper-slide certificates__item"><a class="certificate" data-fslightbox="certificates" href="img/certificate-3@2x.png"> <img class="certificate__image lozad" src="img/certificate-3.png" srcset="img/certificate-3@2x.png 2x" alt="Сертификат 3"></a></div>
+                  <div class="swiper-slide certificates__item"><a class="certificate" data-fslightbox="certificates" href="img/certificate-4@2x.png"> <img class="certificate__image lozad" src="img/certificate-4.png" srcset="img/certificate-4@2x.png 2x" alt="Сертификат 4"></a></div>
+                  <div class="swiper-slide certificates__item"><a class="certificate" data-fslightbox="certificates" href="img/certificate-1@2x.png"> <img class="certificate__image lozad" src="img/certificate-1.png" srcset="img/certificate-1@2x.png 2x" alt="Сертификат 1"></a></div>
+                  <div class="swiper-slide certificates__item"><a class="certificate" data-fslightbox="certificates" href="img/certificate-2@2x.png"> <img class="certificate__image lozad" src="img/certificate-2.png" srcset="img/certificate-2@2x.png 2x" alt="Сертификат 2"></a></div>
                 </div>
               </div>
             </div>
@@ -1085,10 +1078,10 @@
                       </div>
                       <div class="swiper team-slider__nav">
                         <div class="swiper-wrapper team-slider__nav-wrapper">
-                          <div class="swiper-slide team-slider__item team-slider__nav-item"><img class="team-slider__image team-slider__nav-image lozad" src="img/team-1.jpg" data-src="img/team-1@2x.jpg" alt="Фотография команды 1"></div>
-                          <div class="swiper-slide team-slider__item team-slider__nav-item"><img class="team-slider__image team-slider__nav-image lozad" src="img/team-2.jpg" data-src="img/team-2@2x.jpg" alt="Фотография команды 2"></div>
-                          <div class="swiper-slide team-slider__item team-slider__nav-item"><img class="team-slider__image team-slider__nav-image lozad" src="img/team-3.jpg" data-src="img/team-3@2x.jpg" alt="Фотография команды 3"></div>
-                          <div class="swiper-slide team-slider__item team-slider__nav-item"><img class="team-slider__image team-slider__nav-image lozad" src="img/team-4.jpg" data-src="img/team-4@2x.jpg" alt="Фотография команды 4"></div>
+                          <div class="swiper-slide team-slider__item team-slider__nav-item"><img class="team-slider__image team-slider__nav-image lozad" src="img/team-1.jpg" srcset="img/team-1@2x.jpg 2x" alt="Фотография команды 1"></div>
+                          <div class="swiper-slide team-slider__item team-slider__nav-item"><img class="team-slider__image team-slider__nav-image lozad" src="img/team-2.jpg" srcset="img/team-2@2x.jpg 2x" alt="Фотография команды 2"></div>
+                          <div class="swiper-slide team-slider__item team-slider__nav-item"><img class="team-slider__image team-slider__nav-image lozad" src="img/team-3.jpg" srcset="img/team-3@2x.jpg 2x" alt="Фотография команды 3"></div>
+                          <div class="swiper-slide team-slider__item team-slider__nav-item"><img class="team-slider__image team-slider__nav-image lozad" src="img/team-4.jpg" srcset="img/team-4@2x.jpg 2x" alt="Фотография команды 4"></div>
                         </div>
                       </div>
                     </div>
@@ -1110,10 +1103,10 @@
                       </div>
                       <div class="swiper team-slider__nav">
                         <div class="swiper-wrapper team-slider__nav-wrapper">
-                          <div class="swiper-slide team-slider__item team-slider__nav-item"><img class="team-slider__image team-slider__nav-image lozad" src="img/team-1.jpg" data-src="img/team-1@2x.jpg" alt="Фотография команды 1"></div>
-                          <div class="swiper-slide team-slider__item team-slider__nav-item"><img class="team-slider__image team-slider__nav-image lozad" src="img/team-2.jpg" data-src="img/team-2@2x.jpg" alt="Фотография команды 2"></div>
-                          <div class="swiper-slide team-slider__item team-slider__nav-item"><img class="team-slider__image team-slider__nav-image lozad" src="img/team-3.jpg" data-src="img/team-3@2x.jpg" alt="Фотография команды 3"></div>
-                          <div class="swiper-slide team-slider__item team-slider__nav-item"><img class="team-slider__image team-slider__nav-image lozad" src="img/team-4.jpg" data-src="img/team-4@2x.jpg" alt="Фотография команды 4"></div>
+                          <div class="swiper-slide team-slider__item team-slider__nav-item"><img class="team-slider__image team-slider__nav-image lozad" src="img/team-1.jpg" srcset="img/team-1@2x.jpg 2x" alt="Фотография команды 1"></div>
+                          <div class="swiper-slide team-slider__item team-slider__nav-item"><img class="team-slider__image team-slider__nav-image lozad" src="img/team-2.jpg" srcset="img/team-2@2x.jpg 2x" alt="Фотография команды 2"></div>
+                          <div class="swiper-slide team-slider__item team-slider__nav-item"><img class="team-slider__image team-slider__nav-image lozad" src="img/team-3.jpg" srcset="img/team-3@2x.jpg 2x" alt="Фотография команды 3"></div>
+                          <div class="swiper-slide team-slider__item team-slider__nav-item"><img class="team-slider__image team-slider__nav-image lozad" src="img/team-4.jpg" srcset="img/team-4@2x.jpg 2x" alt="Фотография команды 4"></div>
                         </div>
                       </div>
                     </div>
@@ -1139,7 +1132,7 @@
               <div class="info-item__left">
                 <h3 class="info-item__title">Хотите, чтобы сантехнические работы выполнялись быстро, чисто и с гарантией?</h3>
                 <p class="info-item__desc">Мы не тратим ваше время впустую и сразу же приступаем к сантехническим работам. Представьте ситуацию: пришел к вам работник по срочному вызову и «завис» в раздумьях над мойкой. Или – принялся листать инструкцию. Некоторые умельцы еще и клиента привлекают к обсуждению его же проблемы. А время идет…</p><a class="g-link info-item__link" href="#">Подробнее</a>
-              </div><img class="info-item__image lozad" src="img/info-image.jpg" data-src="img/info-image@2x.jpg" alt="">
+              </div><img class="info-item__image lozad" src="img/info-image.jpg" srcset="img/info-image@2x.jpg 2x" alt="">
             </div>
           </div>
         </section>
