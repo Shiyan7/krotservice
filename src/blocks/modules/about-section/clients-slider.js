@@ -1,15 +1,20 @@
 import Swiper, {
+    Autoplay,
     Grid,
     Navigation
 } from "swiper";
 
 new Swiper(".clients-slider", {
-    modules: [Grid, Navigation],
+    modules: [Grid, Navigation, Autoplay],
     slidesPerView: 2,
     spaceBetween: 20,
     slidesPerGroup: 2,
     grid: {
         rows: 2,
+    },
+    autoplay: {
+        delay: 1700,
+        pauseOnMouseEnter: true,
     },
     navigation: {
         prevEl: ".clients-slider__btn--prev",

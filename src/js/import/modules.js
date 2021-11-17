@@ -4,6 +4,7 @@ import "%modules%/hero/hero";
 import "%modules%/main-services/main-services";
 import "%modules%/main-services/main-services-slider";
 import "%modules%/services/services";
+import "%modules%/services/service-item";
 import "%modules%/about-section/video";
 import "%modules%/about-section/benefits";
 import "%modules%/about-section/clients-slider";

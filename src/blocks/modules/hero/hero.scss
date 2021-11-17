@@ -78,11 +78,13 @@
             max-width: 300px;
             font-size: 25px;
             line-height: 30px;
+            margin-bottom: 30px;
         }
         @media (max-width: 360px) {
             max-width: 300px;
             font-size: 20px;
             line-height: 24px;
+            margin-bottom: 20px;
         }
     }
 
@@ -145,6 +147,11 @@
                 @media (max-width: 576px) {
                     width: 40px;
                     height: 40px;
+                }
+                @media (max-width: 360px) {
+                    width: 32px;
+                    height: 32px;
+                    margin-bottom: 10px;
                 }
             }
         }

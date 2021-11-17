@@ -95,6 +95,7 @@
     }
 
     &__item {
+        height: auto;
         @media (max-width: 1024px) {
             padding: 15px 15px 23px 15px;
         }

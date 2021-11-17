@@ -7,6 +7,14 @@
     outline: none;
     font-weight: 400;
 
+    @media (max-width: 576px) {
+        padding: 25px 35px;
+    }
+
+    @media (max-width: 360px) {
+        padding: 20px 30px;
+    }
+
     &.js-validate-error-field {
         background-color: rgba(235, 47, 47, 0.1);
         border: 1px solid rgba(235, 47, 47, 0.5) !important;

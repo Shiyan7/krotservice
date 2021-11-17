@@ -78,7 +78,7 @@
             border-radius: 0;
             display: flex;
             flex-wrap: wrap;
-            padding-bottom: 20px;
+            padding-bottom: 30px;
         }
     }
 
@@ -114,6 +114,16 @@
     background-color: #344f70;
     color: #fff;
 
+    &.open {
+        .service-item-back {
+            opacity: 1;
+            visibility: visible;
+        }
+        .service-item__link {
+            color: #4096fc;
+        }
+    }
+
     @media (max-width: 1024px) {
         margin: 0;
         border: none;
@@ -127,14 +137,16 @@
         padding: 30px 15px;
     }
 
-    &:hover {
-        .service {
-            &-item__link {
-                color: #4096fc;
-            }
-            &-item-back {
-                opacity: 1;
-                visibility: visible;
+    @media (min-width: 1024px) {
+        &:hover {
+            .service {
+                &-item__link {
+                    color: #4096fc;
+                }
+                &-item-back {
+                    opacity: 1;
+                    visibility: visible;
+                }
             }
         }
     }
@@ -202,10 +214,14 @@
         font-size: 20px;
         line-height: 25.5px;
         margin-bottom: 10px;
+        pointer-events: none;
         @media (max-width: 576px) {
             max-width: none;
             font-size: 16px;
             line-height: 22px;
+        }
+        &--2 {
+            max-width: 137px;
         }
     }
 
@@ -216,6 +232,7 @@
         font-size: 14px;
         line-height: 22px;
         font-weight: 500;
+        pointer-events: none;
         @media (max-width: 768px) {
             max-width: 600px;
         }
@@ -285,7 +302,11 @@
 
         &__title {
             color: #000;
+            min-height: 48px;
             margin-bottom: 18px;
+            @media (max-width: 768px) {
+                min-height: none;
+            }
         }
 
         &__list {

@@ -1,15 +1,20 @@
 import Swiper, {
+    Autoplay,
     Grid,
     Navigation
 } from "swiper";
 
 new Swiper(".certificates-slider", {
-    modules: [Grid, Navigation],
+    modules: [Grid, Navigation, Autoplay],
     slidesPerView: 2,
     spaceBetween: 10,
     slidesPerGroup: 2,
     grid: {
         rows: 2,
+    },
+    autoplay: {
+        delay: 2000,
+        pauseOnMouseEnter: true,
     },
     navigation: {
         prevEl: ".certificates-slider__btn--prev",
