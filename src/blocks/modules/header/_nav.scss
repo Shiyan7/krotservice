@@ -114,18 +114,14 @@
         @media (max-width: 1024px) {
             flex-direction: column;
             align-items: flex-start;
-            margin-bottom: 12.5px;
-            width: 300px;
+            max-width: 400px;
+            margin: 0 auto 12.5px;
             transition: all 0.3s;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 576px) {
             max-width: 100%;
             margin: 0;
-        }
-
-        @media (max-width: 576px) {
-            width: 100%;
         }
 
         &--dropdown {
@@ -384,7 +380,12 @@
         position: relative;
         z-index: 4;
 
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 576px) {
             max-width: 100%;
             margin: 0;
         }
