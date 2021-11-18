@@ -101,6 +101,9 @@
         @media (max-width: 768px) {
             padding-bottom: 40px;
         }
+        @media (max-width: 576px) {
+            padding-bottom: 30px;
+        }
         &__item {
             display: flex;
             text-align: center;

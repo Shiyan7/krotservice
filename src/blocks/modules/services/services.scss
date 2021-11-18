@@ -213,7 +213,8 @@
         color: #fff;
         font-size: 20px;
         line-height: 25.5px;
-        margin-bottom: 10px;
+        margin-bottom: auto;
+        min-height: 51px;
         pointer-events: none;
         @media (max-width: 576px) {
             max-width: none;
@@ -228,6 +229,7 @@
     &__desc {
         max-width: 300px;
         margin: 0;
+        margin-top: 10px;
         margin-bottom: 11px;
         font-size: 14px;
         line-height: 22px;
