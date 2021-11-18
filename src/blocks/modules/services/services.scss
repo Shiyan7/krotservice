@@ -220,6 +220,8 @@
             max-width: none;
             font-size: 16px;
             line-height: 22px;
+            min-height: auto;
+            margin-bottom: 10px;
         }
         &--2 {
             max-width: 137px;
@@ -242,6 +244,7 @@
         @media (max-width: 576px) {
             font-size: 14px;
             line-height: 22.4px;
+            margin-top: 0;
         }
     }
 
