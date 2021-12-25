@@ -1055,8 +1055,13 @@
             <form class="modal-form validate-form" action="#">
               <input class="g-input modal-form__input" type="text" name="name" placeholder="Ваше имя">
               <input class="g-input modal-form__input" type="tel" name="phoneNumber" placeholder="Ваш телефон">
-              <textarea class="g-textarea modal-form__textarea modal-form__input" name="text" placeholder="Ваш вопрос"></textarea>
-              <button class="btn-reset g-btn modal-form__btn">Написать</button>
+              <label class="g-input-file modal-form__input">
+                <input class="visually-hidden g-input-file__input" type="file" name="file" multiple>
+                <svg class="svg-icon file">
+                  <use xlink:href="./img/sprites/sprite.svg#file"></use>
+                </svg><span class="g-input-file__desc">Загрузить резюме в формате PDF, DOC</span>
+              </label>
+              <button class="btn-reset g-btn modal-form__btn">Отправить</button>
             </form>
             <p class="modal-form__desc">Нажимая кнопку «Получить консультацию», Вы даете согласие на обработку своих&nbsp;<a href="policy.html">персональных данных</a></p>
           </div>
