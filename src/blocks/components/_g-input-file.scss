@@ -1,0 +1,45 @@
+.g-input-file {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px dashed #cbcbcb;
+    padding: 0 34px;
+    border-radius: 10px;
+    min-height: 84px;
+    cursor: pointer;
+
+    &__input {
+        &.valid ~ label.error {
+            display: none !important;
+        }
+    }
+
+    label.error {
+        display: block !important;
+        position: absolute;
+        z-index: 2;
+        top: -1px;
+        font-size: 0;
+        left: -1px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(235, 47, 47, 0.1);
+        border-radius: 9px;
+        border: 1px solid rgba(235, 47, 47, 0.5);
+        pointer-events: none;
+    }
+
+    svg {
+        display: block;
+        flex-shrink: 0;
+        width: 31px;
+        height: 42px;
+        margin-right: 15px;
+    }
+
+    &__desc {
+        font-size: 16px;
+        line-height: 22.4px;
+        color: #818181;
+    }
+}

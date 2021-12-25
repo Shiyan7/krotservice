@@ -111,7 +111,10 @@
             form.modal-form.validate-form(action="#")
                 input.g-input.modal-form__input(type="text" name="name" placeholder="Ваше имя")
                 input.g-input.modal-form__input(type="tel" name="phoneNumber" placeholder="Ваш телефон")
-                textarea.g-textarea.modal-form__textarea.modal-form__input(name="text" placeholder="Ваш вопрос")
-                button.btn-reset.g-btn.modal-form__btn Написать
+                label.g-input-file.modal-form__input
+                    input.visually-hidden.g-input-file__input(type="file", name="file" multiple)
+                    +icon("file")
+                    span.g-input-file__desc Загрузить резюме в формате PDF, DOC
+                button.btn-reset.g-btn.modal-form__btn Отправить
             p.modal-form__desc Нажимая кнопку «Получить консультацию», Вы даете согласие на обработку своих&nbsp;
                 a(href="policy.html") персональных данных

@@ -20,6 +20,9 @@ $(document).ready(function () {
                 },
                 radio: {
                     required: true,
+                },
+                file: {
+                    required: true,
                 }
             },
         });
