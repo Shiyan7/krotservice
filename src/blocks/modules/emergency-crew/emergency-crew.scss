@@ -161,11 +161,19 @@
         color: #243a54;
         font-size: 100px;
         line-height: 120px;
-        right: 305px;
+        right: 30%;
         @media (max-width: 1920px) {
             font-size: calc(40px + (100 - 40) * ((100vw - 320px) / (1920 - 320)));
             line-height: calc(60px + (120 - 60) * ((100vw - 320px) / (1920 - 320)));
-            right: calc(200px + (305 - 200) * ((100vw - 1px) / (1920 - 1)));
+            right: calc(200px + (630 - 200) * ((100vw - 1px) / (1920 - 1)));
+        }
+
+        @media (max-width: 1600px) {
+            right: calc(200px + (500 - 200) * ((100vw - 1px) / (1920 - 1)));
+        }
+
+        @media (max-width: 1230px) {
+            right: calc(200px + (300 - 200) * ((100vw - 1px) / (1920 - 1)));
         }
 
         @media (max-width: 1024px) {
