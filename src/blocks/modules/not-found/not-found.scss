@@ -6,17 +6,18 @@
     right: 0;
     bottom: 0;
     left: 0;
+    min-width: 320px;
     min-height: 715px;
     background-color: #243a54;
     padding-top: 155px;
     @media (max-width: 1024px) {
-        padding-top: 0;
         height: calc(var(--vh) * 100);
-        min-height: 700px;
+        min-height: 800px;
+        padding-top: 0;
     }
 
     @media (max-width: 576px) {
-        min-height: 600px;
+        min-height: 650px;
     }
 
     &__container {
@@ -32,10 +33,10 @@
         height: 379px;
         object-fit: cover;
         mix-blend-mode: lighten;
-        @media (max-width: 1024px) {
+        /* @media (max-width: 1024px) {
             width: 444px;
             height: 333px;
-        }
+        } */
 
         @media (max-width: 768px) {
             width: 335px;
@@ -64,9 +65,9 @@
             0 2px 2px rgba(0, 0, 0, 0.05),
             0 1px 1px rgba(0, 0, 0, 0.05);
         @media (max-width: 1024px) {
-            font-size: 200px;
-            line-height: 250px;
-            margin-top: -300px;
+            font-size: 250px;
+            line-height: 270px;
+            margin-top: -320px;
         }
         @media (max-width: 768px) {
             margin-top: -250px;
@@ -88,10 +89,8 @@
         line-height: 32px;
         margin-top: -40px;
         @media (max-width: 1024px) {
-            font-size: 18px;
-            line-height: 28px;
-            margin-top: 70px;
             max-width: 600px;
+            margin-top: 80px;
         }
         @media (max-width: 768px) {
             margin-top: 40px;

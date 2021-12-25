@@ -220,9 +220,20 @@
     &-benefits {
         &__list {
             margin-bottom: 36px;
+
+            @media (max-width: 1024px) {
+                padding: 0;
+            }
+
             @media (max-width: 768px) {
                 display: block;
+                padding: 0;
             }
+    
+            @media (max-width: 576px) {
+                padding: 0;
+            }
+
             .benefits {
                 &__item {
                     align-items: flex-start;

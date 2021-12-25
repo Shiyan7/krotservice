@@ -114,7 +114,7 @@
         @media (max-width: 1024px) {
             flex-direction: column;
             align-items: flex-start;
-            max-width: 400px;
+            max-width: 600px;
             margin: 0 auto 12.5px;
             transition: all 0.3s;
         }
@@ -292,10 +292,8 @@
     position: relative;
     z-index: 2;
     @media (max-width: 1024px) {
-
         opacity: 0;
         visibility: hidden;
-
         position: absolute;
         z-index: 100;
         top: 0;
@@ -307,6 +305,7 @@
         padding: 0 15px;
         background-color: #243a54;
         transition: opacity 0.3s, visibility 0.3s;
+        min-width: 290px;
     }
     @media (max-width: 768px) {
         display: flex;
@@ -381,7 +380,7 @@
         z-index: 4;
 
         @media (max-width: 1024px) {
-            max-width: 400px;
+            max-width: 600px;
             margin: 0 auto;
         }
 

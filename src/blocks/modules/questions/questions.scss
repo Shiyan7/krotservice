@@ -126,6 +126,11 @@
                 height: 36px;
                 border-radius: 100%;
                 background-color: #fff;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: rgba(#fff, 0.6);
+                }
 
                 svg {
                     display: block;

@@ -1,4 +1,6 @@
 .header {
+    position: relative;
+    z-index: 4;
     background-color: #243a54;
     
     &--main {

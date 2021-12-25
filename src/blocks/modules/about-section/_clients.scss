@@ -47,17 +47,17 @@
 
         &__btn {
             &--prev {
-                left: -45px;
+                left: 45px;
                 @media (max-width: 1330px) {
-                    left: 5px;
+                    left: 20px;
                     top: calc(50% - 10px);
                 }
             }
 
             &--next {
-                right: -45px;
+                right: 45px;
                 @media (max-width: 1330px) {
-                    right: 5px;
+                    right: 20px;
                     top: calc(50% - 10px);
                 }
             }

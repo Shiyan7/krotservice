@@ -18,7 +18,16 @@
         @media (max-width: 1024px) {
             display: grid;
             gap: 40px;
+            padding: 0 80px;
             grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 768px) {
+            padding: 0 40px;
+        }
+
+        @media (max-width: 576px) {
+            padding: 0;
         }
     }
 

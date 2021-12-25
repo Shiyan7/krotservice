@@ -24,6 +24,7 @@
     &__title {
         line-height: 52px;
         margin-bottom: 20px;
+        text-align: center;
         @media (max-width: 768px) {
             font-size: 30px;
             line-height: 34px;
@@ -45,15 +46,16 @@
         line-height: 24.3px;
         color: #243a54;
         margin-bottom: 10px;
+        text-align: center;
     }
 
     &__desc {
         max-width: 1076px;
-        margin: 0;
+        margin: 0 auto 40px;
         font-size: 18px;
         line-height: 28.8px;
         color: #212121;
-        margin-bottom: 40px;
+        text-align: center;
         @media (max-width: 768px) {
             font-size: 16px;
             line-height: 25px;

@@ -15,9 +15,14 @@
         padding: 20px 30px;
     }
 
-    &.js-validate-error-field {
-        background-color: rgba(235, 47, 47, 0.1);
-        border: 1px solid rgba(235, 47, 47, 0.5) !important;
+    &.error {
+        border: 1px solid rgba(#cc0000, 0.5);
+        background-color: rgba(#cc0000, 0.1);
+    }
+
+    &.valid {
+        border: 1px solid rgba(#008315, 0.5);
+        background-color: rgba(#008315, 0.1);
     }
     
     &::placeholder {

@@ -24,7 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
         document.addEventListener("click", (e) => {
             if (e.target.classList.contains("team-slider__nav-image")) {
                 let src = e.target.getAttribute("src");
+                let srcset = e.target.getAttribute("srcset").replace(" 2x", "");
                 e.target.closest(".team-slider").querySelector(".team-slider__main img")?.setAttribute("src", src);
+                e.target.closest(".team-slider").querySelector(".team-slider__main img")?.setAttribute("srcset", srcset);
             }
         }); 
     });

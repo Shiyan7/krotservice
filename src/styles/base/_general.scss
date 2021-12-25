@@ -61,8 +61,13 @@ img {
 }
 .container {
     max-width: 1200px;
-    padding: 0 15px;
+    padding: 0 35px;
     margin: 0 auto;
+
+    @media (max-width: 576px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 .svg-icon {
@@ -80,4 +85,8 @@ img {
 	height: 1px !important; 
 	width: 1px !important; 
 	overflow: hidden;
+}
+
+label.error {
+    display: none !important;
 }

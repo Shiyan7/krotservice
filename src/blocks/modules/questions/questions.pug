@@ -43,20 +43,20 @@ section.questions
                 .questions-right__form
                     h2.g-title.questions-form__title Остались вопросы?
                     p.questions-form__desc Задайте свой вопрос и получите бесплатную консультацию!
-                    form.questions-form.validate-form5(action="#")
-                        input.g-input.questions-form__input(data-validate-field="name" type="text" name="Имя" placeholder="Ваше имя")
-                        input.g-input.questions-form__input(data-validate-field="tel" type="tel" name="Телефон" placeholder="Ваш телефон")
-                        textarea.g-textarea.questions-form__input(data-validate-field="text", name="Вопрос" placeholder="Ваш вопрос")
+                    form.questions-form.validate-form(action="#")
+                        input.g-input.questions-form__input(type="text" name="name" placeholder="Ваше имя")
+                        input.g-input.questions-form__input(type="tel" name="phoneNumber" placeholder="Ваш телефон")
+                        textarea.g-textarea.questions-form__input(name="text" placeholder="Ваш вопрос")
                         button.btn-reset.g-btn.questions-form__btn отправить
                 .questions-right__bottom
                     span.questions-contacts__desc Или можно позвонить:
                     .questions-contacts
                         ul.list-reset.questions-contacts__social
                             li.questions-contacts__social-item
-                                a.questions-contacts__social-link(href="#")
+                                a.questions-contacts__social-link(href="https://t.me/krotservis" target="_blank")
                                     +icon("telegram2")
                             li.questions-contacts__social-item
-                                a.questions-contacts__social-link(href="#")
+                                a.questions-contacts__social-link(href="tel:89017423198" target="_blank")
                                     +icon("whatsapp2")
                         .tell.questions-contacts__tell
                             span.tell__desc Круглосуточно, без выходных

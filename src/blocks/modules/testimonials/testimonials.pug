@@ -89,29 +89,30 @@ section.testimonials
                 p.testimonial__desc Каждая женщина хочет выглядеть достойно и презентабельно. Сияющие глаза, лучезарная улыбка, красивый наряд — это крупный план. Не меньшую роль играют детали. Интересное украшение...
                 a.g-link.testimonial__link(href="#") Читать дальше
         button.btn-reset.g-btn.g-btn--stroke.testimonials__more Показать еще
-        form.testimonials-form.validate-form9(action="#" id="testimonials-form")
+        form.testimonials-form.validate-form(action="#" id="testimonials-form")
             h2.testimonials-form__title.g-title ОСТАВИТЬ ОТЗЫВ
             .testimonials-form__row
-                input.g-input.testimonials-form__input(data-validate-field="name" type="text" name="Имя" placeholder="Ваше имя")
-                input.g-input.testimonials-form__input(data-validate-field="tel" type="tel" name="Телефон" placeholder="Ваш телефон")
-                textarea.g-textarea.testimonials-form__textarea(data-validate-field="text", name="Текст отзыва" placeholder="Ваш отзыв")
+                input.g-input.testimonials-form__input(type="text" name="name" placeholder="Ваше имя")
+                input.g-input.testimonials-form__input(type="tel" name="phoneNumber" placeholder="Ваш телефон")
+                textarea.g-textarea.testimonials-form__textarea(name="text" placeholder="Ваш отзыв")
             .testimonials-form__bottom
                 .g-rating.testimonials-form__rating
-                    h3.g-rating__caption Ваша оценка:
+                    h3.g-rating__caption Ваша radio:
                     .g-rating__group
-                        input.g-rating__input(data-validate-field="radio" type="radio" name="Оценка" id="grade-1" value="1")
+
+                        input.g-rating__input(type="radio" name="radio" id="grade-1" value="1")
                         label.g-rating__star(for="grade-1" aria-label="Ужасно")
 
-                        input.g-rating__input(data-validate-field="radio" type="radio" name="Оценка" id="grade-2" value="2")
+                        input.g-rating__input(type="radio" name="radio" id="grade-2" value="2")
                         label.g-rating__star(for="grade-2" aria-label="Сносно")
 
-                        input.g-rating__input(data-validate-field="radio" type="radio" name="Оценка" id="grade-3" value="3")
+                        input.g-rating__input(type="radio" name="radio" id="grade-3" value="3")
                         label.g-rating__star(for="grade-3" aria-label="Нормально")
 
-                        input.g-rating__input(data-validate-field="radio" type="radio" name="Оценка" id="grade-4" value="4")
+                        input.g-rating__input(type="radio" name="radio" id="grade-4" value="4")
                         label.g-rating__star(for="grade-4" aria-label="Хорошо")
 
-                        input.g-rating__input(data-validate-field="radio" type="radio" name="Оценка" id="grade-5" value="5")
+                        input.g-rating__input(type="radio" name="radio" id="grade-5" value="5")
                         label.g-rating__star(for="grade-5" aria-label="Отлично")
                 p.testimonials-form__desc Нажимая кнопку «Получить консультацию», Вы даете согласие на обработку своих&nbsp;
                     a(href="#") персональных данных

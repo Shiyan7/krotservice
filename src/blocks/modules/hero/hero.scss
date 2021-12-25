@@ -5,6 +5,12 @@
     background-size: cover;
     background-color: #243a54;
     background-position: 60%;
+
+    @media (max-width: 576px) {
+        background-image: url(../img/hero-bg-mobile.jpg);
+        background-position: center;
+    }
+
     &:after {
         @include pseudo();
         position: absolute;
