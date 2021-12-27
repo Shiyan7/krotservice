@@ -2,8 +2,12 @@ mixin header
     .container.header__container
         .header__top
             .header__left
-                a.logo.header__logo(href="/")
-                    +icon("logo-icon")
+                if page === "index"
+                    a.logo.header__logo
+                        +icon("logo-icon")
+                else
+                    a.logo.header__logo(href="/")
+                        +icon("logo-icon")
                 span.header__desc
                     +icon("warning")
                     | Наши сотрудники вакцинированы от&nbsp;COVID-19 Работаем в&nbsp;мед.масках, бахилах и&nbsp;перчатках

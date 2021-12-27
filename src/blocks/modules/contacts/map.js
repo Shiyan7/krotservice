@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    let center = [48.8866527839977, 2.34310679732974];
+    let center = [55.70508206902523,37.77475049999993];
 
     function init() {
         //eslint-disable-next-line

@@ -1,8 +1,12 @@
 footer.footer
     .container.footer__container
         .footer__left
-            .logo.footer__logo
-                +icon("logo-icon")
+            if page === "index"
+                a.logo.footer__logo
+                    +icon("logo-icon")
+            else
+                a.logo.footer__logo(href="/")
+                    +icon("logo-icon")
             span.footer__copy © 2021 ООО Сантехстрой
             span.footer__desc Сделано в -&nbsp;
                 a(href="#" target="_blank")

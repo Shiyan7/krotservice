@@ -1,5 +1,24 @@
 .about {
 
+    .plyr {
+        margin-bottom: 91px;
+        @media (max-width: 1024px) {
+            margin-bottom: 70px;
+        }
+
+        @media (max-width: 768px) {
+            margin-bottom: 50px;
+        }
+
+        @media (max-width: 576px) {
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 420px) {
+            margin-bottom: 30px;
+        }
+    }
+
     &__container {
         padding-bottom: 93px;
         @media (max-width: 768px) {
@@ -196,25 +215,6 @@
 
     &__quote {
         margin-bottom: 30px;
-    }
-
-    &__video {
-        margin-bottom: 91px;
-        @media (max-width: 1024px) {
-            margin-bottom: 70px;
-        }
-
-        @media (max-width: 768px) {
-            margin-bottom: 50px;
-        }
-
-        @media (max-width: 576px) {
-            margin-bottom: 40px;
-        }
-
-        @media (max-width: 420px) {
-            margin-bottom: 30px;
-        }
     }
 
     &-benefits {
