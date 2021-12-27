@@ -168,13 +168,21 @@
     height: 588px;
     padding: 40px 40px 0;
 
+    @media (max-width: 1230px) {
+        padding: 40px 20px 0;
+    }
+
     @media (max-width: 1024px) {
         height: 560px;
         padding: 0;
     }
 
-    @media (max-width: 576px) {
-        height: 520px;
+    @media (min-width: 769px) {
+        &:hover {
+            .main-service__icon svg {
+                animation: position 1s infinite linear;
+            }
+        }
     }
 
     @media (max-width: 768px) {
@@ -183,7 +191,15 @@
             .main-service__icon::before, .main-service__icon::after {
                 animation: hiddenCircles 1.5s linear infinite;
             }
+            
+            .main-service__icon svg {
+                animation: position 1s infinite linear;
+            }
         }
+    }
+
+    @media (max-width: 576px) {
+        height: 520px;
     }
 
     &:hover {
@@ -252,7 +268,7 @@
         &:before, &:after {
             @include pseudo();
             position: absolute;
-            bottom: -53px;
+            bottom: 0;
             width: 135px;
             height: 62px;
             background-image: url(../img/svg/circles.svg);
@@ -308,6 +324,11 @@
         line-height: 25.6px;
         margin: auto auto 32px;
 
+        @media (max-width: 1230px) {
+            font-size: 14px;
+            line-height: 22.4px;
+        }
+
         @media (max-width: 768px) {
             max-width: 500px;
         }
@@ -345,125 +366,33 @@
     }
 
     &:nth-child(2) {
-        @media (min-width: 769px) {
-            &:hover {
-                .main-service__line {
-                    animation: gradient 1s infinite linear;
-                }
-            }
-        }
-
-        @media (max-width: 768px) {
-            &.swiper-slide-active {
-
-                .main-service__line {
-                    animation: gradient 1s infinite linear;
-                }
-            }
-        }
-    }
-
-    &:nth-child(3) {
-
-
-        @media (min-width: 769px) {
-            &:hover {
-                .main-service__icon svg {
-                    animation: position 1s infinite linear;
-                }
-            }
-        }
-
-        @media (max-width: 768px) {
-            &.swiper-slide-active {
-                .main-service__icon svg {
-                    animation: position 1s infinite linear;
-                }
-            }
-        }
-
         .main-service__icon {
             &:before {
-                bottom: 0;
+                bottom: -10px;
+                left: -107px;
             }
 
             &:after {
-                bottom: 0;
+                right: -107px;
+                bottom: -10px;
             }
         }
     }
 
     &:nth-child(4) {
 
-
-        @media (min-width: 769px) {
-            &:hover {
-                &:before {
-                    animation: gradient 1s infinite linear;
-                }
-            }
-        }
-
-        @media (max-width: 768px) {
-            &.swiper-slide-active {
-                &:before {
-                    animation: gradient 1s infinite linear;
-                }
-            }
-        }
-
-        &:before {
-            @include pseudo();
-            position: absolute;
-            z-index: -1;
-            top: 250px;
-            bottom: auto;
-            left: 50%;
-            width: 60px;
-            height: 60px;
-            transform: translateX(-50%);
-            clip-path: polygon(50% 0%, 50% 0%, 100% 100%, 0% 100%);
-            background: linear-gradient(179.9deg, rgba(252, 255, 116, 1) 0%, rgba(252, 255, 116, 1) 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
-            background-size: 15000%;
-
-            @media (max-width: 1024px) {
-                top: 200px;
-            }
-
-            @media (max-width: 576px) {
-                top: 185px;
-            }
-        }
-
         .main-service__icon {
             &:before {
-                bottom: -101px;
+                bottom: -49px;
                 left: -107px;
             }
 
             &:after {
                 right: -107px;
-                bottom: -101px;
+                bottom: -49px;
             }
         }
     }
-}
-
-/* icons */
-
-.main-service-1 {
-    width: 50px;
-    height: 175px;
-}
-
-.main-service-2 {
-    width: 50px;
-    height: 227px;
-}
-
-.main-service-3 {
-    width: 50px;
-    height: 135px;
 }
 
 /* animations */
@@ -479,50 +408,6 @@
 
     100% {
         transform: translateY(0);
-    }
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 1% 0%;
-    }
-
-    25% {
-        background-position: 60% 0%;
-    }
-
-    50% {
-        background-position: 100% 0%;
-    }
-
-    75% {
-        background-position: 60% 0%;
-    }
-
-    100% {
-        background-position: 1% 0%;
-    }
-}
-
-@-webkit-keyframes gradient {
-    0% {
-        background-position: 1% 0%;
-    }
-
-    25% {
-        background-position: 60% 0%;
-    }
-
-    50% {
-        background-position: 100% 0%;
-    }
-
-    75% {
-        background-position: 60% 0%;
-    }
-
-    100% {
-        background-position: 1% 0%;
     }
 }
 
