@@ -6,7 +6,7 @@ mixin header
                     a.logo.header__logo
                         +icon("logo-icon")
                 else
-                    a.logo.header__logo(href="/")
+                    a.logo.header__logo(href="index.html")
                         +icon("logo-icon")
                 span.header__desc
                     +icon("warning")
@@ -97,6 +97,12 @@ mixin header
 
 if page === "index"
     header.header--main
+        +header
+else if page === "thanks"
+    header.header.header--transparent.header--thanks
+        +header
+else if transparentHeader
+    header.header.header--transparent
         +header
 else
     header.header

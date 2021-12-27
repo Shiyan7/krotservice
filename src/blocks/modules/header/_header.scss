@@ -2,6 +2,12 @@
     position: relative;
     z-index: 4;
     background-color: #243a54;
+
+    &--transparent {
+        @media (max-width: 768px) {
+            border-bottom: 1px solid rgba(#fff, 0.1);
+        }
+    }
     
     &--main {
         position: absolute;
@@ -12,8 +18,19 @@
         background-color: transparent;
     }
 
+    &--thanks {
+        .header__container {
+            padding-bottom: 0;
+
+            @media (max-width: 576px) {
+                padding-bottom: 20px;
+            }
+        }
+    }
+
     &__container {
         padding-top: 23px;
+        padding-bottom: 23px;
         @media (max-width: 576px) {
             padding-top: 20px;
             padding-bottom: 20px;

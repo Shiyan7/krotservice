@@ -1,8 +1,5 @@
 .vacancies {
     background-color: #243a54;
-    @media (max-width: 768px) {
-        border-top: 1px solid rgba(#fff, 0.1);
-    }
     &__container {
         padding-bottom: 81px;
         @media (max-width: 768px) {
