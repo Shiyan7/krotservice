@@ -105,6 +105,10 @@
 
     &__title {
         color: #212121;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     &__desc {
