@@ -25,6 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
             if (e.target.classList.contains("team-slider__nav-image")) {
                 let src = e.target.getAttribute("src");
                 let srcset = e.target.getAttribute("srcset");
+                let block = e.target.closest(".team-slider").querySelector(".team-slider__block");
+                // eslint-disable-next-line
+                refreshFsLightbox();
+                block.setAttribute("href", src);
                 e.target.closest(".team-slider").querySelector(".team-slider__main img")?.setAttribute("src", src);
                 e.target.closest(".team-slider").querySelector(".team-slider__main img")?.setAttribute("srcset", srcset);
             }

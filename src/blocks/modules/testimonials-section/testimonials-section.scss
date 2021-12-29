@@ -55,7 +55,7 @@
             right: -43px;
             left: -43px;
             @media (max-width: 576px) {
-                top: 45%;
+                display: none;
             }
         }
         &__pagination {
@@ -66,6 +66,7 @@
         }
 
         &__btn {
+
             &--prev {
                 @media (max-width: 1330px) {
                     width: 60px;
