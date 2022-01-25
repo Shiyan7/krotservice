@@ -203,7 +203,9 @@
     }
 }
 
-.menu-open .header__top {
-    background-color: #243a54;
-    transition: background-color 0.3s;
+@media (max-width: 1024px) {
+    .menu-open .header__top {
+        background-color: #243a54;
+        transition: background-color 0.3s;
+    }
 }
