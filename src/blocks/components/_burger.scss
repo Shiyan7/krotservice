@@ -48,7 +48,7 @@
         stroke-width: 2px;
     }
 
-    &.isOpen {
+    &-close {
         transform: rotate(180deg);
 
         span {
