@@ -25,6 +25,9 @@ $(document).ready(function () {
                     required: true,
                 }
             },
+
+            //костыль ну ок
+            submitHandler: function() { window.location.href = "https://shiyan7.github.io/krotservice/thanks.html"; }
         });
     });
 
