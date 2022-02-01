@@ -257,6 +257,12 @@
         z-index: 3;
         margin: 0 auto;
 
+        &-wrapper {
+            @media (max-width: 768px) {
+                animation: position 1s infinite linear;
+            }
+        }
+
         &:before {
             left: -135px;
         }
@@ -290,6 +296,14 @@
         background: linear-gradient(179.9deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 40%, rgba(253, 255, 167, 0) 72%, rgba(253, 255, 167, 0) 100%);
         clip-path: polygon(35% 0%, 65% 0%, 100% 100%, 0% 100%);
         background-size: 50000%;
+
+        @media (max-width: 768px) {
+            background: -webkit-gradient(linear,left top, left bottom,from(#fff),color-stop(40%, #fff),color-stop(72%, rgba(253,255,167,0)),to(rgba(253,255,167,0)));
+            background: -webkit-linear-gradient(#fff,#fff 40%,rgba(253,255,167,0) 72%,rgba(253,255,167,0));
+            background: -moz-linear-gradient(#fff,#fff 40%,rgba(253,255,167,0) 72%,rgba(253,255,167,0));
+            background: -o-linear-gradient(#fff,#fff 40%,rgba(253,255,167,0) 72%,rgba(253,255,167,0));
+            background: linear-gradient(#fff,#fff 40%,rgba(253,255,167,0) 72%,rgba(253,255,167,0));
+        }
 
         &--1 {
             bottom: 25px;
@@ -376,7 +390,7 @@
             &.swiper-slide-active {
 
                 .main-service__line {
-                    animation: gradient 1s infinite linear;
+                    animation: none;
                 }
             }
         }
@@ -424,10 +438,20 @@
         }
 
         @media (max-width: 768px) {
-            &.swiper-slide-active {
-                &:before {
-                    animation: gradient 1s infinite linear;
-                }
+            .main-service-3 {
+                animation: position 1s infinite linear;
+            }
+
+            &:before {
+                background: -webkit-gradient(linear,left top, left bottom,from(#fcff74),color-stop(40%, #fcff74),color-stop(80%, rgba(253,255,167,0)),to(rgba(253,255,167,0)));
+                background: -webkit-linear-gradient(#fcff74,#fcff74 40%,rgba(253,255,167,0) 80%,rgba(253,255,167,0));
+                background: -moz-linear-gradient(#fcff74,#fcff74 40%,rgba(253,255,167,0) 80%,rgba(253,255,167,0));
+                background: -o-linear-gradient(#fcff74,#fcff74 40%,rgba(253,255,167,0) 80%,rgba(253,255,167,0));
+                background: linear-gradient(#fcff74,#fcff74 40%,rgba(253,255,167,0) 80%,rgba(253,255,167,0));
+                -webkit-animation: c 1s infinite linear;
+                -moz-animation: c 1s infinite linear;
+                -o-animation: c 1s infinite linear;
+                animation: c 1s infinite linear;
             }
         }
 
@@ -539,5 +563,61 @@
 
     100% {
         opacity: 100%;
+    }
+}
+
+@-webkit-keyframes c {
+    0% {
+        top: 205px
+    }
+
+    50% {
+        top: 210px;
+    }
+
+    to {
+        top: 205px
+    }
+}
+
+@-moz-keyframes c {
+    0% {
+        top: 205px
+    }
+
+    50% {
+        top: 210px;
+    }
+
+    to {
+        top: 205px
+    }
+}
+
+@-o-keyframes c {
+    0% {
+        top: 205px
+    }
+
+    50% {
+        top: 210px;
+    }
+
+    to {
+        top: 205px
+    }
+}
+
+@keyframes c {
+    0% {
+        top: 205px
+    }
+
+    50% {
+        top: 210px;
+    }
+
+    to {
+        top: 205px
     }
 }
