@@ -455,6 +455,13 @@
             }
         }
 
+        @media (max-width: 576px) {
+            .main-service-3 {
+                position: relative;
+                top: 17px;
+            }
+        }
+
         &:before {
             @include pseudo();
             position: absolute;
@@ -475,10 +482,6 @@
 
             @media (max-width: 1024px) {
                 top: 200px;
-            }
-
-            @media (max-width: 576px) {
-                top: 185px;
             }
         }
 
@@ -566,51 +569,9 @@
     }
 }
 
-@-webkit-keyframes c {
-    0% {
-        top: 205px
-    }
-
-    50% {
-        top: 210px;
-    }
-
-    to {
-        top: 205px
-    }
-}
-
-@-moz-keyframes c {
-    0% {
-        top: 205px
-    }
-
-    50% {
-        top: 210px;
-    }
-
-    to {
-        top: 205px
-    }
-}
-
-@-o-keyframes c {
-    0% {
-        top: 205px
-    }
-
-    50% {
-        top: 210px;
-    }
-
-    to {
-        top: 205px
-    }
-}
-
 @keyframes c {
     0% {
-        top: 205px
+        top: 205px;
     }
 
     50% {
