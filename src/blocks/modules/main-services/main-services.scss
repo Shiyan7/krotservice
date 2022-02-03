@@ -472,7 +472,7 @@
             @supports (-webkit-touch-callout: none) {
                 @media (max-width: 768px) {
                     background: linear-gradient(#fcff74 0%, #fcff74 40%, rgba(253, 255, 167, 0) 80%, rgba(253, 255, 167, 0) 100%);
-                    animation: light 1s infinite linear;
+                    animation: light 1s infinite linear !important;
                 }
             }
         }
