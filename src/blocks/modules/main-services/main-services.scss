@@ -187,19 +187,17 @@
     @media (max-width: 1024px) {
         height: 560px;
         padding: 0;
-    }
 
-    @media (max-width: 576px) {
-        height: 520px;
-    }
-
-    @media (max-width: 768px) {
         &.swiper-slide-active {
 
             .main-service__icon::before, .main-service__icon::after {
                 animation: hiddenCircles 1.5s linear infinite;
             }
         }
+    }
+
+    @media (max-width: 576px) {
+        height: 520px;
     }
 
     &:hover {
@@ -297,14 +295,6 @@
         clip-path: polygon(35% 0%, 65% 0%, 100% 100%, 0% 100%);
         background-size: 50000%;
 
-        @media (max-width: 768px) {
-            background: -webkit-gradient(linear,left top, left bottom,from(#fff),color-stop(40%, #fff),color-stop(72%, rgba(253,255,167,0)),to(rgba(253,255,167,0)));
-            background: -webkit-linear-gradient(#fff,#fff 40%,rgba(253,255,167,0) 72%,rgba(253,255,167,0));
-            background: -moz-linear-gradient(#fff,#fff 40%,rgba(253,255,167,0) 72%,rgba(253,255,167,0));
-            background: -o-linear-gradient(#fff,#fff 40%,rgba(253,255,167,0) 72%,rgba(253,255,167,0));
-            background: linear-gradient(#fff,#fff 40%,rgba(253,255,167,0) 72%,rgba(253,255,167,0));
-        }
-
         &--1 {
             bottom: 25px;
             left: -15px;
@@ -378,7 +368,7 @@
     }
 
     &:nth-child(2) {
-        @media (min-width: 769px) {
+        @media (min-width: 1025px) {
             &:hover {
                 .main-service__line {
                     animation: gradient 1s infinite linear;
@@ -386,11 +376,11 @@
             }
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             &.swiper-slide-active {
 
                 .main-service__line {
-                    animation: none;
+                    animation: gradient 1s infinite linear;
                 }
             }
         }
@@ -399,7 +389,7 @@
     &:nth-child(3) {
 
 
-        @media (min-width: 769px) {
+        @media (min-width: 1025px) {
             &:hover {
                 .main-service__icon svg {
                     animation: position 1s infinite linear;
@@ -407,7 +397,7 @@
             }
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             &.swiper-slide-active {
                 .main-service__icon svg {
                     animation: position 1s infinite linear;
@@ -429,7 +419,7 @@
     &:nth-child(4) {
 
 
-        @media (min-width: 769px) {
+        @media (min-width: 1025px) {
             &:hover {
                 &:before {
                     animation: gradient 1s infinite linear;
@@ -437,21 +427,13 @@
             }
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             .main-service-3 {
                 animation: position 1s infinite linear;
             }
 
             &:before {
-                background: -webkit-gradient(linear,left top, left bottom,from(#fcff74),color-stop(40%, #fcff74),color-stop(80%, rgba(253,255,167,0)),to(rgba(253,255,167,0)));
-                background: -webkit-linear-gradient(#fcff74,#fcff74 40%,rgba(253,255,167,0) 80%,rgba(253,255,167,0));
-                background: -moz-linear-gradient(#fcff74,#fcff74 40%,rgba(253,255,167,0) 80%,rgba(253,255,167,0));
-                background: -o-linear-gradient(#fcff74,#fcff74 40%,rgba(253,255,167,0) 80%,rgba(253,255,167,0));
-                background: linear-gradient(#fcff74,#fcff74 40%,rgba(253,255,167,0) 80%,rgba(253,255,167,0));
-                -webkit-animation: c 1s infinite linear;
-                -moz-animation: c 1s infinite linear;
-                -o-animation: c 1s infinite linear;
-                animation: c 1s infinite linear;
+                animation: gradient 1s infinite linear;
             }
         }
 
@@ -563,19 +545,5 @@
 
     100% {
         opacity: 100%;
-    }
-}
-
-@keyframes c {
-    0% {
-        transform: translateX(-50%) translateY(0);
-    }
-
-    50% {
-        transform: translateX(-50%) translateY(5px);
-    }
-
-    100% {
-        transform: translateX(-50%) translateY(0);
     }
 }
