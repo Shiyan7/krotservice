@@ -98,3 +98,10 @@ video {
         height: 200px;
     }
 }
+
+.plyr:fullscreen {
+    border: none;
+    & video {
+        max-width: 100%;
+    }
+}
