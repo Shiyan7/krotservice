@@ -102,6 +102,7 @@ video {
 .plyr:fullscreen {
     border: none;
     & video {
+        object-fit: contain;
         max-width: 100%;
     }
 }
